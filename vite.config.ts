@@ -7,4 +7,11 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    // This handles client-side routing properly during development
+    historyApiFallback: true,
+  },
 });
