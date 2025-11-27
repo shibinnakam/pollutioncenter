@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, User, Search } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
-import { representatives, rtoDistricts } from '../data';
+import { rtoDistricts } from '../data';
 import { useLanguage } from '../context/LanguageContext';
 
 const RepresentativesPage: React.FC = () => {
