@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import GovernmentOrdersPage from './pages/GovernmentOrdersPage';
 import TestingCentersPage from './pages/TestingCentersPage';
+import RepresentativesPage from './pages/RepresentativesPage';
 import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
 import RequestFormPage from './pages/RequestFormPage';
