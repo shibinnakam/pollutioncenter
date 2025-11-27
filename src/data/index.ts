@@ -87,53 +87,6 @@ export const testingCenters: TestingCenter[] = [
   }
 ];
 
-export const representatives: Representative[] = [
-  {
-    id: 'rep1',
-    name: 'Anand Kumar',
-    role: 'President',
-    contact: '+91 9876543220',
-    rto: 'kl01',
-    email: 'anand@veotakerala.org',
-    photo: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600'
-  },
-  {
-    id: 'rep2',
-    name: 'Priya Nair',
-    role: 'Secretary',
-    contact: '+91 9876543221',
-    rto: 'kl07',
-    email: 'priya@veotakerala.org',
-    photo: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600'
-  },
-  {
-    id: 'rep3',
-    name: 'Mohan Das',
-    role: 'Treasurer',
-    contact: '+91 9876543222',
-    rto: 'kl08',
-    email: 'mohan@veotakerala.org',
-    photo: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600'
-  },
-  {
-    id: 'rep4',
-    name: 'Lakshmi Menon',
-    role: 'District Coordinator',
-    contact: '+91 9876543223',
-    rto: 'kl02',
-    photo: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600'
-  },
-  {
-    id: 'rep5',
-    name: 'Rajesh Kumar',
-    role: 'District Coordinator',
-    contact: '+91 9876543224',
-    rto: 'kl11',
-    email: 'rajesh@veotakerala.org',
-    photo: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600'
-  }
-];
-
 export const governmentOrders: GovernmentOrder[] = [
   {
     id: 'go1',
