@@ -32,20 +32,7 @@ export const slideImages: SlideImage[] = [
 ];
 
 export const rtoDistricts: RTODistrict[] = [
-  { id: 'kl01', name: 'Thiruvananthapuram', code: 'KL-01' },
-  { id: 'kl02', name: 'Kollam', code: 'KL-02' },
-  { id: 'kl03', name: 'Pathanamthitta', code: 'KL-03' },
-  { id: 'kl04', name: 'Alappuzha', code: 'KL-04' },
-  { id: 'kl05', name: 'Kottayam', code: 'KL-05' },
-  { id: 'kl06', name: 'Idukki', code: 'KL-06' },
-  { id: 'kl07', name: 'Ernakulam', code: 'KL-07' },
-  { id: 'kl08', name: 'Thrissur', code: 'KL-08' },
-  { id: 'kl09', name: 'Palakkad', code: 'KL-09' },
-  { id: 'kl10', name: 'Malappuram', code: 'KL-10' },
-  { id: 'kl11', name: 'Kozhikode', code: 'KL-11' },
-  { id: 'kl12', name: 'Wayanad', code: 'KL-12' },
-  { id: 'kl13', name: 'Kannur', code: 'KL-13' },
-  { id: 'kl14', name: 'Kasaragod', code: 'KL-14' }
+  { id: 'kl11', name: 'Kozhikode', code: 'KL-11' }
 ];
 
 export const testingCenters: TestingCenter[] = [
