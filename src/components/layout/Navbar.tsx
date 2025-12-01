@@ -37,7 +37,6 @@ const Navbar: React.FC = () => {
     { path: '/about', label: t('nav.about') },
     { path: '/government-orders', label: t('nav.governmentOrders') },
     { path: '/testing-centers', label: t('nav.testingCenters') },
-    { path: '/representatives', label: t('nav.representatives') },
     { path: '/news', label: t('nav.news') },
     { path: '/contact', label: t('nav.contact') },
     { path: '/request-form', label: t('nav.requestForm') },
