@@ -423,14 +423,135 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc39',
-    name: '',
+    name: 'S S Narikunni',
     contact: '',
-    location: 'Feroke',
-    rto: 'kl73',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc40',
+    name: 'Amulya Balussery ',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc41',
+    name: 'Atom tech Nanmanda',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc42',
+    name: 'Grip Kakkodi',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc43',
+    name: 'Ideal Narikkuni',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc44',
+    name: 'K K Pollution B Makku',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc45',
+    name: 'P K M Estatemukku',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc46',
+    name: 'Sopanam Atholi',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc47',
+    name: 'Prem Atholi',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc48',
+    name: 'Sreerag Parambilbazar',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc49',
+    name: 'Vettakkal',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc50',
+    name: 'Auto-matic',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc51',
+    name: 'J S Kakkur',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
     address: '',
     email: '',
     workingHours: ''
   }
+
 
 ];
 
