@@ -340,7 +340,98 @@ export const testingCenters: TestingCenter[] = [
     address: '',
     email: '',
     workingHours: ''
+  },
+  {
+    id: 'tc31',
+    name: 'Anitha Kallampara',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc32',
+    name: 'Cheruvalath Naduvattom',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc33',
+    name: 'Driveline Nallur',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc34',
+    name: 'Eminent Palazhi',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc35',
+    name: 'Monto Chaliyam',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc36',
+    name: 'P M Kutty & Sons',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc37',
+    name: 'R R Pantheerankavu',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc38',
+    name: 'X Auto Areekad',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc39',
+    name: '',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '',
+    email: '',
+    workingHours: ''
   }
+
 ];
 
 export const governmentOrders: GovernmentOrder[] = [
