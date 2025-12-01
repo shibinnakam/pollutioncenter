@@ -42,45 +42,7 @@ export const rtoDistricts: RTODistrict[] = [
 ];
 
 export const testingCenters: TestingCenter[] = [
-  {
-    id: 'tc1',
-    name: 'Green Emissions Testing Center',
-    contact: '+91 9876543210',
-    location: 'Thiruvananthapuram',
-    rto: 'kl01',
-    address: '23/A, MG Road, Thiruvananthapuram, Kerala 695001',
-    email: 'info@greenemissions.com',
-    workingHours: 'Mon-Sat: 9:00 AM - 6:00 PM'
-  },
-  {
-    id: 'tc2',
-    name: 'EcoTest Vehicle Services',
-    contact: '+91 9876543211',
-    location: 'Kollam',
-    rto: 'kl02',
-    address: '45, Kollam Bypass, Kollam, Kerala 691001',
-    email: 'support@ecotest.com',
-    workingHours: 'Mon-Sat: 8:30 AM - 5:30 PM'
-  },
-  {
-    id: 'tc3',
-    name: 'CleanAir Emission Center',
-    contact: '+91 9876543212',
-    location: 'Ernakulam',
-    rto: 'kl07',
-    address: '78, Kakkanad, Ernakulam, Kerala 682030',
-    email: 'info@cleanair.com',
-    workingHours: 'Mon-Sat: 9:00 AM - 6:00 PM'
-  },
-  {
-    id: 'tc4',
-    name: 'PollutionCheck Kerala',
-    contact: '+91 9876543213',
-    location: 'Thrissur',
-    rto: 'kl08',
-    address: '12, MG Road, Thrissur, Kerala 680001',
-    workingHours: 'Mon-Sat: 9:30 AM - 5:30 PM'
-  },
+  
   {
     id: 'tc5',
     name: 'Ali Auto Scan',
