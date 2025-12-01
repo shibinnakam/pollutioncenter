@@ -37,9 +37,10 @@ export const rtoDistricts = [
     code: "KL-11",
     name: "RTO Kozhikode",
     subRTO: [
-      { id: "kl11a", code: "KL-11A", name: "Sub RTO Koyilandy" },
-      { id: "kl11b", code: "KL-11B", name: "Sub RTO Perambra" },
-      { id: "kl11c", code: "KL-11C", name: "Sub RTO Thottilpalam" }
+      { id: "kl11a", code: "KL-11", name: "Sub RTO Kozhikode" },
+      { id: "kl11a", code: "KL-57", name: "Sub RTO Koduvally" },
+      { id: "kl11b", code: "KL-73", name: "Sub RTO Feroke" },
+      { id: "kl11c", code: "KL-76", name: "Sub RTO Nanmanda" }
     ]
   },
 
@@ -48,8 +49,9 @@ export const rtoDistricts = [
     code: "KL-18",
     name: "RTO Vadakara",
     subRTO: [
-      { id: "kl18a", code: "KL-18A", name: "Sub RTO Koduvally" },
-      { id: "kl18b", code: "KL-18B", name: "Sub RTO Nadapuram" }
+      { id: "kl18a", code: "KL-18", name: "Sub RTO Vadakara" },
+      { id: "kl18b", code: "KL-56", name: "Sub RTO Quilandi" },
+      { id: "kl18c", code: "KL-77", name: "Sub RTO Perambra" },
     ]
   }
 ];
