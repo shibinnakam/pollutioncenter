@@ -37,7 +37,7 @@ export const rtoDistricts = [
     code: "KL-11",
     name: "RTO Kozhikode",
     subRTO: [
-      { id: "kl11a", code: "KL-11A", name: "Sub RTO Kozhikode" },
+      { id: "kl11a", code: "KL-11", name: "Sub RTO Kozhikode" },
       { id: "kl57", code: "KL-57", name: "Sub RTO Koduvally" },
       { id: "kl73", code: "KL-73", name: "Sub RTO Feroke" },
       { id: "kl76", code: "KL-76", name: "Sub RTO Nanmanda" }
@@ -49,7 +49,7 @@ export const rtoDistricts = [
     code: "KL-18",
     name: "RTO Vadakara",
     subRTO: [
-      { id: "kl18a", code: "KL-18A", name: "Sub RTO Vadakara" },
+      { id: "kl18a", code: "KL-18", name: "Sub RTO Vadakara" },
       { id: "kl56", code: "KL-56", name: "Sub RTO Quilandi" },
       { id: "kl77", code: "KL-77", name: "Sub RTO Perambra" },
     ]
@@ -743,7 +743,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Al Arabia Purameri',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -753,7 +753,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'AV Auto',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -763,7 +763,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Classic Kallachi',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -773,7 +773,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Global Kainatty',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -783,7 +783,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Global Meppayil',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -793,7 +793,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Global Azhiyoor',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -803,7 +803,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Global Vadakara',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -813,7 +813,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Hindo lam',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -823,7 +823,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Kairali Kakkuttil',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -833,7 +833,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Marwa Kallachi',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -843,7 +843,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'M G Tyres Ayancheri',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -853,7 +853,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'M G Auto Tech Vadakara',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -863,7 +863,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'M K Thiruvallur',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -873,7 +873,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Moto Spot Vadakara',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -883,7 +883,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Nakshathra',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -893,7 +893,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Nasco Nadapuram',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -903,7 +903,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Orbiz Auto Scan',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -913,7 +913,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Oxygen Vadakara',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -923,7 +923,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Prince Vadakara',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -933,7 +933,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'SA Auto Scan',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -943,7 +943,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Saga Kallachi',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -953,7 +953,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Surya Valayam',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -963,7 +963,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Wheel plus',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
@@ -973,7 +973,7 @@ export const testingCenters: TestingCenter[] = [
     name: 'Surya Vanimel',
     contact: '',
     location: 'Vadakara',
-    rto: 'kl18A',
+    rto: 'kl18a',
     address: '',
     email: '',
     workingHours: ''
