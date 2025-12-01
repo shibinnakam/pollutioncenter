@@ -114,7 +114,7 @@ const ContactPage: React.FC = () => {
                 <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                   <iframe
                     title="VEOTA Kerala Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126931.66373132048!2d76.81565858036993!3d8.499608086962906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb805bbcd47%3A0x15439fab5c5c81cb!2sThiruvananthapuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1689919463723!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501804.8922950888!2d75.61419218388469!3d11.258753668480079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7be06d1c4f6af%3A0x9e1f3de7350f8c22!2sKozhikode%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sin!4v1698891234567!5m2!1sen!2sin"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
