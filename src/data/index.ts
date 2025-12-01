@@ -37,7 +37,7 @@ export const rtoDistricts = [
     code: "KL-11",
     name: "RTO Kozhikode",
     subRTO: [
-      { id: "kl11a", code: "KL-11A", name: "Sub RTO Kozhikode" },
+      { id: "kl11a", code: "KL-11", name: "Sub RTO Kozhikode" },
       { id: "kl57", code: "KL-57", name: "Sub RTO Koduvally" },
       { id: "kl73", code: "KL-73", name: "Sub RTO Feroke" },
       { id: "kl76", code: "KL-76", name: "Sub RTO Nanmanda" }
