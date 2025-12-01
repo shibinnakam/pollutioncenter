@@ -31,28 +31,21 @@ export const slideImages: SlideImage[] = [
   }
 ];
 
-export const rtoDistricts: RTODistrict[] = [
-  {
-    id: 'kl11-main',
-    name: 'Kozhikode (Main RTO)',
-    code: 'KL-11',
-    subRTOs: [
-      { id: 'kl11', name: 'Kozhikode', code: 'KL-11' },
-      { id: 'kl57', name: 'Koduvally', code: 'KL-57' },
-      { id: 'kl73', name: 'Feroke', code: 'KL-73' },
-      { id: 'kl76', name: 'Nenmanda', code: 'KL-76' }
-    ]
-  },
-  {
-    id: 'kl18-main',
-    name: 'Vadakara (Main RTO)',
-    code: 'KL-18',
-    subRTOs: [
-      { id: 'kl18', name: 'Vadakara', code: 'KL-18' },
-      { id: 'kl77', name: 'Perambra', code: 'KL-77' },
-      { id: 'kl56', name: 'Quilandi', code: 'KL-56' }
-    ]
-  }
+export const rtoDistricts = [
+  // Main RTO
+  { id: "kl11", code: "KL-11", name: "RTO Kozhikode" },
+
+  // Sub-RTOs
+  { id: "kl11a", code: "KL-11A", name: "Sub RTO Koyilandy" },
+  { id: "kl11b", code: "KL-11B", name: "Sub RTO Perambra" },
+  { id: "kl11c", code: "KL-11C", name: "Sub RTO Thottilpalam" },
+
+  // Vadakara RTO
+  { id: "kl18", code: "KL-18", name: "RTO Vadakara" },
+
+  // Sub-RTOs of Vadakara
+  { id: "kl18a", code: "KL-18A", name: "Sub RTO Koduvally" },
+  { id: "kl18b", code: "KL-18B", name: "Sub RTO Nadapuram" },
 ];
 
 export const testingCenters: TestingCenter[] = [
