@@ -550,6 +550,216 @@ export const testingCenters: TestingCenter[] = [
     address: '',
     email: '',
     workingHours: ''
+  },
+  {
+    id: 'tc52',
+    name: 'Arabian',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc53',
+    name: 'Aroma',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc54',
+    name: 'Auto Scan Kunnanmangalam',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc55',
+    name: 'Badar Koduvally',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc56',
+    name: 'Bharath Pathimangalam',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc57',
+    name: 'B R Varattiakkal',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc58',
+    name: 'CM Auto Scan',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc59',
+    name: 'Echo harbour',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc60',
+    name: 'Fit N Drive',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc61',
+    name: 'Freeway Mutheri',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc62',
+    name: 'Global Kodenchery',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc63',
+    name: 'J & J Parappanpoyil',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc64',
+    name: 'KRS Pathimangalam',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc65',
+    name: 'Manraj Thamarassery',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc66',
+    name: 'M/S Western Madavoor',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc67',
+    name: 'Safiya Karuthaparambu',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc68',
+    name: 'SNS Kallanthode',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc69',
+    name: 'Green tech Omarassery',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc70',
+    name: 'Valappil',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc71',
+    name: 'Mother India',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc72',
+    name: 'SS Vattoli',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '',
+    email: '',
+    workingHours: ''
   }
 
 
