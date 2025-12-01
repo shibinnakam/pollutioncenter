@@ -38,7 +38,7 @@ export const rtoDistricts: RTODistrict[] = [
   { id: 'kl76', name: 'Nanmanda', code: 'KL-76' },
   { id: 'kl18', name: 'Vadakara', code: 'KL-18' },
   { id: 'kl77', name: 'Perambra', code: 'KL-77' },
-  { id: 'kl56', name: 'Koyilandy', code: 'KL-56' }
+  { id: 'kl56', name: 'Quilandi', code: 'KL-56' }
 ];
 
 export const testingCenters: TestingCenter[] = [
@@ -760,7 +760,349 @@ export const testingCenters: TestingCenter[] = [
     address: '',
     email: '',
     workingHours: ''
+  },
+  {
+    id: 'tc73',
+    name: 'Al Arabia Purameri',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc74',
+    name: 'AV Auto',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc75',
+    name: 'Classic Kallachi',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc76',
+    name: 'Global Kainatty',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc77',
+    name: 'Global Meppayil',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc78',
+    name: 'Global Azhiyoor',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc79',
+    name: 'Global Vadakara',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc80',
+    name: 'Hindo lam',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc81',
+    name: 'Kairali Kakkuttil',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc82',
+    name: 'Marwa Kallachi',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc83',
+    name: 'M G Tyres Ayancheri',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc84',
+    name: 'M G Auto Tech Vadakara',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc85',
+    name: 'M K Thiruvallur',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc86',
+    name: 'Moto Spot Vadakara',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc87',
+    name: 'Nakshathra',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc88',
+    name: 'Nasco Nadapuram',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc89',
+    name: 'Orbiz Auto Scan',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc90',
+    name: 'Oxygen Vadakara',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc91',
+    name: 'Prince Vadakara',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc92',
+    name: 'SA Auto Scan',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc93',
+    name: 'Saga Kallachi',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc94',
+    name: 'Surya Valayam',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc95',
+    name: 'Wheel plus',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+   {
+    id: 'tc96',
+    name: 'Surya Vanimel',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc97',
+    name: 'Auto Zone Koyilandi',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc98',
+    name: 'Energy Kanayankode',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc99',
+    name: 'Moto care Ullery',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc100',
+    name: 'Moto zone Koyilandy',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc101',
+    name: 'Payyoli',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc102',
+    name: 'Roadster Ullery',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc103',
+    name: 'Sanas Payyoli',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  
+  {
+    id: 'tc104',
+    name: 'Vidhya Kattilpedika',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc105',
+    name: 'V R Koyilandy',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc106',
+    name: 'Global Koyilandy',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '',
+    email: '',
+    workingHours: ''
   }
+  
 
 
 ];
