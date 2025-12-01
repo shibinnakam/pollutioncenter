@@ -83,13 +83,263 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc5',
-    name: 'Eco Emissions Test Center',
-    contact: '+91 9876543214',
+    name: 'Ali Auto Scan',
+    contact: '',
     location: 'Kozhikode',
     rto: 'kl11',
-    address: '34, Beach Road, Kozhikode, Kerala 673001',
-    email: 'support@ecoemissions.com',
-    workingHours: 'Mon-Sat: 9:00 AM - 6:00 PM'
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc6',
+    name: 'Ambady Auto Scan',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc7',
+    name: 'Friends Kuttikkattur',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc8',
+    name: 'Jeena Puthiyangadi',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc9',
+    name: 'Lakshmi Trading',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc10',
+    name: 'Lovely kallayi',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc11',
+    name: 'Metro Vaidhyarangadi',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc12',
+    name: 'Moto Care Thodampattuthazham',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc13',
+    name: 'MTS Mundikkal thazham',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc14',
+    name: 'Narakath Nellikode',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc15',
+    name: 'Perfect Cherootty Road',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc16',
+    name: 'Poopathi Peruvayal',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc17',
+    name: 'Poopathi Moozhikkal',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc18',
+    name: 'PRK Chelavoor',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc19',
+    name: 'Ready To Go Chevarambalam',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc20',
+    name: 'Right Chevayur',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc21',
+    name: 'RK Merykkunnu',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc22',
+    name: 'Star Mankavu',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc23',
+    name: 'SP Auto Care Elathur',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc24',
+    name: 'Test Well Chevayur',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc25',
+    name: 'United Kallayi',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc26',
+    name: 'V Care Westhill',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc27',
+    name: 'Vengalath',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc28',
+    name: 'Venkateshwara Westhill',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc29',
+    name: 'Mukkam Tyres',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
+  },
+  {
+    id: 'tc30',
+    name: 'Club C',
+    contact: '',
+    location: 'Kozhikode',
+    rto: 'kl11',
+    address: '',
+    email: '',
+    workingHours: ''
   }
 ];
 
