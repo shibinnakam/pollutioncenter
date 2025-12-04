@@ -1091,7 +1091,7 @@ export const governmentOrders: GovernmentOrder[] = [
     number: 'GO(P)No.25/2023/Trans',
     date: '2023-05-15',
     summary: 'Implementation of updated emission standards for vehicles registered in Kerala',
-    documentUrl: '/documents/go-25-2023.pdf',
+    documentUrl: '.\PUCC LIST DTC KOZHIKODE.pdf',
     category: 'Emission Standards'
   },
   {
