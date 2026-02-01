@@ -3,21 +3,21 @@ import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, R
 export const slideImages: SlideImage[] = [
   {
     id: 1,
-    url: '/cmveotahome.jpg',
+    url: '/cmvetoahome.jpg',
     title: 'Vehicle Emission Testing',
     description: 'Ensuring a cleaner environment through proper vehicle emission testing',
     alt: 'Vehicle emission testing being performed'
   },
   {
     id: 2,
-    url: '/mriyazveota.jpg',
+    url: '/mriyazvetoa.jpg',
     title: 'Modern Testing Equipment',
     description: 'Using state-of-the-art equipment for accurate emission testing',
     alt: 'Modern vehicle testing equipment'
   },
   {
     id: 3,
-    url: 'mriyazveotak.jpg',
+    url: 'mriyazvetoak.jpg',
     title: 'Emission Control',
     description: 'Working together for a pollution-free Kerala',
     alt: 'Emission control system'
@@ -1130,9 +1130,9 @@ export const newsItems: NewsItem[] = [
     id: 'news1',
     title: 'Annual Conference Announced',
     date: '2024-02-25',
-    summary: 'VEOTA Kerala announces annual conference to be held in Kochi on March 15-16, 2024',
-    content: 'The Vehicle Emission Testing Owners Association Kerala (VEOTA) is pleased to announce its annual conference scheduled for March 15-16, 2024, at the Grand Hyatt in Kochi. This year\'s conference will focus on new emission testing technologies and upcoming regulatory changes. All members are encouraged to attend this important event.',
-    imageUrl: '/mriyazveota.jpg',
+    summary: 'VETOA Kerala announces annual conference to be held in Kochi on March 15-16, 2024',
+    content: 'The Vehicle Emission Testing Owners Association Kerala (VETOA) is pleased to announce its annual conference scheduled for March 15-16, 2024, at the Grand Hyatt in Kochi. This year\'s conference will focus on new emission testing technologies and upcoming regulatory changes. All members are encouraged to attend this important event.',
+    imageUrl: '/mriyazvetoa.jpg',
     tags: ['Conference', 'Events']
   },
   {
@@ -1141,15 +1141,15 @@ export const newsItems: NewsItem[] = [
     date: '2024-01-10',
     summary: 'BS6 Phase 2 emission norms now in effect across Kerala',
     content: 'Starting April 1, 2023, the BS6 Phase 2 emission norms have come into effect across Kerala. All testing centers are required to update their equipment and testing procedures to comply with these new standards. The Transport Department has issued detailed guidelines for implementation, which can be accessed on the official website.',
-    imageUrl: '/cmveotahome.jpg',
+    imageUrl: '/cmvetoahome.jpg',
     tags: ['Regulations', 'Emission Standards']
   },
   {
     id: 'news3',
     title: 'Training Workshop for Testing Center Staff',
     date: '2023-12-15',
-    summary: 'VEOTA organizing training workshops for testing center staff in all districts',
-    content: 'The Vehicle Emission Testing Owners Association Kerala (VEOTA) will be conducting a series of training workshops for testing center staff across all districts in Kerala. These workshops aim to enhance the technical skills of the staff and familiarize them with the latest testing equipment and procedures. The schedule for these workshops will be announced soon.',
+    summary: 'VETOA organizing training workshops for testing center staff in all districts',
+    content: 'The Vehicle Emission Testing Owners Association Kerala (VETOA) will be conducting a series of training workshops for testing center staff across all districts in Kerala. These workshops aim to enhance the technical skills of the staff and familiarize them with the latest testing equipment and procedures. The schedule for these workshops will be announced soon.',
     tags: ['Training', 'Workshop']
   }
 ];

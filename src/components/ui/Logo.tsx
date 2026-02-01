@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
       <div className="bg-primary-600 dark:bg-primary-500 p-1.5 rounded-full">
         <Car size={22} className="text-white" />
       </div>
-      <span className="sr-only">VEOTA Kerala</span>
+      <span className="sr-only">VETOA Kerala</span>
     </div>
   );
 };
