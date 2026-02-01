@@ -3,7 +3,7 @@ import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, R
 export const slideImages: SlideImage[] = [
   {
     id: 1,
-    url: 'https://images.pexels.com/photos/11347464/pexels-photo-11347464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: '/cmveotahome.jpeg',
     title: 'Vehicle Emission Testing',
     description: 'Ensuring a cleaner environment through proper vehicle emission testing',
     alt: 'Vehicle emission testing being performed'
