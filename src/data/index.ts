@@ -21,13 +21,6 @@ export const slideImages: SlideImage[] = [
     title: 'Emission Control',
     description: 'Working together for a pollution-free Kerala',
     alt: 'Emission control system'
-  },
-  {
-    id: 4,
-    url: 'https://images.pexels.com/photos/9800002/pexels-photo-9800002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    title: 'Expert Testing',
-    description: 'Professional testing services by certified technicians',
-    alt: 'Vehicle testing by professional'
   }
 ];
 
