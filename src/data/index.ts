@@ -3,21 +3,21 @@ import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, R
 export const slideImages: SlideImage[] = [
   {
     id: 1,
-    url: '/cmveotahome.jpeg',
+    url: '/cmveotahome.jpg',
     title: 'Vehicle Emission Testing',
     description: 'Ensuring a cleaner environment through proper vehicle emission testing',
     alt: 'Vehicle emission testing being performed'
   },
   {
     id: 2,
-    url: '/mriyazveota.jpeg',
+    url: '/mriyazveota.jpg',
     title: 'Modern Testing Equipment',
     description: 'Using state-of-the-art equipment for accurate emission testing',
     alt: 'Modern vehicle testing equipment'
   },
   {
     id: 3,
-    url: 'mriyazveotak.jpeg',
+    url: 'mriyazveotak.jpg',
     title: 'Emission Control',
     description: 'Working together for a pollution-free Kerala',
     alt: 'Emission control system'
