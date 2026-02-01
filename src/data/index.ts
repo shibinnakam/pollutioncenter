@@ -10,14 +10,14 @@ export const slideImages: SlideImage[] = [
   },
   {
     id: 2,
-    url: 'https://images.pexels.com/photos/8986768/pexels-photo-8986768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: '/mriyazveota.jpeg',
     title: 'Modern Testing Equipment',
     description: 'Using state-of-the-art equipment for accurate emission testing',
     alt: 'Modern vehicle testing equipment'
   },
   {
     id: 3,
-    url: 'https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: 'mriyazveotak.jpeg',
     title: 'Emission Control',
     description: 'Working together for a pollution-free Kerala',
     alt: 'Emission control system'
