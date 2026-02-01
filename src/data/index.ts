@@ -1132,7 +1132,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-02-25',
     summary: 'VEOTA Kerala announces annual conference to be held in Kochi on March 15-16, 2024',
     content: 'The Vehicle Emission Testing Owners Association Kerala (VEOTA) is pleased to announce its annual conference scheduled for March 15-16, 2024, at the Grand Hyatt in Kochi. This year\'s conference will focus on new emission testing technologies and upcoming regulatory changes. All members are encouraged to attend this important event.',
-    imageUrl: 'https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    imageUrl: '/mriyazveota.jpg',
     tags: ['Conference', 'Events']
   },
   {
@@ -1141,7 +1141,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-01-10',
     summary: 'BS6 Phase 2 emission norms now in effect across Kerala',
     content: 'Starting April 1, 2023, the BS6 Phase 2 emission norms have come into effect across Kerala. All testing centers are required to update their equipment and testing procedures to comply with these new standards. The Transport Department has issued detailed guidelines for implementation, which can be accessed on the official website.',
-    imageUrl: 'https://images.pexels.com/photos/5331445/pexels-photo-5331445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    imageUrl: '/cmveotahome.jpg',
     tags: ['Regulations', 'Emission Standards']
   },
   {

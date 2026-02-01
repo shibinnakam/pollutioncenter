@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '300+', label: 'Testing Centers' },
+  { value: '100+', label: 'Testing Centers' },
   { value: '14', label: 'Districts Covered' },
-  { value: '18', label: 'Years of Service' },
+  { value: '6', label: 'Years of Service' },
   { value: '1M+', label: 'Vehicles Tested' },
 ];
 
