@@ -22,7 +22,7 @@ const AboutSection: React.FC = () => {
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-500/10 rounded-lg z-0"></div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary-500/10 rounded-lg z-0"></div>
               <img
-                src="https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/ourmission.jpeg"
                 alt="VEOTA Kerala team meeting"
                 className="rounded-lg shadow-soft relative z-10 w-full object-cover"
                 style={{ maxHeight: '500px' }}
