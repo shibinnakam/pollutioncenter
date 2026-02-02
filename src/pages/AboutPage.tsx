@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => {
               className="order-first md:order-last"
             >
               <img
-                src="/cmveota.jpeg"
+                src="/cmvetoa.jpeg"
                 alt="VEOTA Kerala History"
                 className="rounded-lg shadow-soft w-full"
               />
