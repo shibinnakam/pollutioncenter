@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <Logo />
-            <span className="ml-2 text-lg font-semibold hidden md:block">VEOTA Kerala</span>
+            <span className="ml-2 text-lg font-semibold hidden md:block">VETOA Kerala</span>
           </Link>
 
           {/* Desktop Navigation */}
