@@ -26,24 +26,38 @@ const ContactPage: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('submitting');
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('success');
-      // Reset form after 3 seconds
-      setTimeout(() => {
+
+    const encode = (data: { [key: string]: string }) => {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+    };
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...formData })
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
         setFormData({
           name: '',
           email: '',
           subject: '',
           message: ''
         });
-        setFormStatus('idle');
-      }, 3000);
-    }, 1500);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setFormStatus('error');
+    }
   };
 
   return (
@@ -135,7 +149,18 @@ const ContactPage: React.FC = () => {
               <h2 className="text-2xl font-bold mb-6">{t('contact.sendMessage')}</h2>
               
               <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-6">
-                <form onSubmit={handleSubmit}>
+                <form 
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                >
+                  {/* Hidden input for Netlify to identify the form */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  {/* Hidden honeypot field for spam prevention */}
+                  <p className="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+
                   <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
                       {t('contact.form.name')} <span className="text-error-500">*</span>
@@ -199,7 +224,7 @@ const ContactPage: React.FC = () => {
                   <div className="mt-6">
                     <button
                       type="submit"
-                      disabled={formStatus === 'submitting' || formStatus === 'success'}
+                      disabled={formStatus === 'submitting'}
                       className={`w-full btn btn-primary flex items-center justify-center transition-all ${
                         formStatus === 'submitting' ? 'opacity-70 cursor-wait' : ''
                       } ${formStatus === 'success' ? 'bg-success-500 hover:bg-success-600 focus:ring-success-400' : ''}`}
@@ -216,6 +241,10 @@ const ContactPage: React.FC = () => {
                         <span className="flex items-center">
                           Message Sent Successfully
                         </span>
+                      ) : formStatus === 'error' ? (
+                        <span className="flex items-center">
+                          Submission Failed. Try again.
+                        </span>
                       ) : (
                         <span className="flex items-center">
                           <Send size={16} className="mr-2" />
@@ -223,6 +252,11 @@ const ContactPage: React.FC = () => {
                         </span>
                       )}
                     </button>
+                    {formStatus === 'success' && (
+                      <p className="text-center text-sm text-success-600 dark:text-success-400 mt-4">
+                        Thank you for your message! We will get back to you shortly.
+                      </p>
+                    )}
                   </div>
                 </form>
               </div>
