@@ -4,7 +4,7 @@ export const slideImages: SlideImage[] = [
   {
     id: 1,
     url: '/cmvetoahome.jpg',
-    title: 'Vehicle Emission Testing',
+    title: 'Welcome to Vetoa Kozhikode',
     description: 'Ensuring a cleaner environment through proper vehicle emission testing',
     alt: 'Vehicle emission testing being performed'
   },
