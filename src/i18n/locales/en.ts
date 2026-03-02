@@ -47,6 +47,8 @@ export default {
   'testingCenters.workingHours': 'Working Hours',
   'testingCenters.email': 'Email',
   'testingCenters.address': 'Address',
+  'testingCenters.centerCode': 'Center Code',
+  'testingCenters.vehicleTypes': 'Authorized for',
 
   // Representatives
   'representatives.title': 'Association Representatives',

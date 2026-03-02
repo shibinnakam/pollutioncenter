@@ -47,6 +47,8 @@ export default {
   'testingCenters.workingHours': 'പ്രവൃത്തി സമയം',
   'testingCenters.email': 'ഇമെയിൽ',
   'testingCenters.address': 'വിലാസം',
+  'testingCenters.centerCode': 'സെന്റർ കോഡ്',
+  'testingCenters.vehicleTypes': 'അംഗീകൃത വാഹനങ്ങൾ',
 
   // Representatives
   'representatives.title': 'അസോസിയേഷൻ പ്രതിനിധികൾ',
