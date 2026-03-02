@@ -46,8 +46,8 @@ const TestingCentersPage: React.FC = () => {
     if (selectedSubRTO) {
       return center.rto === selectedSubRTO &&
         (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-         center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-         center.address.toLowerCase().includes(searchQuery.toLowerCase()));
+          center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          center.address.toLowerCase().includes(searchQuery.toLowerCase()));
     }
 
     // if main RTO selected (but no sub selected), show centers whose rto is the mainRTO OR any of its subRTO ids
@@ -57,8 +57,8 @@ const TestingCentersPage: React.FC = () => {
       const matchesRTO = center.rto === selectedMainRTO || subIds.includes(center.rto);
       return matchesRTO &&
         (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-         center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-         center.address.toLowerCase().includes(searchQuery.toLowerCase()));
+          center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          center.address.toLowerCase().includes(searchQuery.toLowerCase()));
     }
 
     // default: no RTO selected -> return empty, because we show only main RTO cards initially
@@ -263,7 +263,7 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
       className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft overflow-hidden"
     >
       {/* Card Header */}
-      <div 
+      <div
         className="p-6 flex flex-col md:flex-row md:items-center justify-between cursor-pointer"
         onClick={toggleExpand}
       >
@@ -275,8 +275,12 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
           </div>
         </div>
         <div className="flex items-center space-x-4">
+          {center.centerCode && (
+            <div className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 px-3 py-1 rounded-full text-sm font-mono font-medium">
+              {center.centerCode}
+            </div>
+          )}
           <div className="bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 px-3 py-1 rounded-full text-sm font-medium">
-            {/* show the district code if available */}
             {(function getCode() {
               const d = (rtoDistricts as any[]).find((dr: any) => dr.id === center.rto)
                 || (rtoDistricts as any[]).flatMap((m: any) => m.subRTO || []).find((s: any) => s.id === center.rto);
@@ -299,22 +303,28 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
 
       {/* Expanded Content */}
       <div
-        className={`px-6 pb-6 overflow-hidden transition-all duration-300 ${
-          isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`px-6 pb-6 overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <div className="pt-4 border-t border-neutral-200 dark:border-neutral-700 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h4 className="text-lg font-medium mb-3">{t('testingCenters.details')}</h4>
             <ul className="space-y-3">
+              {center.centerCode && (
+                <li className="flex items-center">
+                  <Info size={18} className="text-primary-600 dark:text-primary-400 mr-2 shrink-0" />
+                  <span className="text-neutral-500 dark:text-neutral-400 mr-1">{t('testingCenters.centerCode')}:</span>
+                  <span className="font-mono font-semibold text-neutral-700 dark:text-neutral-300">{center.centerCode}</span>
+                </li>
+              )}
               <li className="flex items-start">
                 <MapPin size={18} className="text-primary-600 dark:text-primary-400 mt-0.5 mr-2 shrink-0" />
                 <span className="text-neutral-700 dark:text-neutral-300">{center.address || '-'}</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-primary-600 dark:text-primary-400 mr-2 shrink-0" />
-                <a 
-                  href={`tel:${center.contact}`} 
+                <a
+                  href={`tel:${center.contact}`}
                   className="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400"
                 >
                   {center.contact || '-'}
@@ -323,8 +333,8 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
               {center.email && (
                 <li className="flex items-center">
                   <Mail size={18} className="text-primary-600 dark:text-primary-400 mr-2 shrink-0" />
-                  <a 
-                    href={`mailto:${center.email}`} 
+                  <a
+                    href={`mailto:${center.email}`}
                     className="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400"
                   >
                     {center.email}
@@ -355,6 +365,18 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                 <span className="text-neutral-700 dark:text-neutral-300">Vehicle Inspection</span>
               </li>
             </ul>
+            {center.vehicleTypes && center.vehicleTypes.length > 0 && (
+              <div className="mt-4">
+                <h5 className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">{t('testingCenters.vehicleTypes')}</h5>
+                <div className="flex flex-wrap gap-2">
+                  {center.vehicleTypes.map((vt, i) => (
+                    <span key={i} className="bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 px-2 py-0.5 rounded text-xs font-medium">
+                      {vt}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
