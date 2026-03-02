@@ -50,8 +50,8 @@ export const rtoDistricts = [
 ];
 
 export const testingCenters: TestingCenter[] = [
-  
-   {
+
+  {
     id: 'tc5',
     name: 'Ali Auto Scan',
     contact: '',
@@ -523,216 +523,456 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc52',
-    name: 'Arabian',
+    name: '5S AUTO HEALTH CARE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'MALIYEKKAL BUILDING,WARD NO 1/ROOM NO 628/I,673572',
+    centerCode: 'KL0570035',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc53',
-    name: 'Aroma',
+    name: 'ABC AUTO SCAN',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'PULIYARAKKAL COMPLEX ,THACHAMPOYIL ,THAMARASSERY PO , KOZHIKODE ,673573',
+    centerCode: 'KL0570031',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc54',
-    name: 'Auto Scan Kunnanmangalam',
+    name: 'ADHAN SMOKE TEST',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO.17/322 A,KARAT BUILDING,MAINROAD,KODUVALLY,KOZHIKODE-673612,673612',
+    centerCode: 'KL0570015',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc55',
-    name: 'Badar Koduvally',
+    name: 'ARABIAN POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO. TP 9/3A ,THAMARASSERY,KOZHIKODE,ROOM NO. TP 9/3A,THAMARASSERY,KOZHIKODE,673573',
+    centerCode: 'KL0570014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc56',
-    name: 'Bharath Pathimangalam',
+    name: 'AROMA EMISSION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO PP XVII/515-D,ELOKKARA,PUTHUPPADY PO,ROOM NO PP XVII/515-D,ELOKKARA,PUTHUPPADY PO,673586',
+    centerCode: 'KL0570001',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc57',
-    name: 'B R Varattiakkal',
+    name: 'AROMA POLUTION TESTING CENTER',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'SOUTH MALAPURAM, PERUMBALLY P O,PUTHUPPADI,673586',
+    centerCode: 'KL0570042',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc58',
-    name: 'CM Auto Scan',
+    name: 'AUTOSCAN EMISSION TEST CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO.17/228,NEAR IIM,KUNNAMANGALAM,ROOM NO.17/228,NEAR IIM,KUNNAMANGALAM,673571',
+    centerCode: 'KL0570016',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc59',
-    name: 'Echo harbour',
+    name: 'BADAR TYRES SMOK TESTING CENTER',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KM 21/759 JAMAL COMPLEX,WAYANAD ROAD , KODUVALLY,673572',
+    centerCode: 'KL0570025',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc60',
-    name: 'Fit N Drive',
+    name: 'BHARATH POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO. 245,WARD NO.6,PATHIMANGALAM,KUNNAMANGALAM,ROOM NO.245,WARD NO.6,PATHIMANGALAM,KUNNAMANGALAM,673571',
+    centerCode: 'KL0570009',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc61',
-    name: 'Freeway Mutheri',
+    name: 'BPM POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO. XII/489 B,KARASSERY JN,MUKKAM PO,ROOM NO.XII/489 B,KARASSERY JN, MUKKAM,673202',
+    centerCode: 'KL0570007',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc62',
-    name: 'Global Kodenchery',
+    name: 'B R ASSOCIATES',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '635D,EDEN FACADE,VARATTIAKKAL,KUNNAMANGALAM,KOZHIKODE,KERALA,673571',
+    centerCode: 'KL0570021',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc63',
-    name: 'J & J Parappanpoyil',
+    name: 'C M AUTO SCAN',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'A2Z COMPLEX,ADIVARAM,CALICUT DT,673586',
+    centerCode: 'KL0570032',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc64',
-    name: 'KRS Pathimangalam',
+    name: 'FIT N DRIVE AUTOMOTIVE PUC TESTING CENTER',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NO 31/228, PALAKUTTY,WAYANAD ROAD,,KODUVALLY,KOZHIKODE DIST, KERALA,673572',
+    centerCode: 'KL0570039',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc65',
-    name: 'Manraj Thamarassery',
+    name: 'FREEWAY PUC CENTRE MUTHERI',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '10/13 B CHOYI SONS BUILDING ,MUTHERI,NEELESWARAM PO, KOZHIKODE,673582',
+    centerCode: 'KL0570029',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc66',
-    name: 'M/S Western Madavoor',
+    name: 'GLOBAL POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'DOOR NO 237A,KODENCHERY SOUTH,KODENCHERY POST KODUVALLY,673580',
+    centerCode: 'KL0570051',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc67',
-    name: 'Safiya Karuthaparambu',
+    name: 'GLOBAL VEHICLE POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KODENCHERY, KOZHIKODE DT. , KERALA ST.,673580',
+    centerCode: 'KL0570033',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc68',
-    name: 'SNS Kallanthode',
+    name: 'GREEN GO POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'THAIKKATTUPARAMBIL BUILDING ,PONNAMKAYAM P O THIRUVAMBADY VIA CALICUT,673603',
+    centerCode: 'KL0570044',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc69',
-    name: 'Green tech Omarassery',
+    name: 'GREEN OZONE AUTO SCAN',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '13/422/N KANIYARKANDAM PUTHUR,KODUVALLY KOZHIKODE DT, 673582',
+    centerCode: 'KL0570034',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc70',
-    name: 'Valappil',
+    name: 'GREEN TECH POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KURUMPARAKANDY, OMASSERY,OPP. GREEN VALLEY HOTEL, CALICUT,673582',
+    centerCode: 'KL0570022',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc71',
-    name: 'Mother India',
+    name: 'GREEN ZONE POLLUTION TESTING CENTER',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'MAMPATTA MANASSERY PO,MUKKAM KERALA,673602',
+    centerCode: 'KL0570052',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc72',
-    name: 'SS Vattoli',
+    name: 'J & J AUTOSCAN POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Koduvally',
     rto: 'kl57',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO TP XII/656,PARAPPANPOYIL,THAMARASSERY PO,ROOM NO TP XII/656,PARAPPANPOYIL,THAMARASSERY PO,673573',
+    centerCode: 'KL0570002',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc73',
+    name: 'KRS POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO.KP 01/82,PATHIMANGALAM,KUNNAMANGALAM,ROOM NO .KP 01/82,PATHIMANGALAM, KUNNAMANGALAM,673571',
+    centerCode: 'KL0570006',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc74',
+    name: 'KRS POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO. KP01/82 PATHIMANGALAM,KUNNAMANGALAM,673571',
+    centerCode: 'KL0570054',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc75',
+    name: 'MANRAJ EMISSION TEST CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO.TP 5/675,CHUNGAM,THAMARASSERY,ROOM NO.TP 5/675,CHUNGAM,THAMARASSERY,673573',
+    centerCode: 'KL0570010',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc76',
+    name: 'MOTHER INDIA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOMNO.14/415A,KAKKUND,KOODARANHIROAD,THIRUVAMBADI,KOZHIKODE DIST.,673603',
+    centerCode: 'KL0570011',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc77',
+    name: 'MOTHER INDIA VEHICLE POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'NEAR NEETHI SUPERMARKET KARINKUTTI,KOODARANHI, KOZHIKODE, KERALA,673604',
+    centerCode: 'KL0570038',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc78',
+    name: 'MOTHER VEHICLE POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: '14/94B KATYAD,THIRUVAMBADY PO, KOZHIKODE, KERALA ,673603',
+    centerCode: 'KL0570045',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc79',
+    name: 'M/S WESTERN VEHICLE POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ATHIYOD POYIL, PARANNUR P.O, MADAVOOR,673585',
+    centerCode: 'KL0570036',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc80',
+    name: 'NEXA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'AGASTIANMUZHI,MUKKAM,673602',
+    centerCode: 'KL0570023',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc81',
+    name: 'PARAYANGATTU PUCC',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'PARAYANGATTU,CHERUVADI POST,MAVOORVIAZHI,PERUVAYAL,KOZHIKODE,KERALA,673661',
+    centerCode: 'KL0570026',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc82',
+    name: 'PCA ENTERPRISES',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'POYIL,NEELESHWARAM PO,MUKKAM,,KOZHIKODE,KERALA,673582',
+    centerCode: 'KL0570053',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc83',
+    name: 'PCA ENTERPRISES',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'NO 359 ,WARD NO 25,OLD RTO OFFICE BUILDING,KODUVALLY PO KODUVALLY KOZHIKODE DIST KERALA,673572',
+    centerCode: 'KL0570041',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc84',
+    name: 'PCA ENTERPRISES',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'NO 9/410/F,WARD NO 09,EAST KIZHAKKOTH,,KIZHAKKOTH P O,KOZHIKODE DIST,KERALA.,673572',
+    centerCode: 'KL0570040',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc85',
+    name: 'ROMANCE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'KP/8/350E,PANNIKODE (POST) MUKKAM KOZHIKODE,673602',
+    centerCode: 'KL0570049',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc86',
+    name: 'SAFIYA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'KP 15/538E,KARUTHAPARAMBA,KARASHERY(PO),MUKKOM,673602',
+    centerCode: 'KL0570027',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc87',
+    name: 'SAJISASSOCIATES',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'CALICUT MAIN ROAD,THIRUVAMBADI,673603',
+    centerCode: 'KL0570048',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc88',
+    name: 'SAJISASSOCIATES POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'CALICUT MAIN ROAD,ENGAPUZHA,673586',
+    centerCode: 'KL0570050',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc89',
+    name: 'SAJISASSOCIATES POLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'CALICUT MAIN ROAD,KODENCHERY,CALICUT,673580',
+    centerCode: 'KL0570047',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc90',
+    name: 'SIYA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'WEST MANASSERY,MANASSERY PO KOZHIKODE,673602',
+    centerCode: 'KL0570046',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc91',
+    name: 'SNS VEHICLE POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO. CP 4/417 B,KALANTHODE,NIT PO,ROOM NO CP 4/417 B,KALANTHODE,NIT PO,673601',
+    centerCode: 'KL0570003',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc92',
+    name: 'SPLASH POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'CHENNAMANGALORE THAZHECODE ,MUKKAM KOZHIKODE,673602',
+    centerCode: 'KL0570043',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc93',
+    name: 'TECHNOVA POLLUTION TEST CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'T . K. ARCADE,ENGAPUZHA,673586',
+    centerCode: 'KL0570020',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc94',
+    name: 'TECHNOVA POLLUTION TEST CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ORCHID COMPLEX,KUDUKKILUMARAM THAMARASSERY,673573',
+    centerCode: 'KL0570019',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc95',
+    name: 'U3 SMOKE TEST',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO 94, VK BULDING, VATTAKKUNDUNGAL,KARADI, THAMARASSERY, KOZHIKODE DT,673573',
+    centerCode: 'KL0570030',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc96',
+    name: 'VALAPPIL POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Koduvally',
+    rto: 'kl57',
+    address: 'ROOM NO. KP 01/91 B,PADANILAM PO,ROOM NO KP 01/91 B,PADANILAM PO,673571',
+    centerCode: 'KL0570008',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc97',
     name: 'Al Arabia Purameri',
     contact: '',
     location: 'Vadakara',
@@ -742,7 +982,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc74',
+    id: 'tc98',
     name: 'AV Auto',
     contact: '',
     location: 'Vadakara',
@@ -752,7 +992,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc75',
+    id: 'tc99',
     name: 'Classic Kallachi',
     contact: '',
     location: 'Vadakara',
@@ -762,7 +1002,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc76',
+    id: 'tc100',
     name: 'Global Kainatty',
     contact: '',
     location: 'Vadakara',
@@ -772,7 +1012,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc77',
+    id: 'tc101',
     name: 'Global Meppayil',
     contact: '',
     location: 'Vadakara',
@@ -782,7 +1022,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc78',
+    id: 'tc102',
     name: 'Global Azhiyoor',
     contact: '',
     location: 'Vadakara',
@@ -791,8 +1031,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc79',
+  {
+    id: 'tc103',
     name: 'Global Vadakara',
     contact: '',
     location: 'Vadakara',
@@ -801,8 +1041,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc80',
+  {
+    id: 'tc104',
     name: 'Hindo lam',
     contact: '',
     location: 'Vadakara',
@@ -811,8 +1051,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc81',
+  {
+    id: 'tc105',
     name: 'Kairali Kakkuttil',
     contact: '',
     location: 'Vadakara',
@@ -821,8 +1061,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc82',
+  {
+    id: 'tc106',
     name: 'Marwa Kallachi',
     contact: '',
     location: 'Vadakara',
@@ -831,8 +1071,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc83',
+  {
+    id: 'tc107',
     name: 'M G Tyres Ayancheri',
     contact: '',
     location: 'Vadakara',
@@ -841,8 +1081,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc84',
+  {
+    id: 'tc108',
     name: 'M G Auto Tech Vadakara',
     contact: '',
     location: 'Vadakara',
@@ -851,8 +1091,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc85',
+  {
+    id: 'tc109',
     name: 'M K Thiruvallur',
     contact: '',
     location: 'Vadakara',
@@ -861,8 +1101,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc86',
+  {
+    id: 'tc110',
     name: 'Moto Spot Vadakara',
     contact: '',
     location: 'Vadakara',
@@ -871,8 +1111,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc87',
+  {
+    id: 'tc111',
     name: 'Nakshathra',
     contact: '',
     location: 'Vadakara',
@@ -881,8 +1121,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc88',
+  {
+    id: 'tc112',
     name: 'Nasco Nadapuram',
     contact: '',
     location: 'Vadakara',
@@ -891,8 +1131,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc89',
+  {
+    id: 'tc113',
     name: 'Orbiz Auto Scan',
     contact: '',
     location: 'Vadakara',
@@ -901,8 +1141,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc90',
+  {
+    id: 'tc114',
     name: 'Oxygen Vadakara',
     contact: '',
     location: 'Vadakara',
@@ -911,8 +1151,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc91',
+  {
+    id: 'tc115',
     name: 'Prince Vadakara',
     contact: '',
     location: 'Vadakara',
@@ -921,8 +1161,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc92',
+  {
+    id: 'tc116',
     name: 'SA Auto Scan',
     contact: '',
     location: 'Vadakara',
@@ -931,8 +1171,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc93',
+  {
+    id: 'tc117',
     name: 'Saga Kallachi',
     contact: '',
     location: 'Vadakara',
@@ -941,8 +1181,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc94',
+  {
+    id: 'tc118',
     name: 'Surya Valayam',
     contact: '',
     location: 'Vadakara',
@@ -951,8 +1191,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc95',
+  {
+    id: 'tc119',
     name: 'Wheel plus',
     contact: '',
     location: 'Vadakara',
@@ -961,8 +1201,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-   {
-    id: 'tc96',
+  {
+    id: 'tc120',
     name: 'Surya Vanimel',
     contact: '',
     location: 'Vadakara',
@@ -972,7 +1212,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc97',
+    id: 'tc121',
     name: 'Auto Zone Koyilandi',
     contact: '',
     location: 'Quilandi',
@@ -982,7 +1222,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc98',
+    id: 'tc122',
     name: 'Energy Kanayankode',
     contact: '',
     location: 'Quilandi',
@@ -992,7 +1232,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc99',
+    id: 'tc123',
     name: 'Moto care Ullery',
     contact: '',
     location: 'Quilandi',
@@ -1002,7 +1242,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc100',
+    id: 'tc124',
     name: 'Moto zone Koyilandy',
     contact: '',
     location: 'Quilandi',
@@ -1012,7 +1252,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc101',
+    id: 'tc125',
     name: 'Payyoli',
     contact: '',
     location: 'Quilandi',
@@ -1022,7 +1262,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc102',
+    id: 'tc126',
     name: 'Roadster Ullery',
     contact: '',
     location: 'Quilandi',
@@ -1032,7 +1272,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc103',
+    id: 'tc127',
     name: 'Sanas Payyoli',
     contact: '',
     location: 'Quilandi',
@@ -1041,9 +1281,8 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   },
-  
   {
-    id: 'tc104',
+    id: 'tc128',
     name: 'Vidhya Kattilpedika',
     contact: '',
     location: 'Quilandi',
@@ -1053,7 +1292,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc105',
+    id: 'tc129',
     name: 'V R Koyilandy',
     contact: '',
     location: 'Quilandi',
@@ -1063,7 +1302,7 @@ export const testingCenters: TestingCenter[] = [
     workingHours: ''
   },
   {
-    id: 'tc106',
+    id: 'tc130',
     name: 'Global Koyilandy',
     contact: '',
     location: 'Quilandi',
@@ -1072,7 +1311,7 @@ export const testingCenters: TestingCenter[] = [
     email: '',
     workingHours: ''
   }
-  
+
 
 
 ];

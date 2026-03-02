@@ -7,6 +7,8 @@ export interface TestingCenter {
   address: string;
   email?: string;
   workingHours?: string;
+  centerCode?: string;
+  vehicleTypes?: string[];
 }
 
 export interface Representative {
