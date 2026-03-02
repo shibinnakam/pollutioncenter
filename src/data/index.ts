@@ -503,133 +503,183 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc39',
-    name: 'S S Narikunni',
+    name: '5S AUTO HEALTH CARE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'VISMAYA ARCADE BUILDING ROOM NO X1K, NANMANDA ROAD NARIKKUNI KOZHIKODE,673585',
+    centerCode: 'KL0760018',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc40',
-    name: 'Amulya Balussery ',
+    name: 'AMULYA AUTO EMISSION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO 287/6, BALUSSERY,KOZHIKODE,673612',
+    centerCode: 'KL0760011',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc41',
-    name: 'Atom tech Nanmanda',
+    name: 'ATMOTECH POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NANMANDA 13,NEAR SRTO NANMANDA,673613',
+    centerCode: 'KL0760004',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc42',
-    name: 'Grip Kakkodi',
+    name: 'ATMOTECH POLLUTION TESTING CENTRE KOKKALLUR',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KOKKALLUR POST BALUSSERY VIA KOZHIKODE,KOKKALLUR PO BALUSSERY,673612',
+    centerCode: 'KL0760014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc43',
-    name: 'Ideal Narikkuni',
+    name: 'AUTOMATIC POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO. TP12/436B, THALAKULATHUR (P.O),PURAKKATTIRI, KOZHIKODE,673317',
+    centerCode: 'KL0760015',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc44',
-    name: 'K K Pollution B Makku',
+    name: 'GRIP TYRES AND POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KAKKODI,KOZHIKODE,673611',
+    centerCode: 'KL0760016',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc45',
-    name: 'P K M Estatemukku',
+    name: 'HI TECH POLLUTION TESTING STATION',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO KP 16/503,ERAKULAM KAKKODI PO, KOZHIKODE,673611',
+    centerCode: 'KL0760005',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc46',
-    name: 'Sopanam Atholi',
+    name: 'IDEAL POLLUTION TESTING STATION',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '10/549 A , POONOOR ROAD,NARIKKUNI , KOZHIKODE ,673585',
+    centerCode: 'KL0760013',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc47',
-    name: 'Prem Atholi',
+    name: 'JS AUTOSCAN',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO CP 4/112C, 9/5,NEAR KAKKUR POLICE STATION, KAKKUR,673613',
+    centerCode: 'KL0760020',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc48',
-    name: 'Sreerag Parambilbazar',
+    name: 'JVR TYRES',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'AMARAPURI, VATTOLI BAZAR PO, KOZHIKODE -DT ,673612',
+    centerCode: 'KL0760021',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc49',
-    name: 'Vettakkal',
+    name: 'K K POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ROOM NO 7/316 BALUSSERY MUKKU,NANMANDA PO KOZHKODE DT,673612',
+    centerCode: 'KL0760003',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc50',
-    name: 'Auto-matic',
+    name: 'MALABAR POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KARUMALA PO EKAROOL,UNNIKKULAM VIA KOZHIKODE DT ,673612',
+    centerCode: 'KL0760010',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc51',
-    name: 'J S Kakkur',
+    name: 'P K M POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Nanmanda',
     rto: 'kl76',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'ESTATE MUKKU, EKAROOL PO,UNNIKULAM, KOZHIKODE,673574',
+    centerCode: 'KL0760009',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc142',
+    name: 'PREM ENTERPRISES VEHICLE POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: 'ROOM NO-TP 2/208-1 , VK ROAD JUNCTION,VK BUILDING,ANNASSERY PO, KOZHIKODE,673317',
+    centerCode: 'KL0760012',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc143',
+    name: 'SHAKTHI AUTO SPA',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: 'MODAKKALLUR,ULLIYERI,673323',
+    centerCode: 'KL0760017',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc144',
+    name: 'SOPANAM POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: 'MINARAH ARCADE, 14/107-A,VELUR,ATHOLI-PO,KOZHIKODE DIST,673315',
+    centerCode: 'KL0760019',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc145',
+    name: 'SREERAG POLLUTION TESTING STATION',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: '17/852, KONOTT P O, PARAMBIL BAZAR,WARD NO 17, KOZHIKODE,673571',
+    centerCode: 'KL0760006',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc146',
+    name: 'VETTAKKAL POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Nanmanda',
+    rto: 'kl76',
+    address: 'ROOM NO NP9/430B,CHEEKKILO DE ROAD NANMANDA KOZHIKODE DT,673572',
+    centerCode: 'KL0760001',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc52',
@@ -1083,344 +1133,714 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc97',
-    name: 'Al Arabia Purameri',
+    name: 'ABHIJEETH AUTOMOBILE EXHAUST TESTING',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'PRESENT BUILDING,KARTHIKAPALLY ROAD,,ORKKATTERY,673501',
+    centerCode: 'KL0180007',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc98',
-    name: 'AV Auto',
+    name: 'AL ARABIA AUTO CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NO.2/413A,NEAR POST OFFICE,PURAMERI PO,VADAKARA,673503',
+    centerCode: 'KL0180016',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc99',
-    name: 'Classic Kallachi',
+    name: 'ANJANA SMOKE TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '8/745B CONVENT ROAD, OPP. CONVENT SCHOOL,VADAKARA,673101',
+    centerCode: 'KL0180013',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc100',
-    name: 'Global Kainatty',
+    name: 'AV AUTO TECH',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KURUMBAYIL,,NADAKKUTHAZHA POST,VADAKARA,673104',
+    centerCode: 'KL0180024',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc101',
-    name: 'Global Meppayil',
+    name: 'GENERAL AUTO SCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR IOC PETROL PUMP,OPP SIVA TEMPLE,VATTOLI(PO),673507',
+    centerCode: 'KL0180036',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc102',
-    name: 'Global Azhiyoor',
+    name: 'GENERAL AUTO SCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR 10C PETROL PUMB, OPP SIVA TEMPLE,AMBALAKULANGARA, VATTOLI PO,673507',
+    centerCode: 'KL0180011',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc103',
-    name: 'Global Vadakara',
+    name: 'GLOBAL AUTO TECH',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR ASHA HOSPITAL,N H ROAD,,VADAKARA,673104',
+    centerCode: 'KL0180008',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc104',
-    name: 'Hindo lam',
+    name: 'GLOBAL AUTO TECH',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR RANI SERVICE CENTRE,NH ROAD,KAINATTY,NEAR RANI SERVICE CENTRE,NHROAD,KAINATTY,673106',
+    centerCode: 'KL0180003',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc105',
-    name: 'Kairali Kakkuttil',
+    name: 'GLOBAL AUTO TECH',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR OVU PALAM BUS STOP,MEPPAYIL POST,VADAKARA,673104',
+    centerCode: 'KL0180022',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc106',
-    name: 'Marwa Kallachi',
+    name: 'GLOBAL POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'AZHIYUR, KOZHIKODE DISTRICT, 673309',
+    centerCode: 'KL0180020',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc107',
-    name: 'M G Tyres Ayancheri',
+    name: 'GLOBAL WHEEL CARE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'OPP.KERALA WATER AUTHORITY, VO ROAD,VEERANCHERI,VADAKARA,673101',
+    centerCode: 'KL0180031',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc108',
-    name: 'M G Auto Tech Vadakara',
+    name: 'GRAND POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'RIFA BUILDING , MAIN ROAD,EDACHERI,VADAKARA,673502',
+    centerCode: 'KL0180035',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc109',
-    name: 'M K Thiruvallur',
+    name: 'GREEN TECH POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'VALLIKKAD,CHORODE,673106',
+    centerCode: 'KL0180038',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc110',
-    name: 'Moto Spot Vadakara',
+    name: 'HINDOLAM POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'GOVT HOSPITAL ROAD,OPP.GOVT HOSPITAL,VADAKARA,673104',
+    centerCode: 'KL0180010',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc111',
-    name: 'Nakshathra',
+    name: 'KAIRALI AUTO SCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'POLLUTION TESTING CENTRE,MAIN ROAD,KAKKATTIL,673507',
+    centerCode: 'KL0180014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc112',
-    name: 'Nasco Nadapuram',
+    name: 'MG AUTO TECH',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'GOVT.HOSPITAL ROAD,NUT STREET ,VATAKARA,673104',
+    centerCode: 'KL0180029',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc113',
-    name: 'Orbiz Auto Scan',
+    name: 'M.G TYRES AND AUTO SCAN TESTING',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR BUS STAND,THEEKUNI ROAD,AYANCHERY,NEAR BUS STAND,THEEKUNI ROAD,AYANCHERY,673541',
+    centerCode: 'KL0180002',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc114',
-    name: 'Oxygen Vadakara',
+    name: 'MK AUTOSCAN POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '13/217 KANNINADA THIRUVALLUR GP,VATAKARA KOZHIKODE,673541',
+    centerCode: 'KL0180017',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc115',
-    name: 'Prince Vadakara',
+    name: 'NAKSHATHRA AUTOSCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR CANARA BANK,TUNERI,KOZHIKODE DT. ,673505',
+    centerCode: 'KL0180034',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc116',
-    name: 'SA Auto Scan',
+    name: 'NAKSHATRA AUTO SCAN TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR OLIVE CATERING SERVICE, PARAKKADAVU,673509',
+    centerCode: 'KL0180001',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc117',
-    name: 'Saga Kallachi',
+    name: 'NASCO AUTO SCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'THUNERI POST,AVOLAM ,NADAPURAM,673504',
+    centerCode: 'KL0180025',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc118',
-    name: 'Surya Valayam',
+    name: 'ORBIZ AUTO CARE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'BANK ROAD,PATHIYARAKKARA PO,VATAKARA,673105',
+    centerCode: 'KL0180021',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc119',
-    name: 'Wheel plus',
+    name: 'OXYGEN POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '19/62W NEAR SHIVA TEMPLE KARIMBANAPALAM, VADAKARA,(25/422) VADAKARA KOZHIKODE DT, 673101',
+    centerCode: 'KL0180023',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc120',
-    name: 'Surya Vanimel',
+    name: 'PRINCE AUTO SCAN',
     contact: '',
     location: 'Vadakara',
     rto: 'kl18a',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'DAS BUILDING,JT ROAD,VADAKARA,673101',
+    centerCode: 'KL0180019',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc147',
+    name: 'S A AUTO TECH',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'NEAR PETROL PUMP,AMARAVATHI,VILLIAPALLY,673542',
+    centerCode: 'KL0180005',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc148',
+    name: 'SAGA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'VALAYAM ROAD, KALLACHI, VATAKARA,KOZHIKODE,673506',
+    centerCode: 'KL0180027',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc149',
+    name: 'SURYA AUTO SCAN',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'VALAYAM (PO) KALLACHI (VIA),VATAKARA,673517',
+    centerCode: 'KL0180018',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc150',
+    name: 'SURYA AUTO SCAN',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'NEAR AMBALAPARAMB BAGAVATHI TEMPLE,VANIMEL PO,,KALLACHI.VATAKARA,673506',
+    centerCode: 'KL0180033',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc151',
+    name: 'VEEKEY POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'PONMERIPARAMBIL PO ,VILLIAPPALLY,VADAKARA,KOZHIKODE DT. KERALA ST.,673542',
+    centerCode: 'KL0180037',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc152',
+    name: 'WHEEL PLUS',
+    contact: '',
+    location: 'Vadakara',
+    rto: 'kl18a',
+    address: 'NO 7/130/J,KOROTH ROAD,AZHIYUR,KOZHIKODE,KERALA ST,673309',
+    centerCode: 'KL0180026',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc121',
-    name: 'Auto Zone Koyilandi',
+    name: 'AIR CARE POLLUTION TESTING CENTER',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'PARAMBATH,ARIKKULAM,KOYILANDY,CALICUT DT,673620',
+    centerCode: 'KL0560026',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc122',
-    name: 'Energy Kanayankode',
+    name: 'ARANGADATH',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: '1/436 C ,ARYA BUILDING, ARANGADATH,CHENGOTTUKAVE,KOYILANDY,673306',
+    centerCode: 'KL0560019',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc123',
-    name: 'Moto care Ullery',
+    name: 'AUTOZONE POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR HITECH MARUTHI ,MAIN ROAD QUILANDY,673305',
+    centerCode: 'KL0560001',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc124',
-    name: 'Moto zone Koyilandy',
+    name: 'CCR POLLUTION CENTRE',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'AISWARYA BUILDING,ANAKKULAM,KOLLAM,KOILANDY,673307',
+    centerCode: 'KL0560014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc125',
-    name: 'Payyoli',
+    name: 'ENERGY AUTO SCAN',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'MOIDU TOWER,KANAYANKODE, KOYILANDY, KOZHIKODE DT,673620',
+    centerCode: 'KL0560016',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc126',
-    name: 'Roadster Ullery',
+    name: 'GLOBAL AUTO TECH',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KOYILANDY,KOZHIKODE DIST,673106',
+    centerCode: 'KL0560005',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc127',
-    name: 'Sanas Payyoli',
+    name: 'GREENS POLLUTION TESTING CENTRE',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'KEEZHARIYUR, KOYILANDY,673307',
+    centerCode: 'KL0560021',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
   {
     id: 'tc128',
-    name: 'Vidhya Kattilpedika',
+    name: 'KL56 PERFECT MOTORS PUCC',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'OPP SUPREME PETROL PUMP, KOLLAM, KOYILANDY,PRANAVAM HOUSE, VARYAMKANDY, PUTHUR VADAKARA,673307',
+    centerCode: 'KL0560011',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc129',
-    name: 'V R Koyilandy',
+    name: 'MOTO CARE',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
+    address: 'NEAR KDC BANK,ULLIYERI,673323',
+    centerCode: 'KL0560008',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
   {
     id: 'tc130',
-    name: 'Global Koyilandy',
+    name: 'MOTOZONE AUTO SCAN',
     contact: '',
     location: 'Quilandi',
     rto: 'kl56',
-    address: '',
-    email: '',
-    workingHours: ''
-  }
+    address: 'MEPPAD TOWER ,KOTHAMANGALAM,BAPPPANGAD KOYILANDY,673305',
+    centerCode: 'KL0560007',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc174',
+    name: 'MP SMOKE TESTING CENTRE',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'K K COMPLEX KOLLAM KOYILANDY ,NEAR PISHARIKKAVE TEMPLE GATE DOOR NO 225/C1,673307',
+    centerCode: 'KL0560024',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc175',
+    name: 'NGS WHEEL CARE',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '1/310B, THURAYUR PO,PAYYOLIANGADI, KOYILANDY,673523',
+    centerCode: 'KL0560022',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc176',
+    name: 'NH POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'NEAR HP PETROL PUMP , AYANIKKAD ,PO PAYYOLI , KOZHIKODE -DT,673522',
+    centerCode: 'KL0560020',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc177',
+    name: 'PAYYOLI AUTO SCAN',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'BLDG NO 06/131 , A 10 KALARIPADY,NH 66 ROAD PAYYOLI MUNCIPALITY,673522',
+    centerCode: 'KL0560006',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc178',
+    name: 'ROADSTER AUTOSCAN',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'NEAR PETROL PUMP,ULLIYERI,673323',
+    centerCode: 'KL0560003',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc179',
+    name: 'SANAS EMISSION TEST CENTER',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'PAYYOLI,KIZHUR,673522',
+    centerCode: 'KL0560009',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc180',
+    name: 'UNICORN PETROLEUM',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'UNICORN PETROLEUM,POOKKAD, PO CHEMANCHERRY, KOZHIKODE,673304',
+    centerCode: 'KL0560013',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc181',
+    name: 'VIDYA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: '345/B,VIDYA BUILDING, NEAR KAIRALI BAKERY,KATTILAPEEDIKA, VENGALAM (P.O), KOZHIKODE.,673303',
+    centerCode: 'KL0560025',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc182',
+    name: 'VR AUTO SOLUTIONS',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'NEAR HOMEO HOSPITAL ,KOILANDY P.O , KOZHIKODE,673305',
+    centerCode: 'KL0560017',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc183',
+    name: 'V V POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Quilandi',
+    rto: 'kl56',
+    address: 'V.V BUILDING,PALAKKULAM, MUDADI,KOZHIKODE ,673307',
+    centerCode: 'KL0560015',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc153',
+    name: 'ASA AUTO SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'KADIYANGAD,KADIYANGAD(PO), PERAMBRA(VIA),KOZHIKODE,673525',
+    centerCode: 'KL0770015',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc154',
+    name: 'EASY POLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'BLDG NO 50/C SPACE BUILDING, KANJIRAMUK MEPPAYUR KOZHIKODE DT,673524',
+    centerCode: 'KL0770019',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc155',
+    name: 'ELITE EMISSION TEST CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'MEPPAYUR,KOZHIKODE,673524',
+    centerCode: 'KL0770002',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc156',
+    name: 'FEATHER TOUCH POLLUTION TESTING CENTER',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: '11/471E,CHAKKITTAPARA (PO),PERAMBRA (VIA),CALICUT,673526',
+    centerCode: 'KL0770020',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc157',
+    name: 'GLOBAL TYRES POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'NEAR ST.THOMAS CHURCH,KOORACHUNDU,KOZHIKODE,673527',
+    centerCode: 'KL0770018',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc158',
+    name: 'GREENS POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'VELLIYOOR,NOCHAD,PERAMBRA,673614',
+    centerCode: 'KL0770017',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc159',
+    name: 'GREENS POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'PALLIYATHUKKUNI,KAVIL (PO),NADUVANNUR,673614',
+    centerCode: 'KL0770024',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc160',
+    name: 'HI TECH POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'CHERUVANNUR,PERAMBRA,673524',
+    centerCode: 'KL0770016',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc161',
+    name: 'KUTTIADY AUTO SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'NEAR MRF TYRES , WAYANAD ROAD KUTTIADY,KUTTIADY,673508',
+    centerCode: 'KL0770007',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc162',
+    name: 'MARWA AUTO SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'POLLUTION TESTING CENTRE,PARAKKADAVU,PALERI PO,KUTTIADY VIA,673508',
+    centerCode: 'KL0770022',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc163',
+    name: 'MECH HUB POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'OPP. PETROL PUMP, CHEDIKKULAM,KOOTTALIDA, KOZHIKODE,673614',
+    centerCode: 'KL0770014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc164',
+    name: 'NAKSHATRA POLLUTION TESTING CENTER',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'NADAVANNUR,KOZHIKODE ,673614',
+    centerCode: 'KL0770003',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc165',
+    name: 'NAS AUTO SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'NEAR BHARATH PETROLEUM , PAIKALANGADI ,KUTTIADY ,673513',
+    centerCode: 'KL0770005',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc166',
+    name: 'NEW EASTERN POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'KUTTIADY , VADAKARA ROAD,KOZHIKODE,673508',
+    centerCode: 'KL0770001',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc167',
+    name: 'PEE KAY AUTO SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'KALLODE, PERAMBRA,KOZHIKODE,673525',
+    centerCode: 'KL0770011',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc168',
+    name: 'PERAMBRA EMISSION CARE PARK',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'INFRONT OF PWD,KUTTIYADY ROAD ,PERAMBRA,673525',
+    centerCode: 'KL0770008',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc169',
+    name: 'PONPARA AUTOSCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: '15/426/B KARAYIL BUILDING ,PERAMRA -PAYYOLI ROAD,PERAMBRA,KOZHIKODE DT.,673525',
+    centerCode: 'KL0770013',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc170',
+    name: 'PULSE AUTOCARE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'CHENOLI PO PERAMBRA KAITHAKKAL,CHENOLI PO PERAMBRA KAITHAKKAL,673525',
+    centerCode: 'KL0770025',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc171',
+    name: 'RISHIS AUTO-SCAN',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'XVI/271 ,KAVILUMPARA PANCHAYATH,673513',
+    centerCode: 'KL0770010',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc172',
+    name: 'ROYAL SMOKE TEST CENTER',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: 'ROYAL SMOKE TEST CENTER, PERAMBRA,PUSHPA NIVAS, PERAMBRA,673525',
+    centerCode: 'KL0770012',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc173',
+    name: 'SPEED POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Perambra',
+    rto: 'kl77',
+    address: '291/F,THEVERKOTTAYIL BUILDING,PANTHIRIKKARA,PERAMBRA,673528',
+    centerCode: 'KL0770023',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
 
 
 
