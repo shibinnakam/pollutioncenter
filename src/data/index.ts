@@ -1841,6 +1841,156 @@ export const testingCenters: TestingCenter[] = [
     centerCode: 'KL0770023',
     vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
   },
+  {
+    id: 'tc184',
+    name: 'ANITHA POLLUTION',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'KALLAMPARA, PERUMUGHAM (PO),KOZHIKODE,673631',
+    centerCode: 'KL0850007',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc185',
+    name: 'BHARATH EMISSION TESTING CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'MAB COMPLEX,NEAR ALLAMA MARBLES,FEROKE PO.CHUNGAM,KOZHIKODE,673631',
+    centerCode: 'KL0850010',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc186',
+    name: 'CHERUVALATH',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '50/2061 B2, POONAT BUILDING, NADUVATTOM, BEYPORE,50/2061 B2, POONAT BUILDING, NADUVATTOM, BEYPORE,673015',
+    centerCode: 'KL0850001',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc187',
+    name: 'DILKUSH AUTOMOBILE POLLUTION TESTING STATION',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '7/244, WARD 10, RAMANATTUKARA,NH BYPASS, KOZHIKODE,673633',
+    centerCode: 'KL0850018',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc188',
+    name: 'DRIVE LINE VEHICLE POLUSION TESTING CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'DRIVE LINE VEHICLE POLUSION CENTRE ,NEAR GOVT. GANAPATHY UP SCHOOL- AMBALAPPADI, NALLUR,673631',
+    centerCode: 'KL0850014',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc189',
+    name: 'EMINENT SMOKE TEST',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'ROOM NO.OP-2/1215,PEARLY GATES,NH BYPASS,PALAZHI JN,P.O.G.A.COLLEGE,CALICUT,673014',
+    centerCode: 'KL0850008',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc190',
+    name: 'EMIRATES POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '14/290, 11TH MILE, VAIDYARANGADI (PO),KOZHIKODE, KERALA,673633',
+    centerCode: 'KL0850019',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc191',
+    name: 'MJ SMOKE TEST CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'CHERUVANNUR,KOZHIKODE,673655',
+    centerCode: 'KL0850015',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc192',
+    name: 'MONTO AUTOSCAN',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'KP3/342/A3,SUHRABI K BUILDING,PARAVANCHERY PADAM ,CHALIYAM POST,KOZHIKODE,KERALA.,673301',
+    centerCode: 'KL0850017',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc193',
+    name: 'NATIONAL POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'DOOR NO. XII/367, FEROKE CHUNGAM,RAMANATTUKARA, KOZHIKODE,673631',
+    centerCode: 'KL0850009',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc194',
+    name: 'NEW INDIA POLLUTION TESTING CENTRE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'VALLIKUNNU,PANTHEERANKAVE (PO),KOZHIKODE,KERALA,673019',
+    centerCode: 'KL0850016',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc195',
+    name: 'P.M.KUTTY&SONS',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'H.P.C.L DEALERS,KOLATHARA(PO),CHERUVANNUR,CALICUT,673655',
+    centerCode: 'KL0850012',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+  },
+  {
+    id: 'tc196',
+    name: 'RAMANATTUKARA TYRES POLLUTION TESTING CENTER',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '11/542A ,8/4 CHUNGAM,FEROKE,673631',
+    centerCode: 'KL0850013',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc197',
+    name: 'RR PUC',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: 'SREE BUILDING, ROOM NO OP 6/28,WEST PANTHEERANKAVU,KOZHIKODE 673019,673019',
+    centerCode: 'KL0850002',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc198',
+    name: 'X AUTO SHADE',
+    contact: '',
+    location: 'Feroke',
+    rto: 'kl73',
+    address: '5/438C, CHERUVANNU, AREEKAD, NALLALAM(PO),CALICUT,KERALA,673027',
+    centerCode: 'KL0850006',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  }
 
 
 
