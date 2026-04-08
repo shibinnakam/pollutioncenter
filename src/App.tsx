@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import Preloader from './components/ui/Preloader';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -28,9 +29,18 @@ const ScrollToTop: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Hide preloader after page resources are ready
+    const timer = setTimeout(() => setLoading(false), 2200);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <ThemeProvider>
       <LanguageProvider>
+        {loading && <Preloader />}
         <Router>
           <ScrollToTop>
             <div className="flex flex-col min-h-screen">
