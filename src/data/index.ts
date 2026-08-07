@@ -805,12 +805,14 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc72',
     name: 'J & J AUTOSCAN POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Koduvally',
+    contact: '9961077766',
+    location: 'Parappapoil',
     rto: 'kl57',
-    address: 'ROOM NO TP XII/656,PARAPPANPOYIL,THAMARASSERY PO,ROOM NO TP XII/656,PARAPPANPOYIL,THAMARASSERY PO,673573',
+    address: 'Parappapoil, Thamarassery',
     centerCode: 'KL0570002',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/jandjautoscan.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/hV7wLtpJws58wSnS7?g_st=awb'
   },
   {
     id: 'tc73',

@@ -9,6 +9,8 @@ export interface TestingCenter {
   workingHours?: string;
   centerCode?: string;
   vehicleTypes?: string[];
+  image?: string;
+  googleMapLink?: string;
 }
 
 export interface Representative {
