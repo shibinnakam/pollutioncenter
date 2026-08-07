@@ -368,7 +368,7 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                 <img
                   src={center.image}
                   alt={center.name}
-                  className="w-full h-40 object-cover rounded-lg"
+                  className="w-full h-64 object-contain bg-neutral-100 dark:bg-neutral-700 rounded-lg"
                 />
               </div>
             )}
