@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Info, ChevronDown, ChevronUp, Search, ArrowLeft } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Info, ChevronDown, ChevronUp, Search, ArrowLeft, ExternalLink } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { testingCenters, rtoDistricts } from '../data';
 import { TestingCenter } from '../types';
@@ -303,7 +303,7 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
 
       {/* Expanded Content */}
       <div
-        className={`px-6 pb-6 overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`px-6 pb-6 overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
           }`}
       >
         <div className="pt-4 border-t border-neutral-200 dark:border-neutral-700 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -347,9 +347,31 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                   <span className="text-neutral-700 dark:text-neutral-300">{center.workingHours}</span>
                 </li>
               )}
+              {center.googleMapLink && (
+                <li className="flex items-center">
+                  <MapPin size={18} className="text-green-600 dark:text-green-400 mr-2 shrink-0" />
+                  <a
+                    href={center.googleMapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-green-600 dark:text-green-400 hover:underline font-medium"
+                  >
+                    View on Google Maps <ExternalLink size={14} />
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
           <div>
+            {center.image && (
+              <div className="mb-4 rounded-lg overflow-hidden">
+                <img
+                  src={center.image}
+                  alt={center.name}
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+              </div>
+            )}
             <h4 className="text-lg font-medium mb-3">Services</h4>
             <ul className="space-y-2">
               <li className="flex items-center">
