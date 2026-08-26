@@ -997,12 +997,14 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc91',
     name: 'SNS VEHICLE POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Koduvally',
+    contact: '9847356869',
+    location: 'Kallanthode',
     rto: 'kl57',
-    address: 'ROOM NO. CP 4/417 B,KALANTHODE,NIT PO,ROOM NO CP 4/417 B,KALANTHODE,NIT PO,673601',
+    address: 'SUNILKUMAR G, ROOM NO CP 4/417B, KALLANTHODE, NIT(PO), KOZHIKODE, PIN: 673601',
     centerCode: 'KL0570003',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/snsvehicle.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/D3Z62p8woRmDCJFJ6'
   },
   {
     id: 'tc92',
