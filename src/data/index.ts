@@ -384,10 +384,10 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc138',
     name: 'UNITED SMOKE TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    contact: '9847765214',
+    location: 'Near ICICI Bank Kallai',
     rto: 'kl11a',
-    address: 'KALLAI COMPLEX, 59/5962, NEAR SBT ATM,,KALLAI ROAD, KOZHIKODE.,673003',
+    address: '59/5962, KALLAI COMPLEX, KALLAI ROAD, KOZHIKODE, PIN: 673003',
     centerCode: 'KL0110053',
     vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
   },
