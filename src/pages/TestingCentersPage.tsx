@@ -347,7 +347,21 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                   <span className="text-neutral-700 dark:text-neutral-300">{center.workingHours}</span>
                 </li>
               )}
-              {center.googleMapLink && (
+              {center.googleMapLinks && center.googleMapLinks.length > 0 ? (
+                center.googleMapLinks.map((link, idx) => (
+                  <li key={idx} className="flex items-center">
+                    <MapPin size={18} className="text-green-600 dark:text-green-400 mr-2 shrink-0" />
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-green-600 dark:text-green-400 hover:underline font-medium"
+                    >
+                      View on Google Maps {center.googleMapLinks!.length > 1 ? `(Location ${idx + 1})` : ''} <ExternalLink size={14} />
+                    </a>
+                  </li>
+                ))
+              ) : center.googleMapLink ? (
                 <li className="flex items-center">
                   <MapPin size={18} className="text-green-600 dark:text-green-400 mr-2 shrink-0" />
                   <a
@@ -359,7 +373,7 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                     View on Google Maps <ExternalLink size={14} />
                   </a>
                 </li>
-              )}
+              ) : null}
             </ul>
           </div>
           <div>

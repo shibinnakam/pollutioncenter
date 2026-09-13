@@ -11,6 +11,7 @@ export interface TestingCenter {
   vehicleTypes?: string[];
   image?: string;
   googleMapLink?: string;
+  googleMapLinks?: string[];
 }
 
 export interface Representative {

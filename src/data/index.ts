@@ -425,12 +425,13 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc39',
     name: '5S AUTO HEALTH CARE',
-    contact: '',
-    location: 'Nanmanda',
+    contact: '9645144646',
+    location: 'Narikkuni',
     rto: 'kl76',
-    address: 'VISMAYA ARCADE BUILDING ROOM NO X1K, NANMANDA ROAD NARIKKUNI KOZHIKODE,673585',
+    address: 'Narikkuni, Nanminda Road',
     centerCode: 'KL0760018',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/5sautohealthcare2.jpeg'
   },
   {
     id: 'tc40',
@@ -605,12 +606,13 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc52',
     name: '5S AUTO HEALTH CARE',
-    contact: '',
-    location: 'Koduvally',
+    contact: '9961420445',
+    location: 'Elettil Vattoli',
     rto: 'kl57',
-    address: 'MALIYEKKAL BUILDING,WARD NO 1/ROOM NO 628/I,673572',
+    address: 'Mangad Road, Elettil Vattoli PO, Koduvalli, Kozhikode – 673572',
     centerCode: 'KL0570035',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/5Sautohealthcare1.jpeg'
   },
   {
     id: 'tc53',
@@ -794,13 +796,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc71',
-    name: 'GREEN ZONE POLLUTION TESTING CENTER',
-    contact: '',
-    location: 'Koduvally',
+    name: 'GREENZONE POLLUTION TESTING CENTER',
+    contact: '9745941444',
+    location: 'Mampetta',
     rto: 'kl57',
-    address: 'MAMPATTA MANASSERY PO,MUKKAM KERALA,673602',
+    address: 'Mampetta, Manassery PO, Kozhikode',
     centerCode: 'KL0570052',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/greenzonepollutiontestingcenter.jpeg',
+    googleMapLink: 'https://maps.app.goo.gl/rgVrAbR8ZAVGJUcTA'
   },
   {
     id: 'tc72',
@@ -826,13 +830,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc74',
-    name: 'KRS POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Koduvally',
+    name: 'KRS POLLUTION TESTING CENTER',
+    contact: '9633626233',
+    location: 'Pathimangalam, Kunnamangalam',
     rto: 'kl57',
-    address: 'ROOM NO. KP01/82 PATHIMANGALAM,KUNNAMANGALAM,673571',
+    address: 'Pathimangalam',
     centerCode: 'KL0570054',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle'],
+    image: '/krspollutiontestingcenter.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/Sm97QMqhc5SqeDec7'
   },
   {
     id: 'tc75',
@@ -936,13 +942,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc85',
-    name: 'ROMANCE',
-    contact: '',
-    location: 'Koduvally',
+    name: 'ROMANCE POLUTION',
+    contact: '9946571024',
+    location: 'Pannicode',
     rto: 'kl57',
-    address: 'KP/8/350E,PANNIKODE (POST) MUKKAM KOZHIKODE,673602',
+    address: 'Pannicode, Mukkam, Kozhikode – 673602',
     centerCode: 'KL0570049',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/romancepollution.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/TmfwEVd6uMkKL7uT7?g_st=ac'
   },
   {
     id: 'tc86',
@@ -1269,12 +1277,14 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc118',
     name: 'ORBIZ AUTO CARE',
-    contact: '',
-    location: 'Vadakara',
+    contact: '7501885888',
+    location: 'Bank Road, Pathiyarakkara',
     rto: 'kl18a',
-    address: 'BANK ROAD,PATHIYARAKKARA PO,VATAKARA,673105',
+    address: 'Bank Road, Pathiyarakkara PO, Vadakara, Kozhikode District – 673105',
     centerCode: 'KL0180021',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/orvizautocare.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/kr7rAhYni1p5awJb9'
   },
   {
     id: 'tc119',
@@ -1299,12 +1309,18 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc147',
     name: 'S A AUTO TECH',
-    contact: '',
-    location: 'Vadakara',
+    contact: '7559883732',
+    location: 'Amaravathi, Villyappally',
     rto: 'kl18a',
-    address: 'NEAR PETROL PUMP,AMARAVATHI,VILLIAPALLY,673542',
+    address: 'Pollution Testing Centre, Near Petrol Pump, Amaravathi, Villyappally, Vadakara – 673542',
     centerCode: 'KL0180005',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/saautotech.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/MnsQJRsXcnYJ2Nwt8?g_st=ac',
+    googleMapLinks: [
+      'https://maps.app.goo.gl/MnsQJRsXcnYJ2Nwt8?g_st=ac',
+      'https://maps.app.goo.gl/DZKdCMct4ZQHxecu7?g_st=ac'
+    ]
   },
   {
     id: 'tc148',
@@ -1448,13 +1464,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc130',
-    name: 'MOTOZONE AUTO SCAN',
-    contact: '',
-    location: 'Quilandi',
+    name: 'MOTOZONE AUTOSCAN KOYILANDY',
+    contact: '8086143808',
+    location: 'Thamarassery Road QQ',
     rto: 'kl56',
-    address: 'MEPPAD TOWER ,KOTHAMANGALAM,BAPPPANGAD KOYILANDY,673305',
+    address: 'Motozone Autoscan, Meppad Building, Kothamangalam, Koyilandy',
     centerCode: 'KL0560007',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/motozoneautoscan.png',
+    googleMapLink: 'https://maps.app.goo.gl/Dy4W6uD7CEAxrCr86?g_st=aw'
   },
   {
     id: 'tc174',
@@ -1598,13 +1616,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc157',
-    name: 'GLOBAL TYRES POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Perambra',
+    name: 'GLOBAL CAR CARE CENTRE',
+    contact: '8111959541',
+    location: 'Koorachundu',
     rto: 'kl77',
-    address: 'NEAR ST.THOMAS CHURCH,KOORACHUNDU,KOZHIKODE,673527',
-    centerCode: 'KL0770018',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    address: 'Koorachunde, Kanthalad, Kerala – 673527',
+    centerCode: 'KL260709U0000083',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/globalcarcarecenter1.jpeg'
   },
   {
     id: 'tc158',
@@ -1819,12 +1838,14 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc189',
     name: 'EMINENT SMOKE TEST',
-    contact: '',
-    location: 'Feroke',
+    contact: '9847936685',
+    location: 'Palazhi, Near HiLITE Mall, Kozhikode',
     rto: 'kl73',
-    address: 'ROOM NO.OP-2/1215,PEARLY GATES,NH BYPASS,PALAZHI JN,P.O.G.A.COLLEGE,CALICUT,673014',
+    address: 'Room No. 2/1215, Pearly Gates, NH Bypass, Palazhi Jn., Near HiLITE Mall, Kozhikode – 673014',
     centerCode: 'KL0850008',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/eminentsmoketest.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/1eDe77Ke9b9y8bta8?g_st=ac'
   },
   {
     id: 'tc190',
