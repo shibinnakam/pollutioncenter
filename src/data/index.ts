@@ -533,13 +533,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc43',
-    name: 'AUTOMATIC POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Nanmanda',
+    name: 'AUTOMATIC POLLUTION',
+    contact: '9747756576',
+    location: 'Purakkattiri',
     rto: 'kl76',
-    address: 'ROOM NO. TP12/436B, THALAKULATHUR (P.O),PURAKKATTIRI, KOZHIKODE,673317',
+    address: 'Purakkattiri, Thalakkulathur',
     centerCode: 'KL0760015',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/automaticpollution.jpg'
   },
   {
     id: 'tc44',
@@ -618,13 +619,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc51',
-    name: 'P K M POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Nanmanda',
+    name: 'PKM POLLUTION TESTING CENTRE',
+    contact: '8547238555',
+    location: 'Estatemukku',
     rto: 'kl76',
-    address: 'ESTATE MUKKU, EKAROOL PO,UNNIKULAM, KOZHIKODE,673574',
+    address: 'PKM Pollution Testing Centre, Estatemukku, Ekarool PO, Unnikulam, Kozhikode – 673574',
     centerCode: 'KL0760009',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/pkmpollutiontestingcenter.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/Qp5aUk5wugzv3e618?g_st=aw'
   },
   {
     id: 'tc142',
@@ -758,13 +761,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc59',
-    name: 'BADAR TYRES SMOK TESTING CENTER',
-    contact: '',
-    location: 'Koduvally',
+    name: 'BADARTYRES',
+    contact: '9188954102',
+    location: 'Kozhikode-Koduvally, Thamarassery Road',
     rto: 'kl57',
-    address: 'KM 21/759 JAMAL COMPLEX,WAYANAD ROAD , KODUVALLY,673572',
+    address: 'BADARTYRES Pollution Testing Center, Kozhikode-Koduvally Road, PIN 673572',
     centerCode: 'KL0570025',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/badartyres.jpg',
+    googleMapLink: 'https://share.google/7B5ghjbBO5ZRCzA7P'
   },
   {
     id: 'tc60',
@@ -800,13 +805,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc63',
-    name: 'C M AUTO SCAN',
-    contact: '',
-    location: 'Koduvally',
+    name: 'CM AUTO SCAN',
+    contact: '8714958944',
+    location: 'Adivaram',
     rto: 'kl57',
-    address: 'A2Z COMPLEX,ADIVARAM,CALICUT DT,673586',
+    address: 'A2z Complex, Adivaram, Calicut – 673586',
     centerCode: 'KL0570032',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/cmautoscan.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/mMFVvzXthZFj7q9n8?g_st=aw'
   },
   {
     id: 'tc64',
@@ -1286,33 +1293,38 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc109',
-    name: 'GREEN TECH POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'GREEN TECH',
+    contact: '8089761006',
+    location: 'VALLIKAD, VADAKARA',
     rto: 'kl18a',
-    address: 'VALLIKKAD,CHORODE,673106',
+    address: 'Near, ATHAFY AUDITORIUM, VALLIKAD, VADAKARA',
     centerCode: 'KL0180038',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/greentech.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/xHwAsek8v2VBHkVD9'
   },
   {
     id: 'tc110',
-    name: 'HINDOLAM POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'HINDOLAMPUCC',
+    contact: '9447339535',
+    location: 'Opp. Govt. District Hospital, Vadakara',
     rto: 'kl18a',
-    address: 'GOVT HOSPITAL ROAD,OPP.GOVT HOSPITAL,VADAKARA,673104',
+    address: 'PO Nutstreet, Opp. Govt. Hospital, Nutstreet, Vadakara – 673104',
     centerCode: 'KL0180010',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/hindolamppucc.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/S9TnME3ttGkJyz2R9?g_st=aw'
   },
   {
     id: 'tc111',
     name: 'KAIRALI AUTO SCAN',
-    contact: '',
-    location: 'Vadakara',
+    contact: '9074034607',
+    location: 'Narippetta Road, Kakkattill',
     rto: 'kl18a',
-    address: 'POLLUTION TESTING CENTRE,MAIN ROAD,KAKKATTIL,673507',
+    address: 'KAIRLI AUTO SCAN, Kakkattill, Kakkattill PO, PIN 673507',
     centerCode: 'KL0180014',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/kairaliautoscan.jpg'
   },
   {
     id: 'tc112',
@@ -1338,13 +1350,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc114',
-    name: 'MK AUTOSCAN POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'MK autoscan pollution testing cenre',
+    contact: '9048042907',
+    location: 'Near Kanninada Bridge',
     rto: 'kl18a',
-    address: '13/217 KANNINADA THIRUVALLUR GP,VATAKARA KOZHIKODE,673541',
+    address: 'Kanninada, Thiruvallur, Vatakara, Kozhikode, PIN: 673541',
     centerCode: 'KL0180017',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/mkautoscanpollutiontestingcenter.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/GzvoDDLbSUSJUXLW8?g_st=ac'
   },
   {
     id: 'tc115',
@@ -1392,13 +1406,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc119',
-    name: 'OXYGEN POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'OXYGEN VEHICLE POLUTION TESTING CENTRE',
+    contact: '9388714401',
+    location: 'Karimpanapalam',
     rto: 'kl18a',
-    address: '19/62W NEAR SHIVA TEMPLE KARIMBANAPALAM, VADAKARA,(25/422) VADAKARA KOZHIKODE DT, 673101',
+    address: '19/62W, Near Shiva Temple, Karimpanapalam, Vatakara – 673101',
     centerCode: 'KL0180023',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/oxygenvechilepollutiontestingcenter.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/52X5AioVxcH8Sbth7?g_st=aw'
   },
   {
     id: 'tc120',
@@ -1430,13 +1446,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc148',
-    name: 'SAGA POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'Saga pollution testing centre',
+    contact: '7034847128',
+    location: 'Kallachi',
     rto: 'kl18a',
-    address: 'VALAYAM ROAD, KALLACHI, VATAKARA,KOZHIKODE,673506',
+    address: 'Saga Pollution Testing Centre, Valayam Road, Kallachi, Kozhikode DT',
     centerCode: 'KL0180027',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/sagapollutiontestingcenter.jpg'
   },
   {
     id: 'tc149',
@@ -1447,6 +1464,18 @@ export const testingCenters: TestingCenter[] = [
     address: 'VALAYAM (PO) KALLACHI (VIA),VATAKARA,673517',
     centerCode: 'KL0180018',
     vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+  },
+  {
+    id: 'tc203',
+    name: 'Marwa Auto Scan',
+    contact: '9946919805',
+    location: 'Kummankode',
+    rto: 'kl18a',
+    address: 'Kummankode, Thannerpanthal (Via) – 673504',
+    centerCode: 'KL0180041',
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/marwaautoscan.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/VPWeokrT1KgJat1W9'
   },
   {
     id: 'tc150',
@@ -1650,13 +1679,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc178',
-    name: 'ROADSTER AUTOSCAN',
-    contact: '',
-    location: 'Quilandi',
+    name: 'Roadster Autoscan',
+    contact: '8086810845',
+    location: 'Near SBI',
     rto: 'kl56',
-    address: 'NEAR PETROL PUMP,ULLIYERI,673323',
+    address: 'Roadster Autoscan, Pollution Testing Centre, KIMS Tower, Near SBI, Perambra Road, Ulliyeri',
     centerCode: 'KL0560003',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/roadsterautoscan.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/XoPGsot34GiZqwA78?g_st=aw'
   },
   {
     id: 'tc179',
@@ -1673,12 +1704,13 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc180',
     name: 'UNICORN PETROLEUM',
-    contact: '',
-    location: 'Quilandi',
+    contact: '8547125139',
+    location: 'Pookkad',
     rto: 'kl56',
-    address: 'UNICORN PETROLEUM,POOKKAD, PO CHEMANCHERRY, KOZHIKODE,673304',
+    address: 'Pookkad, Chemanchery – 673304, Koyilandy',
     centerCode: 'KL0560013',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/unicornpetrolium.jpg'
   },
   {
     id: 'tc181',
@@ -1743,13 +1775,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc156',
-    name: 'FEATHER TOUCH POLLUTION TESTING CENTER',
-    contact: '',
-    location: 'Perambra',
+    name: 'FEATHER TOUCH SERVICES',
+    contact: '9495617949',
+    location: 'Chakkittapara',
     rto: 'kl77',
-    address: '11/471E,CHAKKITTAPARA (PO),PERAMBRA (VIA),CALICUT,673526',
+    address: 'Chakkittapara, Kozhikode',
     centerCode: 'KL0770020',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/feathertouchservices.jpg'
   },
   {
     id: 'tc157',
@@ -1794,13 +1827,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc161',
-    name: 'KUTTIADY AUTO SCAN',
-    contact: '',
-    location: 'Perambra',
+    name: 'Kuttiady autoscan',
+    contact: '9605239852',
+    location: 'Kuttiady',
     rto: 'kl77',
-    address: 'NEAR MRF TYRES , WAYANAD ROAD KUTTIADY,KUTTIADY,673508',
+    address: 'Kuttiady Autoscan, Thottilpalam Road, Kuttiady',
     centerCode: 'KL0770007',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/kuttiyadiautoscan.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/QYLuK5xZ3AA5gVFZ7?g_st=ac'
   },
   {
     id: 'tc162',
@@ -1816,13 +1851,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc163',
-    name: 'MECH HUB POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Perambra',
+    name: 'Mech hub',
+    contact: '9946903665',
+    location: 'Kootalida',
     rto: 'kl77',
-    address: 'OPP. PETROL PUMP, CHEDIKKULAM,KOOTTALIDA, KOZHIKODE,673614',
+    address: 'Mech Hub, Kootalida, Balussery',
     centerCode: 'KL0770014',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/mechhub.jpg'
   },
   {
     id: 'tc164',
@@ -1893,12 +1929,14 @@ export const testingCenters: TestingCenter[] = [
   {
     id: 'tc170',
     name: 'PULSE AUTOCARE',
-    contact: '',
-    location: 'Perambra',
+    contact: '9495993755',
+    location: 'Kaithakkal',
     rto: 'kl77',
-    address: 'CHENOLI PO PERAMBRA KAITHAKKAL,CHENOLI PO PERAMBRA KAITHAKKAL,673525',
+    address: 'Pulse Autocare, Kaithakkal, Perambra, Kozhikode District, Kerala – 673525',
     centerCode: 'KL0770025',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/pulseautocare.jpeg',
+    googleMapLink: 'https://maps.app.goo.gl/6meG7Fm5diDkeSY3A?g_st=aw'
   },
   {
     id: 'tc171',
@@ -2051,13 +2089,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc195',
-    name: 'P.M.KUTTY&SONS',
-    contact: '',
-    location: 'Feroke',
+    name: 'P.M.Kutty&Sons',
+    contact: '9895244244',
+    location: 'Cheruvannur, Calicut',
     rto: 'kl73',
-    address: 'H.P.C.L DEALERS,KOLATHARA(PO),CHERUVANNUR,CALICUT,673655',
+    address: 'HPCL Dealers, Kolathara, Cheruvannur',
     centerCode: 'KL0850012',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/pmkuttyandsons.jpeg'
   },
   {
     id: 'tc196',

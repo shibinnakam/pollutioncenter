@@ -433,6 +433,11 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                         return;
                       }
                     }
+                    if (target.parentElement) {
+                      target.parentElement.style.display = 'none';
+                    } else {
+                      target.style.display = 'none';
+                    }
                   }}
                   className="w-full h-64 object-contain bg-neutral-100 dark:bg-neutral-700 rounded-lg"
                 />
