@@ -163,13 +163,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc16',
-    name: 'JEENA VEHICLE POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'Jeena Pollution',
+    contact: '8156964085',
+    location: 'PUTHIYANGADI',
     rto: 'kl11a',
-    address: 'ROOM NO 39/1018-A1 , WARD NO 39,PUTHIYANGADI PO , KOZHIKODE,673021',
-    centerCode: 'KL0110004',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    address: 'PUTHIYANGADI',
+    centerCode: '004',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/jeenapollution.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/nU2ZSZfjBPmnFJdH9'
   },
   {
     id: 'tc17',
@@ -183,13 +185,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc18',
-    name: 'LOVELY POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'Lovely Pollution Testing Center',
+    contact: '9633900906',
+    location: 'kallai',
     rto: 'kl11a',
-    address: 'KALLAYI ARCADE,KALLAYI P O,KOZHIKODE,673003',
+    address: 'kallai arcade... near rail way station.. kallai',
     centerCode: 'KL0110044',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/lovelypollutiontestingcentre.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/pSESrKDQEboTAuUh7?g_st=ac'
   },
   {
     id: 'tc19',
@@ -214,13 +218,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc21',
-    name: 'MTS POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'MTS Pollution Testing Center',
+    contact: '9947068703',
+    location: 'Mundikkalthazham',
     rto: 'kl11a',
-    address: 'PANAGOT BUILDING , MUNDIKKALTHAZHAM,P.O KOTTAMPARAMBA , CALICUT,673008',
+    address: 'Panagot Building, Mundikkalthazham, P.O Kottamparamba, Calicut 673008',
     centerCode: 'KL0110041',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/mtspollutiontestingcentre.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/C6CEB4ssAjpnmmiVA'
   },
   {
     id: 'tc22',
@@ -356,13 +362,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc135',
-    name: 'S P AUTO CARE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'SP Auto Care',
+    contact: '7034000806',
+    location: 'NEAR PUCHING STATION ELATHUR',
     rto: 'kl11a',
-    address: '1/1445, SK BAZAR , KANNUR ROAD,ELATHUR ( P O ),KOZHIKODE,673303',
+    address: 'ELATHUR PO CHETTIKULAM, 673303, 1/1446, S K Bazar Chettikulam, Elathur, Kannur Road, Kozhikode',
     centerCode: 'KL0110042',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/spautocare.jpg'
   },
   {
     id: 'tc136',
@@ -376,43 +383,50 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc137',
-    name: 'STAR AUTO SCAN POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'Star Autoscan Pollution Testing Center',
+    contact: '7994883975',
+    location: 'Mankavu',
     rto: 'kl11a',
-    address: 'ROOM NO 22/1229B , WEST MANAKAVU,KOZHIKODE,673029',
+    address: 'Rajendra complex, west Mankavu, opp IndusInd Bank, mini bypass, Kozhikode Kerala, 673029',
     centerCode: 'KL0110008',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/starautoscanpollutiontestingcenter.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/FvcZZLyzsumyLjjG6'
   },
   {
     id: 'tc138',
-    name: 'UNITED SMOKE TESTING CENTRE',
+    name: 'United Smoke Testing Center',
     contact: '9847765214',
-    location: 'Near ICICI Bank Kallai',
+    location: 'Kallai vatampoil',
     rto: 'kl11a',
-    address: '59/5962, KALLAI COMPLEX, KALLAI ROAD, KOZHIKODE, PIN: 673003',
+    address: 'Kallai road near ICICI bank kallai complex CLT 3',
     centerCode: 'KL0110053',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/unitedsmoketestingcentres.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/tExnnHeTn2qzmtKv6?g_st=aw'
   },
   {
     id: 'tc139',
-    name: 'V-CARE POLLUTION TESTING STATION',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'V-Care Pollution Testing Station',
+    contact: '9947512147',
+    location: 'KANAKALAYA BANK',
     rto: 'kl11a',
-    address: '68/1311(OLD NO 1/3446 B), SIVAM BUILDING,KACHERI, KANAKALYA BANK, WESTHILL POST, KOZHIKODE,673005',
+    address: 'SHIVAM BUILDING, KANAKALAYA BANK, WESTHILL POST, KOZHIKODE - 673005',
     centerCode: 'KL0110050',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/vcarepollutiontesting.jpg'
   },
   {
     id: 'tc140',
-    name: 'VENGALATH SMOKE TESTING CENTRE',
-    contact: '',
-    location: 'Kozhikode',
+    name: 'Vengalath Smoke Testing Center',
+    contact: '9539042404',
+    location: 'Poovattuparamba, Near Poovattuparamba ALP School',
     rto: 'kl11a',
-    address: '13/167 POOVATTU PARAMBA,KOZHIKODE,673008',
+    address: 'Poovattuparampara, Medical College Road',
     centerCode: 'KL0110007',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/vengalathsmoketestingcentre.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/dpS9MFoFhZotAEEa7?g_st=aw'
   },
   {
     id: 'tc141',
@@ -643,15 +657,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc55',
-    name: 'ARABIAN POLLUTION TESTING CENTRE',
+    name: 'Arabian Pollution Testing Center',
     contact: '9447316755',
     location: 'Thamarassery',
     rto: 'kl57',
-    address: 'Thamarassery, Chungam, 673573',
-    centerCode: 'Kl57009arabianpucc',
+    address: 'Arabian pollution center thamarassery chungam checkpost',
+    centerCode: 'KL0570014',
     vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
-    image: '/arabianpollutioncenter.jpg',
-    googleMapLink: 'https://drive.google.com/open?id=1j8buE0BYcw6lYN9ngPfXxOHUQC9gperV'
+    image: '/arabianpollutioncenters.jpg'
   },
   {
     id: 'tc56',
@@ -1071,13 +1084,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc96',
-    name: 'VALAPPIL POLLUTION TESTING CENTRE',
-    contact: '',
-    location: 'Koduvally',
+    name: 'Valappil Pollution Testing Center',
+    contact: '8590936488',
+    location: 'Padanilam',
     rto: 'kl57',
-    address: 'ROOM NO. KP 01/91 B,PADANILAM PO,ROOM NO KP 01/91 B,PADANILAM PO,673571',
+    address: 'Room no KP 01/91 B PADANILAM 673571',
     centerCode: 'KL0570008',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/valappilpollutiontestingcenters.jpg'
   },
   {
     id: 'tc97',
@@ -1091,13 +1105,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc98',
-    name: 'AL ARABIA AUTO CENTRE',
-    contact: '',
-    location: 'Vadakara',
+    name: 'Al Arabia Auto Center',
+    contact: '6282822842',
+    location: 'Old post office purameri',
     rto: 'kl18a',
-    address: 'NO.2/413A,NEAR POST OFFICE,PURAMERI PO,VADAKARA,673503',
+    address: 'Near old post office purameri',
     centerCode: 'KL0180016',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/aiarabiaautocentre.jpg'
   },
   {
     id: 'tc99',
@@ -1381,13 +1396,14 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc152',
-    name: 'WHEEL PLUS',
-    contact: '',
-    location: 'Vadakara',
+    name: 'Wheelplus',
+    contact: '9946250276',
+    location: 'Koroth road',
     rto: 'kl18a',
-    address: 'NO 7/130/J,KOROTH ROAD,AZHIYUR,KOZHIKODE,KERALA ST,673309',
+    address: 'Koroth road Azhiyur',
     centerCode: 'KL0180026',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/wheelplus.jpg'
   },
   {
     id: 'tc121',
@@ -1812,13 +1828,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc184',
-    name: 'ANITHA POLLUTION',
-    contact: '',
-    location: 'Feroke',
+    name: 'Amitha Pollution',
+    contact: '8156964085',
+    location: 'KALLAMPARA, FEROKE.',
     rto: 'kl73',
-    address: 'KALLAMPARA, PERUMUGHAM (PO),KOZHIKODE,673631',
-    centerCode: 'KL0850007',
-    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle']
+    address: 'KALLAMPARA',
+    centerCode: '007',
+    vehicleTypes: ['Diesel Vehicle', 'Petrol/CNG/LPG Vehicle'],
+    image: '/amithapollution.jpg',
+    googleMapLink: 'https://maps.app.goo.gl/vNJZJLphpUTaM5PE7?g_st=aw'
   },
   {
     id: 'tc185',
@@ -1894,13 +1912,15 @@ export const testingCenters: TestingCenter[] = [
   },
   {
     id: 'tc192',
-    name: 'MONTO AUTOSCAN',
-    contact: '',
-    location: 'Feroke',
+    name: 'MontoAutoscan',
+    contact: '9641111811',
+    location: '5R48+FC9 Govt. Authorised Pollution Testing Centre, New Calicut Rd, Chaliyam, Kerala 673301',
     rto: 'kl73',
-    address: 'KP3/342/A3,SUHRABI K BUILDING,PARAVANCHERY PADAM ,CHALIYAM POST,KOZHIKODE,KERALA.,673301',
+    address: 'Paravanchery Padam Chaliyam',
     centerCode: 'KL0850017',
-    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle']
+    vehicleTypes: ['Petrol/CNG/LPG Vehicle', 'Diesel Vehicle'],
+    image: '/montoautoscan.jpeg',
+    googleMapLink: 'https://www.google.com/maps/search/Monto+Autoscan+Pollution+Testing+Centre/@11.1616707,75.8156278,16z?hl=en&entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D'
   },
   {
     id: 'tc193',

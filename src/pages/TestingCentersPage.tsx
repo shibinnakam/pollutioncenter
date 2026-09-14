@@ -47,7 +47,8 @@ const TestingCentersPage: React.FC = () => {
       return center.rto === selectedSubRTO &&
         (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.address.toLowerCase().includes(searchQuery.toLowerCase()));
+          center.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (center.centerCode && center.centerCode.toLowerCase().includes(searchQuery.toLowerCase())));
     }
 
     // if main RTO selected (but no sub selected), show centers whose rto is the mainRTO OR any of its subRTO ids
@@ -58,7 +59,8 @@ const TestingCentersPage: React.FC = () => {
       return matchesRTO &&
         (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.address.toLowerCase().includes(searchQuery.toLowerCase()));
+          center.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          (center.centerCode && center.centerCode.toLowerCase().includes(searchQuery.toLowerCase())));
     }
 
     // default: no RTO selected -> return empty, because we show only main RTO cards initially
@@ -399,6 +401,12 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                 <img
                   src={center.image}
                   alt={center.name}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.includes('valappilpollutiontestingcenters.jpg')) {
+                      target.src = '/valappilpolutiontestingcenters.jpg';
+                    }
+                  }}
                   className="w-full h-64 object-contain bg-neutral-100 dark:bg-neutral-700 rounded-lg"
                 />
               </div>
