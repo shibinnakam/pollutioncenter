@@ -405,6 +405,10 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                     const target = e.currentTarget;
                     if (target.src.includes('valappilpollutiontestingcenters.jpg')) {
                       target.src = '/valappilpolutiontestingcenters.jpg';
+                    } else if (target.src.includes('venkwateshwarapollutioncenter.jpg')) {
+                      target.src = '/venkateshwarapollutioncenter.jpg';
+                    } else if (target.src.includes('mtspollutiontestingcentre.jpg')) {
+                      target.src = '/mtspollutiontestingcenter.jpg';
                     }
                   }}
                   className="w-full h-64 object-contain bg-neutral-100 dark:bg-neutral-700 rounded-lg"
