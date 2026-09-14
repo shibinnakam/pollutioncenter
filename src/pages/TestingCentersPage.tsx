@@ -403,12 +403,35 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                   alt={center.name}
                   onError={(e) => {
                     const target = e.currentTarget;
-                    if (target.src.includes('valappilpollutiontestingcenters.jpg')) {
-                      target.src = '/valappilpolutiontestingcenters.jpg';
-                    } else if (target.src.includes('venkwateshwarapollutioncenter.jpg')) {
-                      target.src = '/venkateshwarapollutioncenter.jpg';
-                    } else if (target.src.includes('mtspollutiontestingcentre.jpg')) {
-                      target.src = '/mtspollutiontestingcenter.jpg';
+                    if (!target.dataset.triedFallback) {
+                      target.dataset.triedFallback = '1';
+                      if (target.src.endsWith('.jpeg')) {
+                        target.src = target.src.replace(/\.jpeg$/, '.jpg');
+                        return;
+                      }
+                      if (target.src.endsWith('.jpg')) {
+                        target.src = target.src.replace(/\.jpg$/, '.jpeg');
+                        return;
+                      }
+                    }
+                    if (!target.dataset.triedSecondFallback) {
+                      target.dataset.triedSecondFallback = '1';
+                      if (target.src.toLowerCase().includes('westernpuccenter')) {
+                        target.src = '/westernpuccenter.JPG';
+                        return;
+                      }
+                      if (target.src.includes('valappilpollutiontestingcenters.jpg')) {
+                        target.src = '/valappilpolutiontestingcenters.jpg';
+                        return;
+                      }
+                      if (target.src.includes('venkwateshwarapollutioncenter.jpg')) {
+                        target.src = '/venkateshwarapollutioncenter.jpg';
+                        return;
+                      }
+                      if (target.src.includes('mtspollutiontestingcentre.jpg')) {
+                        target.src = '/mtspollutiontestingcenter.jpg';
+                        return;
+                      }
                     }
                   }}
                   className="w-full h-64 object-contain bg-neutral-100 dark:bg-neutral-700 rounded-lg"
