@@ -322,21 +322,18 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
           REVEALED EXECUTIVE COMMITTEE SHOWCASE STAGE (ONE-PAGE NEAT VIEW)
           ================================================================ */}
       <div className="celebration-stage">
-        <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-2.5 sm:space-y-3">
-          {/* Main Title Hierarchy */}
-          <div className="space-y-0.5 sm:space-y-1 text-center max-w-4xl px-2">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-extrabold font-cinzel golden-text-gradient tracking-wider uppercase leading-tight">
+        <div className="w-full max-w-7xl flex flex-col items-center text-center space-y-2 sm:space-y-3">
+          {/* Main Title Hierarchy - Grand, Prominent & Centered */}
+          <div className="space-y-1 text-center max-w-5xl px-3">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold font-cinzel golden-text-gradient tracking-wider uppercase leading-tight">
               Kozhikode District Committee
             </h1>
-            <h2 className="text-xs sm:text-sm md:text-base font-playfair font-medium tracking-wide text-amber-100/90">
+            <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-playfair font-semibold tracking-wide text-amber-100/95">
               Vehicle Emission Testing Owners Association <span className="text-amber-400">•</span> Executive Board
             </h2>
-            <p className="text-[11px] sm:text-xs text-amber-200/70 italic">
-              &ldquo;Committed to vehicle emission testing excellence & environmental standards across Kozhikode&rdquo;
-            </p>
           </div>
 
-          {/* 8-Member Executive Committee Grid (All in One Page) */}
+          {/* 8-Member Executive Committee Grid (Expanded & Prominent) */}
           <div className="committee-grid mt-1">
             {members.map((member) => (
               <div
