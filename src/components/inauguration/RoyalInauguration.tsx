@@ -319,38 +319,25 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
       </div>
 
       {/* ================================================================
-          REVEALED EXECUTIVE COMMITTEE SHOWCASE STAGE
+          REVEALED EXECUTIVE COMMITTEE SHOWCASE STAGE (ONE-PAGE NEAT VIEW)
           ================================================================ */}
       <div className="celebration-stage">
-        <div className="max-w-6xl w-full flex flex-col items-center text-center space-y-4 sm:space-y-5">
-          {/* Top Royal Badge */}
-          <div className="royal-badge">
-            <ShieldCheck className="w-4 h-4 text-amber-400" />
-            <span className="text-xs sm:text-sm font-semibold tracking-widest text-amber-200 uppercase">
-              VETOA Kerala • Official Inauguration
-            </span>
-            <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
-          </div>
-
-          {/* Grand Header */}
-          <div className="space-y-1">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold font-cinzel golden-text-gradient leading-tight tracking-wide">
+        <div className="w-full max-w-5xl flex flex-col items-center text-center space-y-2.5 sm:space-y-3">
+          {/* Main Title Hierarchy */}
+          <div className="space-y-0.5 sm:space-y-1 text-center max-w-4xl px-2">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-extrabold font-cinzel golden-text-gradient tracking-wider uppercase leading-tight">
               Kozhikode District Committee
             </h1>
-            <p className="text-xs sm:text-base font-playfair italic text-amber-100/90 font-medium">
-              Vehicle Emission Testing Owners Association • Executive Board
+            <h2 className="text-xs sm:text-sm md:text-base font-playfair font-medium tracking-wide text-amber-100/90">
+              Vehicle Emission Testing Owners Association <span className="text-amber-400">•</span> Executive Board
+            </h2>
+            <p className="text-[11px] sm:text-xs text-amber-200/70 italic">
+              &ldquo;Committed to vehicle emission testing excellence & environmental standards across Kozhikode&rdquo;
             </p>
           </div>
 
-          {/* Executive Motto / Proclamation */}
-          <div className="max-w-2xl px-4 py-2.5 sm:px-6 sm:py-3 bg-black/40 border border-amber-400/25 rounded-xl backdrop-blur-md shadow-lg">
-            <p className="font-playfair text-xs sm:text-sm text-amber-100/95 italic leading-relaxed">
-              &ldquo;Committed to vehicle emission excellence, environmental stewardship, and advancing testing center standards across Kozhikode District.&rdquo;
-            </p>
-          </div>
-
-          {/* 8-Member Executive Committee Grid */}
-          <div className="committee-grid mt-2">
+          {/* 8-Member Executive Committee Grid (All in One Page) */}
+          <div className="committee-grid mt-1">
             {members.map((member) => (
               <div
                 key={member.id}
@@ -371,13 +358,13 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                     />
                   ) : (
                     <div className="w-full h-full rounded-full bg-gradient-to-b from-[#400812] to-[#1a0206] flex flex-col items-center justify-center text-amber-300 border-2 border-amber-300/80">
-                      <User className="w-9 h-9 text-amber-300/90 drop-shadow-sm" />
+                      <User className="w-7 h-7 text-amber-300/90 drop-shadow-sm" />
                     </div>
                   )}
 
                   {/* Hover Camera Icon */}
                   <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                    <Camera className="w-5 h-5 text-amber-300" />
+                    <Camera className="w-4 h-4 text-amber-300" />
                   </div>
                 </div>
 
@@ -395,58 +382,6 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
           </div>
         </div>
       </div>
-
-      {/* ================================================================
-          10-SECOND AUTO-TRANSITION COUNTDOWN BAR
-          ================================================================ */}
-      {curtainOpened && (
-        <div className="transition-countdown-bar">
-          <div className="flex items-center justify-between text-xs text-amber-200">
-            <span className="font-medium flex items-center gap-1.5">
-              <span>Entering VETOA Website in</span>
-              <strong className="text-amber-400 font-bold text-sm">
-                {secondsRemaining}s
-              </strong>
-            </span>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => {
-                  playPop();
-                  setIsTimerPaused((prev) => !prev);
-                }}
-                className="hover:text-white p-1 text-amber-300 transition-colors"
-                title={isTimerPaused ? 'Resume Countdown' : 'Pause Countdown'}
-              >
-                {isTimerPaused ? (
-                  <span className="flex items-center gap-1 text-[11px] text-emerald-400 font-semibold">
-                    <Play className="w-3.5 h-3.5" /> Resume
-                  </span>
-                ) : (
-                  <span className="flex items-center gap-1 text-[11px] text-amber-300 font-semibold">
-                    <Pause className="w-3.5 h-3.5" /> Pause
-                  </span>
-                )}
-              </button>
-
-              <button
-                onClick={onEnterWebsite}
-                className="inline-flex items-center gap-1 px-3 py-1 bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold text-xs rounded-full shadow-md transition-transform hover:scale-105"
-              >
-                <span>Enter Now</span>
-                <ChevronRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-          </div>
-
-          <div className="countdown-progress-track">
-            <div
-              className="countdown-progress-fill"
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
-        </div>
-      )}
 
       {/* Edit / Upload Member Photo Modal */}
       <EditMemberModal
