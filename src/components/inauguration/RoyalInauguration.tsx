@@ -3,28 +3,29 @@ import {
   Volume2,
   VolumeX,
   Sparkles,
-  Sliders,
   RotateCcw,
   ExternalLink,
   Crown,
   PartyPopper,
   Pause,
   Play,
-  Heart,
   ChevronRight,
+  ShieldCheck,
+  User,
+  Camera,
 } from 'lucide-react';
 import './inauguration.css';
 import { useInaugurationAudio } from './useInaugurationAudio';
 import { ConfettiCanvas, ConfettiCanvasRef } from './ConfettiCanvas';
 import {
-  PersonalizeModal,
-  CelebrantData,
-  DEFAULT_CELEBRANT,
-} from './PersonalizeModal';
+  DEFAULT_COMMITTEE_MEMBERS,
+  CommitteeMember,
+} from './committeeData';
+import { EditMemberModal } from './EditMemberModal';
 
 /**
- * Checks if the current date is within the celebration window
- * (20-09-2026 to 28-09-2026) or if explicitly activated via query string.
+ * Checks if current date is within celebration window (20-09-2026 to 28-09-2026)
+ * or explicitly enabled via URL query parameter.
  */
 export const isCelebrationDate = (): boolean => {
   if (typeof window !== 'undefined') {
@@ -52,12 +53,12 @@ export const RoyalFloatingBadge: React.FC<{ onClick: () => void }> = ({
     <button
       onClick={onClick}
       className="royal-floating-badge group"
-      title="View Royal Inauguration & Birthday Celebration"
-      aria-label="View Royal Inauguration & Birthday Celebration"
+      title="View VETOA Kozhikode District Committee Inauguration"
+      aria-label="View VETOA Kozhikode District Committee Inauguration"
     >
       <Crown className="w-5 h-5 text-amber-300 animate-pulse group-hover:rotate-12 transition-transform" />
       <span className="text-xs font-bold tracking-wider text-amber-200">
-        Royal Celebration
+        Committee
       </span>
     </button>
   );
@@ -73,21 +74,19 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
   autoTransitionSeconds = 10,
 }) => {
   const [curtainOpened, setCurtainOpened] = useState(false);
-  const [candlesBlown, setCandlesBlown] = useState(false);
-  const [showSmoke, setShowSmoke] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [secondsRemaining, setSecondsRemaining] = useState(autoTransitionSeconds);
   const [isTimerPaused, setIsTimerPaused] = useState(false);
+  const [editingMember, setEditingMember] = useState<CommitteeMember | null>(null);
 
-  // Celebrant data loaded from localStorage
-  const [celebrant, setCelebrant] = useState<CelebrantData>(() => {
+  // Committee members list loaded from localStorage if customized
+  const [members, setMembers] = useState<CommitteeMember[]>(() => {
     try {
-      const saved = localStorage.getItem('vetoa_celebrant_info');
+      const saved = localStorage.getItem('vetoa_committee_members_v1');
       if (saved) return JSON.parse(saved);
     } catch {
       // Ignore
     }
-    return DEFAULT_CELEBRANT;
+    return DEFAULT_COMMITTEE_MEMBERS;
   });
 
   const confettiRef = useRef<ConfettiCanvasRef | null>(null);
@@ -98,19 +97,21 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     toggleMute,
     playCurtainWhoosh,
     playFanfare,
-    playCandlePuff,
     playPop,
     unlockAudio,
   } = useInaugurationAudio();
 
-  // Save celebrant info
-  const handleSaveCelebrant = (data: CelebrantData) => {
-    setCelebrant(data);
-    try {
-      localStorage.setItem('vetoa_celebrant_info', JSON.stringify(data));
-    } catch {
-      // Ignore
-    }
+  // Save updated member profile
+  const handleSaveMember = (updated: CommitteeMember) => {
+    setMembers((prev) => {
+      const next = prev.map((m) => (m.id === updated.id ? updated : m));
+      try {
+        localStorage.setItem('vetoa_committee_members_v1', JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
     playPop();
   };
 
@@ -127,41 +128,23 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
       confettiRef.current?.burstCannon();
     }, 650);
 
-    // Secondary burst as curtains fully open
+    // Secondary celebratory burst
     setTimeout(() => {
       confettiRef.current?.burstCannon();
-    }, 1800);
+    }, 1900);
   }, [curtainOpened, unlockAudio, playCurtainWhoosh, playFanfare]);
 
-  // Replay curtains ceremony
+  // Replay ceremony
   const handleReplay = () => {
     playPop();
     setCurtainOpened(false);
-    setCandlesBlown(false);
-    setShowSmoke(false);
     setSecondsRemaining(autoTransitionSeconds);
     setIsTimerPaused(false);
   };
 
-  // Blow / Relight candles
-  const handleToggleCandles = () => {
-    if (!candlesBlown) {
-      // Blow out
-      playCandlePuff();
-      setCandlesBlown(true);
-      setShowSmoke(true);
-      confettiRef.current?.burstCannon();
-      setTimeout(() => setShowSmoke(false), 2400);
-    } else {
-      // Relight
-      playPop();
-      setCandlesBlown(false);
-    }
-  };
-
   // 10-Second Auto-Transition Countdown
   useEffect(() => {
-    if (!curtainOpened || isTimerPaused || isModalOpen) {
+    if (!curtainOpened || isTimerPaused || editingMember !== null) {
       if (countdownTimerRef.current) clearInterval(countdownTimerRef.current);
       return;
     }
@@ -180,13 +163,30 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     return () => {
       if (countdownTimerRef.current) clearInterval(countdownTimerRef.current);
     };
-  }, [curtainOpened, isTimerPaused, isModalOpen, onEnterWebsite]);
+  }, [curtainOpened, isTimerPaused, editingMember, onEnterWebsite]);
 
-  // Calculate countdown progress percentage
+  // Progress percentage
   const progressPercent = Math.max(
     0,
     Math.min(100, (secondsRemaining / autoTransitionSeconds) * 100)
   );
+
+  const getRoleBadgeClass = (category: CommitteeMember['category']) => {
+    switch (category) {
+      case 'president':
+        return 'role-badge-president';
+      case 'secretary':
+        return 'role-badge-sec';
+      case 'treasurer':
+        return 'role-badge-treasurer';
+      case 'vp':
+        return 'role-badge-vp';
+      case 'advisor':
+        return 'role-badge-advisor';
+      default:
+        return 'role-badge-vp';
+    }
+  };
 
   return (
     <div
@@ -207,24 +207,15 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
         {curtainOpened && (
           <>
             <button
-              onClick={() => confettiRef.current?.burstCannon()}
+              onClick={() => {
+                playPop();
+                confettiRef.current?.burstCannon();
+              }}
               className="control-glass-btn"
               title="Launch Confetti"
             >
               <PartyPopper className="w-4 h-4 text-amber-300" />
-              <span className="hidden sm:inline">Confetti</span>
-            </button>
-
-            <button
-              onClick={() => {
-                playPop();
-                setIsModalOpen(true);
-              }}
-              className="control-glass-btn"
-              title="Personalize Name, Photo & Message"
-            >
-              <Sliders className="w-4 h-4 text-amber-300" />
-              <span className="hidden sm:inline">Personalize</span>
+              <span className="hidden sm:inline">Celebrate</span>
             </button>
 
             <button
@@ -233,7 +224,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
               title="Close Curtains and Re-inaugurate"
             >
               <RotateCcw className="w-4 h-4 text-amber-300" />
-              <span className="hidden sm:inline">Re-play</span>
+              <span className="hidden sm:inline">Re-inaugurate</span>
             </button>
           </>
         )}
@@ -307,7 +298,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
           <div className="curtain-bottom-fringe" />
         </div>
 
-        {/* Center Golden Inauguration Seal Medallion */}
+        {/* Center Golden Inauguration Seal Medallion (INAUGURATE only) */}
         {!curtainOpened && (
           <div className="seal-wrapper">
             <button
@@ -328,107 +319,79 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
       </div>
 
       {/* ================================================================
-          REVEALED BIRTHDAY CELEBRATION STAGE
+          REVEALED EXECUTIVE COMMITTEE SHOWCASE STAGE
           ================================================================ */}
       <div className="celebration-stage">
-        <div className="max-w-3xl w-full flex flex-col items-center text-center space-y-4 sm:space-y-6">
-          {/* Top Royal Crest Badge */}
+        <div className="max-w-6xl w-full flex flex-col items-center text-center space-y-4 sm:space-y-5">
+          {/* Top Royal Badge */}
           <div className="royal-badge">
-            <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
+            <ShieldCheck className="w-4 h-4 text-amber-400" />
             <span className="text-xs sm:text-sm font-semibold tracking-widest text-amber-200 uppercase">
-              Grand Royal Celebration • Sept 2026
+              VETOA Kerala • Official Inauguration
             </span>
             <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
           </div>
 
-          {/* Golden Shimmering Title */}
+          {/* Grand Header */}
           <div className="space-y-1">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-cinzel golden-text-gradient leading-tight">
-              Happy Birthday!
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold font-cinzel golden-text-gradient leading-tight tracking-wide">
+              Kozhikode District Committee
             </h1>
-            <p className="text-sm sm:text-lg font-playfair italic text-amber-100/90 font-medium">
-              In Honor of our Esteemed Leader & Inspiration
+            <p className="text-xs sm:text-base font-playfair italic text-amber-100/90 font-medium">
+              Vehicle Emission Testing Owners Association • Executive Board
             </p>
           </div>
 
-          {/* Celebrant Portrait in Baroque Golden Filigree Frame */}
-          <div className="portrait-frame-wrapper group cursor-pointer" onClick={() => setIsModalOpen(true)}>
-            <div className="portrait-photo-container">
-              {celebrant.photoUrl ? (
-                <img
-                  src={celebrant.photoUrl}
-                  alt={celebrant.name}
-                  className="portrait-image"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-[#400812] to-[#1a0206] text-amber-300 p-2">
-                  <Crown className="w-12 h-12 text-amber-400 drop-shadow-md mb-1" />
-                  <span className="text-[11px] font-bold font-cinzel text-amber-200 uppercase tracking-wider">
-                    {celebrant.name}
-                  </span>
-                </div>
-              )}
-            </div>
-
-            {/* Hover tooltip */}
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-amber-500/90 text-neutral-950 text-[10px] font-bold px-2 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
-              Tap to Edit Photo
-            </div>
-          </div>
-
-          {/* Celebrant Name & Title */}
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-cinzel text-amber-100 tracking-wide drop-shadow-lg">
-              {celebrant.name}
-            </h2>
-            <p className="text-xs sm:text-sm font-medium text-amber-300/90 uppercase tracking-widest mt-0.5">
-              {celebrant.title}
+          {/* Executive Motto / Proclamation */}
+          <div className="max-w-2xl px-4 py-2.5 sm:px-6 sm:py-3 bg-black/40 border border-amber-400/25 rounded-xl backdrop-blur-md shadow-lg">
+            <p className="font-playfair text-xs sm:text-sm text-amber-100/95 italic leading-relaxed">
+              &ldquo;Committed to vehicle emission excellence, environmental stewardship, and advancing testing center standards across Kozhikode District.&rdquo;
             </p>
           </div>
 
-          {/* Heartfelt Tribute Wishes Card */}
-          <div className="relative max-w-xl px-5 py-4 sm:px-8 sm:py-5 bg-black/40 border border-amber-400/30 rounded-2xl backdrop-blur-md shadow-2xl">
-            <div className="flex items-center justify-center gap-1.5 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-2">
-              <Heart className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-              Royal Felicitation & Wishes
-              <Heart className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            </div>
-            <p className="font-playfair text-sm sm:text-base text-amber-50/95 leading-relaxed italic">
-              &ldquo;{celebrant.message}&rdquo;
-            </p>
-          </div>
+          {/* 8-Member Executive Committee Grid */}
+          <div className="committee-grid mt-2">
+            {members.map((member) => (
+              <div
+                key={member.id}
+                className="committee-card group cursor-pointer"
+                onClick={() => {
+                  playPop();
+                  setEditingMember(member);
+                }}
+                title={`Click to view or edit photo for ${member.name}`}
+              >
+                {/* Portrait Photo Frame */}
+                <div className="committee-photo-wrap">
+                  {member.photo ? (
+                    <img
+                      src={member.photo}
+                      alt={`${member.name} - ${member.role}`}
+                      className="committee-photo"
+                    />
+                  ) : (
+                    <div className="w-full h-full rounded-full bg-gradient-to-b from-[#400812] to-[#1a0206] flex flex-col items-center justify-center text-amber-300 border-2 border-amber-300/80">
+                      <User className="w-9 h-9 text-amber-300/90 drop-shadow-sm" />
+                    </div>
+                  )}
 
-          {/* Interactive Birthday Cake with Candles */}
-          <div className="cake-interactive-box" onClick={handleToggleCandles}>
-            <div className="cake-structure">
-              {/* Candles */}
-              <div className="candles-row">
-                {[0, 1, 2].map((idx) => (
-                  <div key={idx} className="candle-item">
-                    <div className="candle-wick" />
-                    {!candlesBlown && <div className="candle-flame" />}
-                    {showSmoke && <div className="candle-smoke" />}
+                  {/* Hover Camera Icon */}
+                  <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                    <Camera className="w-5 h-5 text-amber-300" />
                   </div>
-                ))}
-              </div>
+                </div>
 
-              {/* Cake Layers */}
-              <div className="cake-tier-top">
-                <div className="cake-frosting-piping" />
-              </div>
-              <div className="cake-tier-bottom">
-                <div className="cake-frosting-piping" />
-              </div>
-              <div className="cake-plate" />
-            </div>
+                {/* Member Name */}
+                <h3 className="committee-name">
+                  {member.name}
+                </h3>
 
-            <div className="mt-2 text-xs font-semibold text-amber-300 flex items-center justify-center gap-1">
-              <span>
-                {candlesBlown
-                  ? '✨ Candles Extinguished! (Tap to Relight)'
-                  : '🎂 Tap Cake to Blow Candles & Make a Wish!'}
-              </span>
-            </div>
+                {/* Role Badge */}
+                <div className={`committee-role-badge ${getRoleBadgeClass(member.category)}`}>
+                  <span>{member.role}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -485,12 +448,12 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
         </div>
       )}
 
-      {/* Personalize Modal */}
-      <PersonalizeModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        celebrant={celebrant}
-        onSave={handleSaveCelebrant}
+      {/* Edit / Upload Member Photo Modal */}
+      <EditMemberModal
+        isOpen={editingMember !== null}
+        onClose={() => setEditingMember(null)}
+        member={editingMember}
+        onSave={handleSaveMember}
       />
     </div>
   );
