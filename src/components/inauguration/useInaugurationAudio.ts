@@ -50,8 +50,8 @@ export const useInaugurationAudio = () => {
       const ctx = getAudioContext();
       if (!ctx) return;
 
-      const duration = 2.4;
-      const bufferSize = ctx.sampleRate * duration;
+      const duration = 3.8;
+      const bufferSize = Math.floor(ctx.sampleRate * duration);
       const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
       const output = buffer.getChannelData(0);
 
@@ -76,7 +76,7 @@ export const useInaugurationAudio = () => {
 
       const gain = ctx.createGain();
       gain.gain.setValueAtTime(0.01, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(0.45, ctx.currentTime + 0.4);
+      gain.gain.linearRampToValueAtTime(0.42, ctx.currentTime + 0.6);
       gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
 
       whiteNoise.connect(filter);

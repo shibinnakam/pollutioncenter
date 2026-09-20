@@ -71,7 +71,7 @@ interface RoyalInaugurationProps {
 
 export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
   onEnterWebsite,
-  autoTransitionSeconds = 10,
+  autoTransitionSeconds = 20,
 }) => {
   const [curtainOpened, setCurtainOpened] = useState(false);
   const [secondsRemaining, setSecondsRemaining] = useState(autoTransitionSeconds);
@@ -121,18 +121,19 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     unlockAudio();
     playCurtainWhoosh();
     setCurtainOpened(true);
+    setSecondsRemaining(autoTransitionSeconds);
 
-    // Play grand fanfare and shoot confetti cannons
+    // Play grand fanfare and shoot confetti cannons as curtains open
     setTimeout(() => {
       playFanfare();
       confettiRef.current?.burstCannon();
-    }, 650);
+    }, 900);
 
-    // Secondary celebratory burst
+    // Secondary celebratory burst as curtains fully reach the sides
     setTimeout(() => {
       confettiRef.current?.burstCannon();
-    }, 1900);
-  }, [curtainOpened, unlockAudio, playCurtainWhoosh, playFanfare]);
+    }, 2600);
+  }, [curtainOpened, unlockAudio, playCurtainWhoosh, playFanfare, autoTransitionSeconds]);
 
   // Replay ceremony
   const handleReplay = () => {
@@ -142,7 +143,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     setIsTimerPaused(false);
   };
 
-  // 10-Second Auto-Transition Countdown
+  // 20-Second Auto-Transition Countdown
   useEffect(() => {
     if (!curtainOpened || isTimerPaused || editingMember !== null) {
       if (countdownTimerRef.current) clearInterval(countdownTimerRef.current);
@@ -249,6 +250,11 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
           title="Proceed to VETOA Website"
         >
           <span>Enter Website</span>
+          {curtainOpened && (
+            <span className="ml-1 text-xs text-amber-200 font-semibold bg-black/40 px-1.5 py-0.5 rounded-full border border-amber-400/40">
+              {secondsRemaining}s
+            </span>
+          )}
           <ExternalLink className="w-3.5 h-3.5 ml-1" />
         </button>
       </div>

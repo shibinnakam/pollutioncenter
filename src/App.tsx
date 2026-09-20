@@ -55,7 +55,7 @@ function App() {
         {showInauguration ? (
           <RoyalInauguration
             onEnterWebsite={handleEnterWebsite}
-            autoTransitionSeconds={10}
+            autoTransitionSeconds={20}
           />
         ) : (
           <>
