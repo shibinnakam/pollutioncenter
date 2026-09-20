@@ -485,24 +485,6 @@
   letter-spacing: 2px;
   color: #5c3b08;
   margin-top: 3px;
-  text-transform: uppercase;
-}
-
-.tap-hint-text {
-  margin-top: 18px;
-  color: #fff1b8;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 215, 0, 0.6);
-  animation: pulseHint 2s infinite ease-in-out;
-}
-
-@keyframes pulseHint {
-  0%, 100% { opacity: 0.7; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(-3px); }
 }
 
 /* ==========================================================================

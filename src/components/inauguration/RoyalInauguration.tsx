@@ -311,9 +311,6 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                 <span className="seal-inaugurate-text">INAUGURATE</span>
               </div>
             </button>
-            <div className="tap-hint-text">
-              ✨ Tap or Click to Inaugurate ✨
-            </div>
           </div>
         )}
       </div>
