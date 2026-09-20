@@ -355,7 +355,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                     />
                   ) : (
                     <div className="w-full h-full rounded-full bg-gradient-to-b from-[#400812] to-[#1a0206] flex flex-col items-center justify-center text-amber-300 border-2 border-amber-300/80">
-                      <User className="w-7 h-7 text-amber-300/90 drop-shadow-sm" />
+                      <User className="w-12 h-12 text-amber-300/90 drop-shadow-sm" />
                     </div>
                   )}
 
