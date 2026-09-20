@@ -1,0 +1,873 @@
+/* ==========================================================================
+   ROYAL INAUGURATION & CELEBRATION DESIGN SYSTEM
+   Ultra-premium velvet curtains, 3D golden ornaments, stage spotlights & cake
+   ========================================================================== */
+
+:root {
+  --royal-velvet-base: #5a0914;
+  --royal-velvet-dark: #220307;
+  --royal-velvet-mid: #780d1e;
+  --royal-velvet-light: #9e1b2f;
+  --royal-velvet-highlight: #c9344c;
+  --gold-highlight: #fff6cc;
+  --gold-mid: #d4af37;
+  --gold-dark: #8c6d1f;
+  --gold-border: #f3e5ab;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel Decorative', serif, Georgia;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ==========================================================================
+   STAGE CONTAINER
+   ========================================================================== */
+.inauguration-viewport {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, #1a0826 0%, #0c0414 45%, #050208 100%);
+  user-select: none;
+}
+
+/* Sweeping spotlights */
+.stage-spotlight-left,
+.stage-spotlight-right {
+  position: absolute;
+  top: -20%;
+  width: 45vw;
+  height: 130vh;
+  pointer-events: none;
+  opacity: 0.28;
+  filter: blur(40px);
+  z-index: 5;
+  mix-blend-mode: screen;
+}
+
+.stage-spotlight-left {
+  left: 5%;
+  background: conic-gradient(from 140deg at 20% 0%, rgba(255, 223, 128, 0.5) 0deg, rgba(212, 175, 55, 0) 50deg);
+  animation: sweepLeft 8s ease-in-out infinite alternate;
+}
+
+.stage-spotlight-right {
+  right: 5%;
+  background: conic-gradient(from 220deg at 80% 0%, rgba(255, 223, 128, 0.5) 0deg, rgba(212, 175, 55, 0) 50deg);
+  animation: sweepRight 8s ease-in-out infinite alternate;
+}
+
+@keyframes sweepLeft {
+  0% { transform: rotate(-8deg) scaleX(0.9); }
+  100% { transform: rotate(10deg) scaleX(1.15); }
+}
+
+@keyframes sweepRight {
+  0% { transform: rotate(8deg) scaleX(0.9); }
+  100% { transform: rotate(-10deg) scaleX(1.15); }
+}
+
+/* Stage floor glow */
+.stage-floor-light {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35vh;
+  background: radial-gradient(ellipse at 50% 100%, rgba(212, 175, 55, 0.22) 0%, rgba(138, 17, 36, 0.15) 40%, transparent 75%);
+  pointer-events: none;
+  z-index: 6;
+}
+
+/* ==========================================================================
+   VELVET CURTAIN SYSTEM
+   ========================================================================== */
+.curtain-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  pointer-events: auto;
+  perspective: 1200px;
+}
+
+.curtain-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 51%;
+  height: 100%;
+  transition: transform 2.8s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 2.8s ease;
+  will-change: transform;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.85);
+}
+
+.curtain-left {
+  left: 0;
+  transform-origin: left top;
+  border-right: 2px solid rgba(212, 175, 55, 0.35);
+}
+
+.curtain-right {
+  right: 0;
+  transform-origin: right top;
+  border-left: 2px solid rgba(212, 175, 55, 0.35);
+}
+
+/* Realistic Pleated Velvet Gradient */
+.curtain-fabric {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      #1f0307 0px,
+      #4d0713 18px,
+      #7f0f22 36px,
+      #b01a33 48px,
+      #df324e 54px,
+      #a81830 60px,
+      #690a1b 74px,
+      #290308 92px
+    );
+  background-size: 92px 100%;
+}
+
+.curtain-fabric::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(255, 255, 255, 0.08) 12%,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  pointer-events: none;
+}
+
+.curtain-fabric::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 220, 160, 0.08) 0%, transparent 80%);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Curtain Opened States */
+.curtain-opened .curtain-left {
+  transform: translateX(-88%) scaleX(0.24);
+  box-shadow: 20px 0 60px rgba(0, 0, 0, 0.95);
+  pointer-events: none;
+}
+
+.curtain-opened .curtain-right {
+  transform: translateX(88%) scaleX(0.24);
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.95);
+  pointer-events: none;
+}
+
+/* Bottom Golden Trim on Curtains */
+.curtain-bottom-fringe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 26px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8c6d1f 0px,
+    #f8e58c 3px,
+    #d4af37 6px,
+    #5a420b 9px
+  );
+  border-top: 2px solid #fff3a8;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   IMPERIAL VALANCE (PELMET) & TASSELS
+   ========================================================================== */
+.valance-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  z-index: 60;
+  pointer-events: none;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.85));
+}
+
+@media (min-width: 768px) {
+  .valance-container {
+    height: 145px;
+  }
+}
+
+.valance-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: linear-gradient(180deg, #ffd700 0%, #d4af37 35%, #856114 70%, #4a3405 100%);
+  border-bottom: 2px solid #ffea88;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valance-header-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.15) 10px,
+    rgba(255, 255, 255, 0.15) 20px
+  );
+}
+
+.valance-swags {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  height: calc(100% - 28px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.valance-swag {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: radial-gradient(ellipse at 50% -20%, #9e1b2f 0%, #680c1b 50%, #2b0308 100%);
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  border-bottom: 5px solid #d4af37;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7), inset 0 -6px 12px rgba(255, 215, 0, 0.3);
+  margin: 0 -4px;
+}
+
+.valance-swag::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 10%;
+  right: 10%;
+  height: 14px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d4af37 0px,
+    #ffd700 2px,
+    #8c6d1f 4px,
+    transparent 5px
+  );
+  border-radius: 0 0 4px 4px;
+  opacity: 0.9;
+}
+
+/* Hanging Tassels on Sides */
+.curtain-tassel {
+  position: absolute;
+  top: 100px;
+  z-index: 65;
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.8));
+  transition: transform 2.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.curtain-tassel-left {
+  left: 20px;
+}
+
+.curtain-tassel-right {
+  right: 20px;
+}
+
+.curtain-opened .curtain-tassel-left {
+  transform: translateX(-40px);
+}
+
+.curtain-opened .curtain-tassel-right {
+  transform: translateX(40px);
+}
+
+.tassel-rope {
+  width: 6px;
+  height: 90px;
+  background: repeating-linear-gradient(
+    180deg,
+    #d4af37 0px,
+    #ffd700 4px,
+    #856114 8px,
+    #4a3405 12px
+  );
+  border-radius: 3px;
+}
+
+.tassel-knot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff0a0 0%, #d4af37 45%, #7a5509 100%);
+  border: 2px solid #ffea88;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  margin-top: -4px;
+}
+
+.tassel-skirt {
+  width: 22px;
+  height: 48px;
+  background: repeating-linear-gradient(
+    90deg,
+    #ffd700 0px,
+    #d4af37 2px,
+    #694806 4px
+  );
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   CENTER INAUGURATION SEAL / MEDALLION
+   ========================================================================== */
+.seal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.curtain-opened .seal-wrapper {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  pointer-events: none;
+}
+
+.inauguration-seal-button {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 35%, #fff4be 0%, #e2b944 30%, #a97e1c 70%, #563d08 100%);
+  box-shadow: 
+    0 0 0 7px rgba(255, 215, 0, 0.4),
+    0 0 0 14px rgba(212, 175, 55, 0.2),
+    0 20px 45px rgba(0, 0, 0, 0.85),
+    inset 0 4px 12px rgba(255, 255, 255, 0.7),
+    inset 0 -6px 14px rgba(0, 0, 0, 0.8);
+  border: 4px solid #fff5cc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  animation: sealPulse 3s infinite ease-in-out;
+}
+
+.inauguration-seal-button:hover {
+  transform: scale(1.06);
+  box-shadow: 
+    0 0 0 10px rgba(255, 215, 0, 0.6),
+    0 0 0 20px rgba(212, 175, 55, 0.3),
+    0 25px 55px rgba(0, 0, 0, 0.95),
+    inset 0 4px 14px rgba(255, 255, 255, 0.8),
+    inset 0 -6px 16px rgba(0, 0, 0, 0.8);
+}
+
+.inauguration-seal-button:active {
+  transform: scale(0.96);
+}
+
+@keyframes sealPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 0 6px rgba(255, 215, 0, 0.4),
+      0 0 0 12px rgba(212, 175, 55, 0.2),
+      0 15px 35px rgba(0, 0, 0, 0.85);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 12px rgba(255, 215, 0, 0.6),
+      0 0 0 24px rgba(212, 175, 55, 0.25),
+      0 20px 50px rgba(255, 215, 0, 0.35);
+  }
+}
+
+.seal-inner-ring {
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 2px dashed rgba(80, 50, 6, 0.65);
+  pointer-events: none;
+  animation: ringRotate 40s linear infinite;
+}
+
+@keyframes ringRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.seal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.seal-crown-icon {
+  width: 42px;
+  height: 42px;
+  color: #4a3006;
+  filter: drop-shadow(0 2px 2px rgba(255, 255, 255, 0.5));
+  margin-bottom: 4px;
+}
+
+.seal-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #382003;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  line-height: 1.2;
+}
+
+.seal-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #5c3b08;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.tap-hint-text {
+  margin-top: 18px;
+  color: #fff1b8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 215, 0, 0.6);
+  animation: pulseHint 2s infinite ease-in-out;
+}
+
+@keyframes pulseHint {
+  0%, 100% { opacity: 0.7; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-3px); }
+}
+
+/* ==========================================================================
+   REVEAL STAGE & BIRTHDAY CONTENT
+   ========================================================================== */
+.celebration-stage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 20;
+  padding: 85px 16px 20px 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 1.8s ease 0.8s;
+}
+
+@media (min-width: 768px) {
+  .celebration-stage {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+}
+
+.curtain-opened .celebration-stage {
+  opacity: 1;
+}
+
+/* Golden Shimmer Typography */
+.golden-text-gradient {
+  background: linear-gradient(
+    135deg,
+    #fff7d1 0%,
+    #ffd700 25%,
+    #ffae19 50%,
+    #ffd700 75%,
+    #fff7d1 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShine 4s linear infinite;
+  filter: drop-shadow(0 4px 15px rgba(212, 175, 55, 0.45));
+}
+
+@keyframes goldShine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.royal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: rgba(43, 8, 15, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 9999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(212, 175, 55, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* ==========================================================================
+   PORTRAIT FRAME
+   ========================================================================== */
+.portrait-frame-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 6px;
+  background: radial-gradient(circle at 35% 35%, #fff0a8 0%, #d4af37 40%, #7d5910 80%, #3d2903 100%);
+  box-shadow: 
+    0 0 35px rgba(212, 175, 55, 0.45),
+    0 15px 35px rgba(0, 0, 0, 0.8),
+    inset 0 2px 5px rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .portrait-frame-wrapper {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.portrait-photo-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff5cc;
+  background: #190509;
+  position: relative;
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   INTERACTIVE 3D BIRTHDAY CAKE
+   ========================================================================== */
+.cake-interactive-box {
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 10px;
+  position: relative;
+}
+
+.cake-interactive-box:hover {
+  transform: scale(1.05);
+}
+
+.cake-structure {
+  position: relative;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .cake-structure {
+    width: 220px;
+  }
+}
+
+.cake-tier-top {
+  width: 100px;
+  height: 38px;
+  background: linear-gradient(180deg, #fff7ed 0%, #fde047 35%, #eab308 100%);
+  border-radius: 12px 12px 6px 6px;
+  border: 2px solid #fef08a;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), inset 0 3px 6px rgba(255, 255, 255, 0.8);
+  margin-bottom: -6px;
+  z-index: 2;
+}
+
+.cake-tier-bottom {
+  width: 155px;
+  height: 52px;
+  background: linear-gradient(180deg, #881337 0%, #be123c 40%, #4c0519 100%);
+  border-radius: 14px 14px 8px 8px;
+  border: 2px solid #fb7185;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), inset 0 4px 10px rgba(255, 228, 230, 0.4);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .cake-tier-top {
+    width: 120px;
+    height: 44px;
+  }
+  .cake-tier-bottom {
+    width: 180px;
+    height: 60px;
+  }
+}
+
+.cake-frosting-piping {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-radial-gradient(circle at 10px 4px, #ffffff, #ffffff 6px, transparent 6px, transparent 16px);
+  opacity: 0.9;
+}
+
+.cake-plate {
+  width: 195px;
+  height: 12px;
+  background: linear-gradient(180deg, #ffd700 0%, #a17812 70%, #4a3405 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.4);
+  margin-top: -4px;
+  border: 1px solid #fff2a3;
+}
+
+@media (min-width: 768px) {
+  .cake-plate {
+    width: 230px;
+    height: 14px;
+  }
+}
+
+/* Candles Row */
+.candles-row {
+  position: absolute;
+  top: -26px;
+  display: flex;
+  gap: 16px;
+  z-index: 3;
+}
+
+.candle-item {
+  position: relative;
+  width: 7px;
+  height: 28px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff 0px,
+    #ffffff 4px,
+    #e11d48 4px,
+    #e11d48 8px
+  );
+  border-radius: 3px 3px 1px 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.candle-wick {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 6px;
+  background: #27272a;
+}
+
+/* Flame & Smoke */
+.candle-flame {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 18px;
+  background: radial-gradient(ellipse at 50% 80%, #ffffff 0%, #fef08a 25%, #f97316 65%, rgba(239, 68, 68, 0) 100%);
+  border-radius: 50% 50% 20% 20% / 60% 60% 40% 40%;
+  filter: drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #ea580c);
+  animation: flameFlicker 0.6s infinite alternate ease-in-out;
+  transform-origin: center bottom;
+}
+
+@keyframes flameFlicker {
+  0% { transform: translateX(-50%) scale(1) rotate(-2deg); }
+  50% { transform: translateX(-50%) scale(1.12, 0.92) rotate(3deg); }
+  100% { transform: translateX(-50%) scale(0.95, 1.08) rotate(-1deg); }
+}
+
+.candle-smoke {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 10px;
+  height: 22px;
+  background: radial-gradient(circle, rgba(212, 212, 216, 0.8) 0%, rgba(161, 161, 170, 0) 75%);
+  border-radius: 50%;
+  animation: smokeRise 1.6s ease-out forwards;
+}
+
+@keyframes smokeRise {
+  0% {
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(0) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-35px) scale(2.2);
+  }
+}
+
+/* ==========================================================================
+   TOP & BOTTOM FLOATING CONTROLS
+   ========================================================================== */
+.controls-top-bar {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-glass-btn {
+  background: rgba(20, 5, 10, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #fff4be;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.control-glass-btn:hover {
+  background: rgba(45, 10, 20, 0.85);
+  border-color: #ffd700;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+}
+
+/* 10-Second Transition Bar */
+.transition-countdown-bar {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+  width: 90%;
+  max-width: 520px;
+  background: rgba(15, 3, 7, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 16px;
+  padding: 12px 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.countdown-progress-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.countdown-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd700 0%, #ff6b6b 50%, #ffd700 100%);
+  border-radius: 9999px;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+/* Re-inaugurate Floating Badge on Main Site */
+.royal-floating-badge {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 45;
+  background: linear-gradient(135deg, #7c0a1a 0%, #3e040b 100%);
+  border: 2px solid #ffd700;
+  border-radius: 9999px;
+  padding: 10px 18px;
+  color: #fff3be;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: gentleBounce 3s infinite ease-in-out;
+}
+
+.royal-floating-badge:hover {
+  transform: scale(1.08) translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.7);
+  color: #ffffff;
+}
+
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
