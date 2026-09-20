@@ -317,9 +317,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
             >
               <div className="seal-inner-ring" />
               <div className="seal-content">
-                <Crown className="seal-crown-icon" />
-                <span className="seal-title">Begin</span>
-                <span className="seal-subtitle">Inauguration</span>
+                <span className="seal-inaugurate-text">INAUGURATE</span>
               </div>
             </button>
             <div className="tap-hint-text">
