@@ -109,5 +109,5 @@ export default {
   'footer.links': 'Quick Links',
   'footer.contact': 'Contact Info',
   'footer.rights': 'All Rights Reserved',
-  'footer.designed': 'Designed and Developed by',
+  'footer.designed': 'Website created by',
 }

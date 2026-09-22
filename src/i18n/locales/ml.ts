@@ -110,5 +110,5 @@ export default {
   'footer.links': 'പ്രധാന ലിങ്കുകൾ',
   'footer.contact': 'ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ',
   'footer.rights': 'എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം',
-  'footer.designed': 'രൂപകൽപ്പന ചെയ്തത്'
+  'footer.designed': 'വെബ്സൈറ്റ് നിർമ്മിച്ചത്'
 }

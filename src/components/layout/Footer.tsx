@@ -84,7 +84,15 @@ const Footer: React.FC = () => {
         <div className="pt-6 border-t border-neutral-800 text-center text-xs text-neutral-500">
           <p>© {currentYear} VEOTA Kerala. {t('footer.rights')}.</p>
           <p className="mt-1">
-            {t('footer.designed')} <span className="text-primary-500">VEOTA Web Team</span>
+            {t('footer.designed')}{' '}
+            <a
+              href="https://netscorps.website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-500 hover:text-primary-400 hover:underline transition-colors font-medium"
+            >
+              Netscorps Team
+            </a>
           </p>
         </div>
       </div>
