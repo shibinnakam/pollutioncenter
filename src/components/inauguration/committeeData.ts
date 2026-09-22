@@ -9,12 +9,12 @@ export interface CommitteeMember {
 
 export const DEFAULT_COMMITTEE_MEMBERS: CommitteeMember[] = [
   {
-    id: 'anand-kumar',
-    name: 'Anand Kumar',
+    id: 'dr-a-neelalohithadasan-nadar',
+    name: 'Dr. A. Neelalohitha dasan Naadar Ex. M . P',
     role: 'President',
-    photo: '', // default executive portrait / custom upload
+    photo: '/neelalohithadasannadar.jpeg',
     category: 'president',
-    description: 'Leading VEOTA Kozhikode District with vision and automotive industry expertise.',
+    description: 'Former Minister & Ex. M.P., leading VEOTA Kerala with visionary leadership.',
   },
   {
     id: 'krishnan-ambadi',

@@ -82,7 +82,16 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
   const [members, setMembers] = useState<CommitteeMember[]>(() => {
     try {
       const saved = localStorage.getItem('vetoa_committee_members_v1');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          return parsed.map((m: CommitteeMember) =>
+            m.id === 'anand-kumar'
+              ? DEFAULT_COMMITTEE_MEMBERS.find((d) => d.category === 'president') || m
+              : m
+          );
+        }
+      }
     } catch {
       // Ignore
     }

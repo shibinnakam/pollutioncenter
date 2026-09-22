@@ -76,15 +76,15 @@ const AboutPage: React.FC = () => {
               className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
             >
               <img
-                src=""
-                alt="Anand Kumar - President"
-                className="w-full h-64 object-cover object-center"
+                src="/neelalohithadasannadar.jpeg"
+                alt="Dr. A. Neelalohitha dasan Naadar Ex. M . P - President"
+                className="w-full h-64 object-cover object-top"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Anand Kumar</h3>
+                <h3 className="text-xl font-semibold mb-1">Dr. A. Neelalohitha dasan Naadar Ex. M . P</h3>
                 <p className="text-primary-600 dark:text-primary-400 mb-4">President</p>
                 <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Leading VEOTA Kerala since 2018 with over 20 years of experience in the automotive industry.
+                  Former Minister &amp; Ex. Member of Parliament, leading VEOTA Kerala with distinguished leadership.
                 </p>
               </div>
             </motion.div>
