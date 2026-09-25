@@ -49,6 +49,18 @@ export default {
   'testingCenters.address': 'വിലാസം',
   'testingCenters.centerCode': 'സെന്റർ കോഡ്',
   'testingCenters.vehicleTypes': 'അംഗീകൃത വാഹനങ്ങൾ',
+  'testingCenters.rtoOfficesTitle': 'ആർ.ടി.ഒ ഓഫീസുകളും ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും',
+  'testingCenters.rtoOfficesDistrict': 'കോഴിക്കോട് ജില്ല',
+  'testingCenters.rtoOfficesNotice': 'ഔദ്യോഗിക MVD ഓഫീസുകൾ — പുകപരിശോധനാ കേന്ദ്രങ്ങളല്ല',
+  'testingCenters.rtoOfficesNoticeDesc': 'ഇവ കേരള മോട്ടോർ വാഹന വകുപ്പിന്റെ (MVD) ഔദ്യോഗിക അഡ്മിനിസ്ട്രേറ്റീവ് ഓഫീസുകളാണ്. ഇത് പുകപരിശോധനാ കേന്ദ്രമല്ല. വാഹന പുകപരിശോധനക്കായി പരിശോധനാ കേന്ദ്രങ്ങൾ കാണുക.',
+  'testingCenters.searchRTOOffices': 'ഓഫീസ്, കോഡ്, സ്ഥലം തിരയുക...',
+  'testingCenters.copyEmail': 'ഇമെയിൽ പകർത്തുക',
+  'testingCenters.emailCopied': 'പകർത്തി!',
+  'testingCenters.callOffice': 'വിളിക്കുക',
+  'testingCenters.mainRTO': 'മെയിൻ ആർ.ടി.ഒ',
+  'testingCenters.subRTO': 'സബ് ആർ.ടി.ഒ',
+  'testingCenters.viewOnMap': 'ഗൂഗിൾ മാപ്പിൽ കാണുക',
+  'testingCenters.toggleOffices': 'ആർ.ടി.ഒ ഓഫീസ് വിവരങ്ങൾ',
 
   // Representatives
   'representatives.title': 'അസോസിയേഷൻ പ്രതിനിധികൾ',

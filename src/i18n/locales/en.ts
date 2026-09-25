@@ -49,6 +49,18 @@ export default {
   'testingCenters.address': 'Address',
   'testingCenters.centerCode': 'Center Code',
   'testingCenters.vehicleTypes': 'Authorized for',
+  'testingCenters.rtoOfficesTitle': 'RTO Offices & Contact Details',
+  'testingCenters.rtoOfficesDistrict': 'Kozhikode District',
+  'testingCenters.rtoOfficesNotice': 'Official MVD Offices — Not Testing Centers',
+  'testingCenters.rtoOfficesNoticeDesc': 'These are official Kerala Motor Vehicles Department (MVD) administrative offices. This is not a testing center. For vehicle pollution/PUC tests, please see the testing centers.',
+  'testingCenters.searchRTOOffices': 'Search RTO offices, codes, places...',
+  'testingCenters.copyEmail': 'Copy Email',
+  'testingCenters.emailCopied': 'Copied!',
+  'testingCenters.callOffice': 'Call Office',
+  'testingCenters.mainRTO': 'Main RTO',
+  'testingCenters.subRTO': 'Sub RTO',
+  'testingCenters.viewOnMap': 'View on Google Maps',
+  'testingCenters.toggleOffices': 'RTO Offices Directory',
 
   // Representatives
   'representatives.title': 'Association Representatives',

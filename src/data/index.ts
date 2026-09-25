@@ -1,4 +1,91 @@
-import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict } from '../types';
+import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict, RTOOfficeInfo } from '../types';
+
+export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
+  {
+    id: 'kl11',
+    name: 'Kozhikode RTO',
+    nameMl: 'കോഴിക്കോട് ആർ.ടി.ഒ',
+    type: 'RTO',
+    code: 'KL 11',
+    email: 'kl11.mvd@kerala.gov.in',
+    phone: '0495-2371705',
+    address: 'Ground Floor, Civil Station, Wayanad Road, Eranhippalam, Kozhikode, Kerala - 673020(Pin)',
+    location: 'Civil Station, Eranhippalam, Kozhikode',
+    pin: '673020'
+  },
+  {
+    id: 'kl18',
+    name: 'VATAKARA RTO',
+    nameMl: 'വടകര ആർ.ടി.ഒ',
+    type: 'RTO',
+    code: 'KL 18',
+    email: 'kl18.mvd@kerala.gov.in',
+    phone: '0496-2526234',
+    address: 'Mini Civil Station, Near Court, Vadakara, Kozhikode - 673101(Pin), Kerala',
+    location: 'Near Court, Vadakara, Kozhikode',
+    pin: '673101'
+  },
+  {
+    id: 'kl77',
+    name: 'PERAMBRA SRTO',
+    nameMl: 'പേരാമ്പ്ര സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-77',
+    email: 'kl77.mvd@kerala.gov.in',
+    phone: '0496-2615077',
+    address: 'First Floor, Mini Civil Station, Perambra, Kozhikode, Kerala - 673525.',
+    location: 'Mini Civil Station, Perambra, Kozhikode',
+    pin: '673525'
+  },
+  {
+    id: 'kl56',
+    name: 'KOYILANDI SRTO',
+    nameMl: 'കൊയിലാണ്ടി സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-56',
+    email: 'kl56.mvd@kerala.gov.in',
+    phone: '0496-2623215',
+    address: 'Meethalekandy Complex, Koyilandy-Thamarassery Road, Koyilandy Town, Kozhikode, Kerala - 673305(Pin)',
+    location: 'Koyilandy Town, Kozhikode',
+    pin: '673305'
+  },
+  {
+    id: 'kl57',
+    name: 'KODUVALLI SRTO',
+    nameMl: 'കൊടുവള്ളി സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-57',
+    email: 'kl57.mvd@kerala.gov.in',
+    phone: '0495-2210280',
+    address: 'Mini Civil Station, Koduvally PO, Kozhikode, Kerala - 673572(Pin)',
+    location: 'Mini Civil Station, Koduvally, Kozhikode',
+    pin: '673572'
+  },
+  {
+    id: 'kl76',
+    name: 'Nanmanda SRTO',
+    nameMl: 'നന്മണ്ട സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-76',
+    email: 'kl76.mvd@kerala.gov.in',
+    phone: '0495-2857700',
+    additionalPhones: ['8547639076'],
+    address: 'Building No. 9/499, Nanmanda P.O, Kozhikode, Kerala',
+    location: 'Building No. 9/499, Nanmanda P.O, Kozhikode'
+  },
+  {
+    id: 'kl85',
+    name: 'FEROKE SRTO',
+    nameMl: 'ഫറോക്ക് സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-85',
+    email: 'kl85.mvd@kerala.gov.in',
+    phone: '0495-2486002',
+    address: 'Sub Regional Transport Office, Ramanattukara, Imax Tower, Chungam, Feroke P.O, Kozhikode 673631(Pin)',
+    location: 'Ramanattukara (Feroke), Kozhikode',
+    pin: '673631'
+  }
+];
 
 export const slideImages: SlideImage[] = [
   {

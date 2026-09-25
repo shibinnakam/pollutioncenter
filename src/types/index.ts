@@ -66,3 +66,18 @@ export interface RTODistrict {
   name: string;
   code: string;
 }
+
+export interface RTOOfficeInfo {
+  id: string;
+  name: string;
+  nameMl?: string;
+  type: 'RTO' | 'SRTO';
+  code: string;
+  email: string;
+  phone: string;
+  additionalPhones?: string[];
+  address: string;
+  addressMl?: string;
+  location?: string;
+  pin?: string;
+}
