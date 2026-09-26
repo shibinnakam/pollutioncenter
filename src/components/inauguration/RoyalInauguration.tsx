@@ -81,15 +81,11 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
   // Committee members list loaded from localStorage if customized
   const [members, setMembers] = useState<CommitteeMember[]>(() => {
     try {
-      const saved = localStorage.getItem('vetoa_committee_members_v1');
+      const saved = localStorage.getItem('vetoa_committee_members_v2');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) {
-          return parsed.map((m: CommitteeMember) =>
-            m.id === 'anand-kumar'
-              ? DEFAULT_COMMITTEE_MEMBERS.find((d) => d.category === 'president') || m
-              : m
-          );
+        if (Array.isArray(parsed) && parsed.length >= DEFAULT_COMMITTEE_MEMBERS.length) {
+          return parsed;
         }
       }
     } catch {
@@ -115,7 +111,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     setMembers((prev) => {
       const next = prev.map((m) => (m.id === updated.id ? updated : m));
       try {
-        localStorage.setItem('vetoa_committee_members_v1', JSON.stringify(next));
+        localStorage.setItem('vetoa_committee_members_v2', JSON.stringify(next));
       } catch {
         // Ignore
       }
@@ -345,7 +341,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
             </h2>
           </div>
 
-          {/* 8-Member Executive Committee Grid (Expanded & Prominent) */}
+          {/* 10-Member Executive Committee Grid (Expanded & Prominent) */}
           <div className="committee-grid mt-1">
             {members.map((member) => (
               <div
@@ -364,6 +360,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                       src={member.photo}
                       alt={`${member.name} - ${member.role}`}
                       className="committee-photo"
+                      style={member.imagePosition ? { objectPosition: member.imagePosition } : undefined}
                     />
                   ) : (
                     <div className="w-full h-full rounded-full bg-gradient-to-b from-[#400812] to-[#1a0206] flex flex-col items-center justify-center text-amber-300 border-2 border-amber-300/80">

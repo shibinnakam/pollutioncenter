@@ -5,40 +5,58 @@ export interface CommitteeMember {
   photo: string;
   category: 'president' | 'secretary' | 'treasurer' | 'vp' | 'advisor';
   description?: string;
+  imagePosition?: string;
 }
 
 export const DEFAULT_COMMITTEE_MEMBERS: CommitteeMember[] = [
   {
     id: 'dr-a-neelalohithadasan-nadar',
     name: 'Dr. A. Neelalohitha dasan Naadar Ex. M . P',
-    role: 'President',
+    role: 'State President',
     photo: '/neelalohithadasannadar.jpeg',
     category: 'president',
-    description: 'Former Minister & Ex. M.P., leading VEOTA Kerala with visionary leadership.',
+    description: 'Former Minister & Ex. M.P., State President leading VEOTA Kerala with visionary leadership.',
   },
   {
     id: 'krishnan-ambadi',
-    name: 'Krishnan Ambadi',
-    role: 'General Secretary',
+    name: 'Krishnan Ambady',
+    role: 'State General Secretary',
     photo: '/person7.jpg',
     category: 'secretary',
-    description: 'Spearheading district administration and association coordination.',
+    description: 'State General Secretary, spearheading statewide administration and association coordination.',
   },
   {
-    id: 'muhammad-sherief',
-    name: 'Muhammad Sherief',
-    role: 'Treasurer',
-    photo: '/person6.jpg',
-    category: 'treasurer',
-    description: 'Managing financial affairs and organizational resources with integrity.',
+    id: 'premraj-m-p',
+    name: 'Premraj M P',
+    role: 'District President',
+    photo: '/districtpresident.jpeg',
+    category: 'president',
+    description: 'President of VETOA Kozhikode District Committee.',
+    imagePosition: 'center 20%',
   },
   {
     id: 'joys-m-joy',
     name: 'Joys M Joy',
-    role: 'Working Secretary',
-    photo: '/person5.jpg',
+    role: 'District Secretary',
+    photo: '/districtsecratary.jpeg',
     category: 'secretary',
-    description: 'Driving operational excellence and member support initiatives.',
+    description: 'Secretary of VETOA Kozhikode District Committee.',
+  },
+  {
+    id: 'sangeetha-pradheep',
+    name: 'Sangeetha Pradheep',
+    role: 'District Treasurer',
+    photo: '/districttressur.jpeg',
+    category: 'treasurer',
+    description: 'Treasurer of VETOA Kozhikode District Committee.',
+  },
+  {
+    id: 'muhammad-sherief',
+    name: 'Muhammad Sherief',
+    role: 'State Treasurer',
+    photo: '/person6.jpg',
+    category: 'treasurer',
+    description: 'State Treasurer, managing financial affairs and organizational resources with integrity.',
   },
   {
     id: 'muhammed-kunji',
