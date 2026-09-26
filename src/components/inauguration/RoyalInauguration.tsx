@@ -53,8 +53,8 @@ export const RoyalFloatingBadge: React.FC<{ onClick: () => void }> = ({
     <button
       onClick={onClick}
       className="royal-floating-badge group"
-      title="View VETOA Kozhikode District Committee Inauguration"
-      aria-label="View VETOA Kozhikode District Committee Inauguration"
+      title="View VETOA State & District Committee Inauguration"
+      aria-label="View VETOA State & District Committee Inauguration"
     >
       <Crown className="w-5 h-5 text-amber-300 animate-pulse group-hover:rotate-12 transition-transform" />
       <span className="text-xs font-bold tracking-wider text-amber-200">
@@ -332,11 +332,15 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
       <div className="celebration-stage">
         <div className="w-full max-w-7xl flex flex-col items-center text-center space-y-2 sm:space-y-3">
           {/* Main Title Hierarchy - Grand, Prominent & Centered */}
-          <div className="space-y-1 text-center max-w-5xl px-3">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold font-cinzel golden-text-gradient tracking-wider uppercase leading-tight">
-              Kozhikode District Committee
+          <div className="space-y-1 text-center max-w-5xl px-3 mb-1">
+            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-[11px] sm:text-xs font-semibold uppercase tracking-widest shadow-sm">
+              <Sparkles className="w-3 h-3 text-amber-300" />
+              <span>Our Leadership Team</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold font-cinzel golden-text-gradient tracking-wider uppercase leading-tight">
+              State &amp; District Committee
             </h1>
-            <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-playfair font-semibold tracking-wide text-amber-100/95">
+            <h2 className="text-xs sm:text-sm md:text-base font-playfair font-semibold tracking-wide text-amber-100/95">
               Vehicle Emission Testing Owners Association <span className="text-amber-400">•</span> Executive Board
             </h2>
           </div>

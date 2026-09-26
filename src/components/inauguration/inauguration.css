@@ -16,7 +16,7 @@
 }
 
 .font-cinzel {
-  font-family: 'Cinzel Decorative', serif, Georgia;
+  font-family: 'Cinzel', 'Cinzel Decorative', 'Playfair Display', serif, Georgia;
 }
 
 .font-playfair {
@@ -209,16 +209,22 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 58px;
+  height: 56px;
   z-index: 60;
   pointer-events: none;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.85));
+  transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 1.8s ease;
 }
 
 @media (min-width: 768px) {
   .valance-container {
-    height: 68px;
+    height: 62px;
   }
+}
+
+.curtain-opened .valance-container {
+  transform: translateY(-24px);
+  opacity: 0.85;
 }
 
 .valance-header {
@@ -497,17 +503,17 @@
   align-items: center;
   justify-content: center;
   z-index: 20;
-  padding: 64px 20px 20px 20px;
+  padding: 78px 18px 18px 18px;
   overflow-y: auto;
   overflow-x: hidden;
   opacity: 0;
   transition: opacity 2s ease 0.6s;
 }
 
-@media (max-height: 800px) {
+@media (max-height: 820px) {
   .celebration-stage {
     justify-content: flex-start;
-    padding-top: 60px;
+    padding-top: 72px;
     padding-bottom: 24px;
   }
 }
@@ -520,17 +526,18 @@
 .golden-text-gradient {
   background: linear-gradient(
     135deg,
-    #fff7d1 0%,
-    #ffd700 25%,
-    #ffae19 50%,
-    #ffd700 75%,
-    #fff7d1 100%
+    #ffffff 0%,
+    #fff5cc 20%,
+    #ffd700 45%,
+    #ffa800 70%,
+    #ffd700 90%,
+    #ffffff 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: goldShine 4s linear infinite;
-  filter: drop-shadow(0 4px 15px rgba(212, 175, 55, 0.45));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 16px rgba(212, 175, 55, 0.4));
 }
 
 @keyframes goldShine {
