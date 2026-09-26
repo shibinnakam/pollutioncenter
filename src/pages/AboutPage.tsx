@@ -60,186 +60,118 @@ const AboutPage: React.FC = () => {
       <section className="py-16 bg-neutral-50 dark:bg-neutral-800">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
+            <h2 className="text-3xl font-bold mb-4 text-neutral-900 dark:text-white">Our Leadership</h2>
             <p className="text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto">
-              Meet the dedicated team that leads VEOTA Kerala in its mission to ensure quality emission testing and environmental compliance.
+              Meet the dedicated team that leads VEOTA Kerala and Kozhikode District in its mission to ensure quality emission testing and environmental compliance.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* President */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/neelalohithadasannadar.jpeg"
-                alt="Dr. A. Neelalohitha dasan Naadar Ex. M . P - President"
-                className="w-full h-64 object-cover object-top"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Dr. A. Neelalohitha dasan Naadar Ex. M . P</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">President</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Former Minister &amp; Ex. Member of Parliament, leading VEOTA Kerala with distinguished leadership.
-                </p>
-              </div>
-            </motion.div>
-            
-            {/* Secretary */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person2.jpg"
-                alt="Muhammed Kunji - Vice-President"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Muhammed Kunji</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Vice-President</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Environmental engineer with extensive experience in emission control technologies.
-                </p>
-              </div>
-            </motion.div>
-             {/* Secretary */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person4.jpg"
-                alt="KPA Razak - Vice-President"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">KPA Razak</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Vice-President</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Environmental engineer with extensive experience in emission control technologies.
-                </p>
-              </div>
-            </motion.div>
-             {/* Secretary */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person3.jpg"
-                alt="Veli Pramod - Vice-President"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Veli Pramod</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Vice-President</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Environmental engineer with extensive experience in emission control technologies.
-                </p>
-              </div>
-            </motion.div>
-            {/* Secretary */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person7.jpg"
-                alt="Krishnan Ambadi - General Secretary"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Krishnan Ambadi</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">General Secretary</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Environmental engineer with extensive experience in emission control technologies.
-                </p>
-              </div>
-            </motion.div>
-            {/* Secretary */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person5.jpg"
-                alt="Joys M Joy - Working Secretary"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Joys M Joy</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Working Secretary</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Environmental engineer with extensive experience in emission control technologies.
-                </p>
-              </div>
-            </motion.div>
-            
-            {/* Treasurer */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person6.jpg"
-                alt="Muhammad Sherief - Treasurer"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Muhammad Sherief</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Treasurer</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Financial expert with a strong background in business management and accounting.
-                </p>
-              </div>
-            </motion.div>
-            
-            {/* Technical Advisor */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-neutral-700 rounded-lg shadow-soft overflow-hidden text-center"
-            >
-              <img
-                src="/person1.jpg"
-                alt="Suvin Sagar- Technical Advisor"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Suvin Sagar</h3>
-                <p className="text-primary-600 dark:text-primary-400 mb-4">Technical Advisor</p>
-                <p className="text-neutral-600 dark:text-neutral-300 text-sm">
-                  Automotive engineer specializing in emission control systems and testing equipment.
-                </p>
-              </div>
-            </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {[
+              {
+                name: 'Dr. A. Neelalohitha dasan Naadar Ex. M . P',
+                role: 'State President',
+                image: '/neelalohithadasannadar.jpeg',
+                description: 'Former Minister & Ex. Member of Parliament, leading VEOTA Kerala with distinguished leadership.',
+                imagePosition: 'object-top'
+              },
+              {
+                name: 'Krishnan Ambady',
+                role: 'State General Secretary',
+                image: '/person7.jpg',
+                description: 'State General Secretary, spearheading statewide administration and association coordination.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Premraj M P',
+                role: 'District President',
+                image: '/districtpresident.jpeg',
+                description: 'President of VETOA Kozhikode District Committee, leading district welfare and compliance initiatives.',
+                imagePosition: 'object-top'
+              },
+              {
+                name: 'Joys M Joy',
+                role: 'District Secretary',
+                image: '/districtsecratary.jpeg',
+                description: 'Secretary of VETOA Kozhikode District Committee, driving operational excellence and member support.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Sangeetha Pradheep',
+                role: 'District Treasurer',
+                image: '/districttressur.jpeg',
+                description: 'Treasurer of VETOA Kozhikode District Committee, managing organizational finances with integrity.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Muhammad Sherief',
+                role: 'State Treasurer',
+                image: '/person6.jpg',
+                description: 'State Treasurer, managing financial affairs and organizational resources with integrity.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Muhammed Kunji',
+                role: 'Vice-President',
+                image: '/person2.jpg',
+                description: 'Guiding environmental emission compliance and member welfare initiatives across the region.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'KPA Razak',
+                role: 'Vice-President',
+                image: '/person4.jpg',
+                description: 'Advancing testing equipment standards, regulatory compliance, and regional representation.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Veli Pramod',
+                role: 'Vice-President',
+                image: '/person3.jpg',
+                description: 'Supporting organizational growth, member relations, and committee development activities.',
+                imagePosition: 'object-center'
+              },
+              {
+                name: 'Suvin Sagar',
+                role: 'Technical Advisor',
+                image: '/person1.jpg',
+                description: 'Automotive engineer specializing in emission control systems and testing equipment.',
+                imagePosition: 'object-center'
+              }
+            ].map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: (index % 5) * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-neutral-700 rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 overflow-hidden text-center flex flex-col group border border-neutral-100 dark:border-neutral-600"
+              >
+                <div className="relative overflow-hidden h-64 bg-neutral-100 dark:bg-neutral-800">
+                  <img
+                    src={member.image}
+                    alt={`${member.name} - ${member.role}`}
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${member.imagePosition}`}
+                  />
+                </div>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-1">
+                      {member.name}
+                    </h3>
+                    <p className="text-primary-600 dark:text-primary-400 font-semibold text-sm mb-3">
+                      {member.role}
+                    </p>
+                  </div>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-xs sm:text-sm leading-relaxed">
+                    {member.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </section>
         {/* Vision and Mission */}
       <section className="py-16 bg-neutral-50 dark:bg-neutral-800">
         <div className="container-custom">
@@ -393,8 +325,6 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
-
       </section>
 
     </main>
