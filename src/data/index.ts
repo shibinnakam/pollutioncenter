@@ -90,21 +90,21 @@ export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
 export const slideImages: SlideImage[] = [
   {
     id: 1,
-    url: '/cmvetoahome.jpg',
+    url: '/cmvetoahome.jpeg',
     title: 'Welcome to Vetoa Kozhikode',
     description: 'Ensuring a cleaner environment through proper vehicle emission testing',
     alt: 'Vehicle emission testing being performed'
   },
   {
     id: 2,
-    url: '/mriyazvetoa.jpg',
+    url: '/mriyazvetoa.jpeg',
     title: 'Modern Testing Equipment',
     description: 'Using state-of-the-art equipment for accurate emission testing',
     alt: 'Modern vehicle testing equipment'
   },
   {
     id: 3,
-    url: 'mriyazvetoak.jpg',
+    url: '/mriyazvetoak.jpeg',
     title: 'Emission Control',
     description: 'Working together for a pollution-free Kerala',
     alt: 'Emission control system'
@@ -2278,7 +2278,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-02-25',
     summary: 'VETOA Kerala announces annual conference to be held in Kochi on March 15-16, 2024',
     content: 'The Vehicle Emission Testing Owners Association Kerala (VETOA) is pleased to announce its annual conference scheduled for March 15-16, 2024, at the Grand Hyatt in Kochi. This year\'s conference will focus on new emission testing technologies and upcoming regulatory changes. All members are encouraged to attend this important event.',
-    imageUrl: '/mriyazvetoa.jpg',
+    imageUrl: '/mriyazvetoa.jpeg',
     tags: ['Conference', 'Events']
   },
   {
@@ -2287,7 +2287,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-01-10',
     summary: 'BS6 Phase 2 emission norms now in effect across Kerala',
     content: 'Starting April 1, 2023, the BS6 Phase 2 emission norms have come into effect across Kerala. All testing centers are required to update their equipment and testing procedures to comply with these new standards. The Transport Department has issued detailed guidelines for implementation, which can be accessed on the official website.',
-    imageUrl: '/cmvetoahome.jpg',
+    imageUrl: '/cmvetoahome.jpeg',
     tags: ['Regulations', 'Emission Standards']
   },
   {
