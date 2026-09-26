@@ -36,6 +36,21 @@ const AboutPage: React.FC = () => {
               <p className="text-neutral-700 dark:text-neutral-300">
                 Since its formation, VEOTA Kerala has been instrumental in representing the interests of emission testing center owners before government authorities. The association has grown from a small group of testing center owners to a statewide organization with members from all districts in Kerala.
               </p>
+              <div className="mt-6 p-4 bg-primary-50 dark:bg-neutral-800 rounded-lg border border-primary-100 dark:border-neutral-700">
+                <span className="text-xs uppercase font-bold text-primary-700 dark:text-primary-400 block mb-1">
+                  Registered Association
+                </span>
+                <p className="text-sm font-bold text-neutral-900 dark:text-white">
+                  Reg: No: KKD/CD/342/2020
+                </p>
+                <p className="text-xs text-neutral-600 dark:text-neutral-300 mt-1 leading-relaxed">
+                  Room No: 8/19368, Prakash Building, Ghandhi Ashramam, Civil Station (Po), Kozhikode - 673020
+                </p>
+                <div className="mt-2 pt-2 border-t border-primary-100 dark:border-neutral-700 flex flex-wrap gap-4 text-xs text-neutral-600 dark:text-neutral-300">
+                  <span>Ph: <a href="tel:04953554596" className="text-primary-600 dark:text-primary-400 font-semibold hover:underline">0495-3554596</a></span>
+                  <span>Email: <a href="mailto:emissiontesting2020@gmail.com" className="text-primary-600 dark:text-primary-400 font-semibold hover:underline">emissiontesting2020@gmail.com</a></span>
+                </div>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 30 }}

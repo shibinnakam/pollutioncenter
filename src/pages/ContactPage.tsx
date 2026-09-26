@@ -80,28 +80,35 @@ const ContactPage: React.FC = () => {
               <h2 className="text-2xl font-bold mb-6">{t('contact.title')}</h2>
               
               <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-6 mb-8">
+                {/* Official Association Header */}
+                <div className="mb-6 pb-5 border-b border-neutral-200 dark:border-neutral-700">
+                  <span className="inline-block px-2.5 py-1 bg-primary-100 dark:bg-primary-900/40 text-primary-800 dark:text-primary-300 text-xs font-bold rounded mb-2">
+                    Reg: No: KKD/CD/342/2020
+                  </span>
+                  <h3 className="text-lg font-bold text-neutral-900 dark:text-white leading-snug">
+                    VEHICLE EMISSION TESTING OWNER'S ASSOCIATION
+                  </h3>
+                </div>
+
                 <ul className="space-y-6">
                   <li className="flex items-start">
                     <MapPin size={24} className="text-primary-600 dark:text-primary-400 mt-1 mr-4 shrink-0" />
                     <div>
-                      <h3 className="font-medium mb-1">{t('contact.address')}</h3>
-                      <p className="text-neutral-600 dark:text-neutral-300">
-                        VEOTA Kerala<br />
-                        TC 25/2342, Sasthamangalam P.O<br />
-                        Thiruvananthapuram, Kerala 695010
+                      <h3 className="font-medium text-neutral-900 dark:text-white mb-1">{t('contact.address')}</h3>
+                      <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                        Room No: 8/19368, Prakash Building,<br />
+                        Ghandhi Ashramam, Civil Station (Po),<br />
+                        Kozhikode - 673020, Kerala
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <Phone size={24} className="text-primary-600 dark:text-primary-400 mt-1 mr-4 shrink-0" />
                     <div>
-                      <h3 className="font-medium mb-1">{t('contact.phone')}</h3>
+                      <h3 className="font-medium text-neutral-900 dark:text-white mb-1">{t('contact.phone')}</h3>
                       <p className="text-neutral-600 dark:text-neutral-300">
-                        <a href="tel:+919876543210" className="hover:text-primary-600 dark:hover:text-primary-400">
-                          +91 9876543210
-                        </a><br />
-                        <a href="tel:+919876543211" className="hover:text-primary-600 dark:hover:text-primary-400">
-                          +91 9876543211
+                        <a href="tel:04953554596" className="hover:text-primary-600 dark:hover:text-primary-400 font-medium">
+                          0495-3554596
                         </a>
                       </p>
                     </div>
@@ -109,13 +116,10 @@ const ContactPage: React.FC = () => {
                   <li className="flex items-start">
                     <Mail size={24} className="text-primary-600 dark:text-primary-400 mt-1 mr-4 shrink-0" />
                     <div>
-                      <h3 className="font-medium mb-1">{t('contact.email')}</h3>
+                      <h3 className="font-medium text-neutral-900 dark:text-white mb-1">{t('contact.email')}</h3>
                       <p className="text-neutral-600 dark:text-neutral-300">
-                        <a href="mailto:info@veotakerala.org" className="hover:text-primary-600 dark:hover:text-primary-400">
-                          info@veotakerala.org
-                        </a><br />
-                        <a href="mailto:support@veotakerala.org" className="hover:text-primary-600 dark:hover:text-primary-400">
-                          support@veotakerala.org
+                        <a href="mailto:emissiontesting2020@gmail.com" className="hover:text-primary-600 dark:hover:text-primary-400 font-medium">
+                          emissiontesting2020@gmail.com
                         </a>
                       </p>
                     </div>
