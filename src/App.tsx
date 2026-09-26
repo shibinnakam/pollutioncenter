@@ -21,6 +21,7 @@ import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
 import RequestFormPage from './pages/RequestFormPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { FloatingWhatsApp } from './components/ui/FloatingWhatsApp';
 
 // Scroll to top when navigating to a new page
 const ScrollToTop: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -86,6 +87,9 @@ function App() {
             {celebrationActive && (
               <RoyalFloatingBadge onClick={() => setShowInauguration(true)} />
             )}
+
+            {/* Floating Direct WhatsApp Support with Authorities */}
+            <FloatingWhatsApp />
           </>
         )}
       </LanguageProvider>

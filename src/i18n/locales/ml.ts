@@ -92,15 +92,17 @@ export default {
   'contact.form.submit': 'സന്ദേശം അയയ്ക്കുക',
 
   // Request Form
-  'requestForm.title': 'അഡ്മിനുകൾക്കുള്ള അഭ്യർത്ഥന ഫോം',
-  'requestForm.subtitle': 'അസോസിയേഷൻ മാനേജ്മെന്റിലേക്ക് നിങ്ങളുടെ അഭ്യർത്ഥനകളോ ആശങ്കകളോ സമർപ്പിക്കുക',
-  'requestForm.form.name': 'നിങ്ങളുടെ പേര്',
+  'requestForm.title': 'ടെസ്റ്റിംഗ് സെന്റർ എൻക്വയറിയും അസോസിയേഷൻ അപേക്ഷ ഫോമും',
+  'requestForm.subtitle': 'നിങ്ങളുടെ പൊലൂഷൻ ടെസ്റ്റിംഗ് സെന്റർ ലിസ്റ്റ് ചെയ്യാനോ അസോസിയേഷനിലേക്ക് അപേക്ഷ സമർപ്പിക്കാനോ ഇവിടെ രേഖപ്പെടുത്താം',
+  'requestForm.form.enquiryType': 'ആവശ്യം / അന്വേഷണ വിഭാഗം',
+  'requestForm.form.centerName': 'പൊലൂഷൻ ടെസ്റ്റിംഗ് സെന്ററിന്റെ പേര്',
+  'requestForm.form.name': 'നിങ്ങളുടെ പേര് / ഉടമയുടെ പേര്',
   'requestForm.form.email': 'നിങ്ങളുടെ ഇമെയിൽ',
   'requestForm.form.contact': 'ബന്ധപ്പെടാനുള്ള നമ്പർ',
   'requestForm.form.rto': 'RTO ജില്ല',
   'requestForm.form.subject': 'വിഷയം',
-  'requestForm.form.message': 'സന്ദേശം',
-  'requestForm.form.submit': 'അഭ്യർത്ഥന സമർപ്പിക്കുക',
+  'requestForm.form.message': 'സെന്റർ വിലാസവും മെഷീൻ വിവരങ്ങളും / സന്ദേശം',
+  'requestForm.form.submit': 'അപേക്ഷ / എൻക്വയറി സമർപ്പിക്കുക',
 
   // Common
   'common.loading': 'ലോഡ് ചെയ്യുന്നു...',

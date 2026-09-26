@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { useLanguage } from '../context/LanguageContext';
+import { WhatsAppAuthoritySection } from '../components/ui/WhatsAppAuthorityCard';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
@@ -127,6 +128,15 @@ const ContactPage: React.FC = () => {
                 </ul>
               </div>
               
+              {/* Direct WhatsApp Contact with Authorities */}
+              <div className="mb-8">
+                <WhatsAppAuthoritySection
+                  title="Direct WhatsApp with Authorities"
+                  subtitle="Redirect directly to WhatsApp to contact the association authorities with your message."
+                  contextMode="general"
+                />
+              </div>
+
               {/* Map */}
               <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-2">
                 <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">

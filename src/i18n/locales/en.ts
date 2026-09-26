@@ -92,15 +92,17 @@ export default {
   'contact.form.submit': 'Send Message',
 
   // Request Form
-  'requestForm.title': 'Request Form for Admins',
-  'requestForm.subtitle': 'Submit your requests or concerns to the association management',
-  'requestForm.form.name': 'Your Name',
+  'requestForm.title': 'Testing Center Enquiry & Request Form',
+  'requestForm.subtitle': 'Inquire to add your pollution testing center or submit requests to VEOTA leadership',
+  'requestForm.form.enquiryType': 'Enquiry / Request Purpose',
+  'requestForm.form.centerName': 'Pollution Testing Center Name',
+  'requestForm.form.name': 'Your Name / Owner Name',
   'requestForm.form.email': 'Your Email',
   'requestForm.form.contact': 'Contact Number',
   'requestForm.form.rto': 'RTO District',
   'requestForm.form.subject': 'Subject',
-  'requestForm.form.message': 'Message',
-  'requestForm.form.submit': 'Submit Request',
+  'requestForm.form.message': 'Center Address, Machine Details & Message',
+  'requestForm.form.submit': 'Submit Enquiry / Request',
 
   // Common
   'common.loading': 'Loading...',

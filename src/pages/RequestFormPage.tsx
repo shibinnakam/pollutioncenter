@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, AlertCircle } from 'lucide-react';
+import { Send, Building2, CheckCircle2 } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { rtoDistricts } from '../data';
 import { useLanguage } from '../context/LanguageContext';
+import { WhatsAppAuthoritySection } from '../components/ui/WhatsAppAuthorityCard';
 
 const RequestFormPage: React.FC = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
+    enquiryType: 'Add New Pollution Testing Center',
+    centerName: '',
     name: '',
     email: '',
     contact: '',
@@ -50,6 +53,8 @@ const RequestFormPage: React.FC = () => {
         setFormStatus('success');
         setTimeout(() => {
           setFormData({
+            enquiryType: 'Add New Pollution Testing Center',
+            centerName: '',
             name: '',
             email: '',
             contact: '',
@@ -58,7 +63,7 @@ const RequestFormPage: React.FC = () => {
             message: ''
           });
           setFormStatus('idle');
-        }, 4000);
+        }, 5000);
       } else {
         throw new Error('Form submission failed');
       }
@@ -77,22 +82,32 @@ const RequestFormPage: React.FC = () => {
       />
 
       <section className="py-16">
-        <div className="container-custom max-w-3xl">
+        <div className="container-custom max-w-4xl">
+          {/* Quick Direct WhatsApp Support for Testing Centers */}
+          <div className="mb-10">
+            <WhatsAppAuthoritySection
+              title="Add Center / Inquire Instantly via WhatsApp"
+              subtitle="Testing Center owners can send center details, license copy, and enquiries directly to our secretaries on WhatsApp for immediate onboarding."
+              contextMode="center-enquiry"
+            />
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-8"
+            className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-6 md:p-8"
           >
-            <div className="mb-6">
-              <div className="flex items-start p-4 border-l-4 border-secondary-500 bg-secondary-50 dark:bg-secondary-900/20 rounded-r-md">
-                <AlertCircle size={24} className="text-secondary-600 dark:text-secondary-400 mr-3 mt-0.5 shrink-0" />
+            {/* Informational Guidance Header */}
+            <div className="mb-8">
+              <div className="flex items-start p-4 border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-950/30 rounded-r-md">
+                <Building2 size={24} className="text-primary-600 dark:text-primary-400 mr-3 mt-0.5 shrink-0" />
                 <div>
-                  <h3 className="text-secondary-800 dark:text-secondary-300 font-medium mb-1">Important Note</h3>
-                  <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-                    This form is specifically for admin-related requests and concerns. For general inquiries, please use the 
-                    <a href="/contact" className="text-secondary-600 dark:text-secondary-400 hover:underline mx-1">contact form</a>
-                    instead.
+                  <h3 className="text-primary-900 dark:text-primary-200 font-bold mb-1">
+                    Pollution Testing Center Registration & Enquiry
+                  </h3>
+                  <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed">
+                    Are you a testing center owner looking to list your center on the official VEOTA Kerala portal, update your listing, or submit official queries? Fill out the details below and our leadership team will process your request promptly.
                   </p>
                 </div>
               </div>
@@ -101,6 +116,13 @@ const RequestFormPage: React.FC = () => {
             {formStatus === 'error' && (
               <div className="mb-6 p-4 rounded-md bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm">
                 There was an error submitting your request. Please try again or email us directly at <a href="mailto:emissiontesting2020@gmail.com" className="font-semibold underline">emissiontesting2020@gmail.com</a>.
+              </div>
+            )}
+
+            {formStatus === 'success' && (
+              <div className="mb-6 p-4 rounded-md bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-300 text-sm flex items-center space-x-2">
+                <CheckCircle2 size={20} className="text-green-600 shrink-0" />
+                <span>Your testing center enquiry has been received successfully! Our team will contact you shortly.</span>
               </div>
             )}
 
@@ -120,6 +142,44 @@ const RequestFormPage: React.FC = () => {
                 </label>
               </p>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label htmlFor="enquiryType" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t('requestForm.form.enquiryType')} <span className="text-error-500">*</span>
+                  </label>
+                  <select
+                    id="enquiryType"
+                    name="enquiryType"
+                    value={formData.enquiryType}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 py-2.5 px-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-400 dark:focus:border-primary-400"
+                  >
+                    <option value="Add New Pollution Testing Center">Add / Register New Pollution Testing Center</option>
+                    <option value="Update Existing Testing Center Details">Update Existing Center Details</option>
+                    <option value="Membership & Affiliation Enquiry">Membership & Affiliation Enquiry</option>
+                    <option value="Official Administrative Request">Administrative Request / Concern</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="centerName" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+                    {t('requestForm.form.centerName')} {formData.enquiryType.includes('Center') && <span className="text-error-500">*</span>}
+                  </label>
+                  <input
+                    type="text"
+                    id="centerName"
+                    name="centerName"
+                    placeholder="e.g. Kozhikode Auto Scan Testing Centre"
+                    value={formData.centerName}
+                    onChange={handleChange}
+                    required={formData.enquiryType.includes('Center')}
+                    className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 py-2.5 px-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-400 dark:focus:border-primary-400"
+                  />
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
@@ -129,6 +189,7 @@ const RequestFormPage: React.FC = () => {
                     type="text"
                     id="name"
                     name="name"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -144,6 +205,7 @@ const RequestFormPage: React.FC = () => {
                     type="email"
                     id="email"
                     name="email"
+                    placeholder="name@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -153,27 +215,30 @@ const RequestFormPage: React.FC = () => {
                 
                 <div>
                   <label htmlFor="contact" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-                    {t('requestForm.form.contact')}
+                    {t('requestForm.form.contact')} <span className="text-error-500">*</span>
                   </label>
                   <input
                     type="tel"
                     id="contact"
                     name="contact"
+                    placeholder="e.g. 9876543210"
                     value={formData.contact}
                     onChange={handleChange}
+                    required
                     className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 py-2.5 px-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-400 dark:focus:border-primary-400"
                   />
                 </div>
                 
                 <div>
                   <label htmlFor="rto" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-                    {t('requestForm.form.rto')}
+                    {t('requestForm.form.rto')} <span className="text-error-500">*</span>
                   </label>
                   <select
                     id="rto"
                     name="rto"
                     value={formData.rto}
                     onChange={handleChange}
+                    required
                     className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 py-2.5 px-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-400 dark:focus:border-primary-400"
                   >
                     <option value="">Select RTO District</option>
@@ -194,6 +259,7 @@ const RequestFormPage: React.FC = () => {
                   type="text"
                   id="subject"
                   name="subject"
+                  placeholder="e.g. Inquiring to list our testing center with VEOTA"
                   value={formData.subject}
                   onChange={handleChange}
                   required
@@ -211,7 +277,8 @@ const RequestFormPage: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
+                  rows={5}
+                  placeholder="Enter center address, license details, equipment type, or your specific enquiry..."
                   className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 py-2.5 px-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-400 dark:focus:border-primary-400"
                 ></textarea>
               </div>
@@ -219,7 +286,7 @@ const RequestFormPage: React.FC = () => {
               <div className="mt-8">
                 <button
                   type="submit"
-                  disabled={formStatus === 'submitting' || formStatus === 'success'}
+                  disabled={formStatus === 'submitting'}
                   className={`w-full btn btn-primary flex items-center justify-center transition-all ${
                     formStatus === 'submitting' ? 'opacity-70 cursor-wait' : ''
                   } ${formStatus === 'success' ? 'bg-success-500 hover:bg-success-600 focus:ring-success-400' : ''}`}
@@ -234,7 +301,7 @@ const RequestFormPage: React.FC = () => {
                     </span>
                   ) : formStatus === 'success' ? (
                     <span className="flex items-center">
-                      Request Submitted Successfully
+                      Enquiry Submitted Successfully
                     </span>
                   ) : (
                     <span className="flex items-center">
