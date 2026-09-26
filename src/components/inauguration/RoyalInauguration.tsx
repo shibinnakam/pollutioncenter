@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   User,
   Camera,
+  ChevronDown,
 } from 'lucide-react';
 import './inauguration.css';
 import { useInaugurationAudio } from './useInaugurationAudio';
@@ -120,32 +121,48 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     playPop();
   };
 
+  const [showScrollHint, setShowScrollHint] = useState(false);
+  const stageRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScrollDown = () => {
+    if (stageRef.current) {
+      stageRef.current.scrollBy({ top: 340, behavior: 'smooth' });
+    }
+  };
+
+  const handleStageScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const target = e.currentTarget;
+    if (target.scrollTop > 50) {
+      setShowScrollHint(false);
+    }
+  };
+
   // Open curtains ceremony
   const handleInaugurate = useCallback(() => {
     if (curtainOpened) return;
     unlockAudio();
     playCurtainWhoosh();
     setCurtainOpened(true);
+    setShowScrollHint(true);
     setSecondsRemaining(autoTransitionSeconds);
 
-    // Play grand fanfare and shoot confetti cannons as curtains open
+    // Single grand celebratory burst as curtains open (one time only)
     setTimeout(() => {
       playFanfare();
       confettiRef.current?.burstCannon();
     }, 900);
-
-    // Secondary celebratory burst as curtains fully reach the sides
-    setTimeout(() => {
-      confettiRef.current?.burstCannon();
-    }, 2600);
   }, [curtainOpened, unlockAudio, playCurtainWhoosh, playFanfare, autoTransitionSeconds]);
 
   // Replay ceremony
   const handleReplay = () => {
     playPop();
     setCurtainOpened(false);
+    setShowScrollHint(false);
     setSecondsRemaining(autoTransitionSeconds);
     setIsTimerPaused(false);
+    if (stageRef.current) {
+      stageRef.current.scrollTop = 0;
+    }
   };
 
   // 20-Second Auto-Transition Countdown
@@ -329,7 +346,11 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
       {/* ================================================================
           REVEALED EXECUTIVE COMMITTEE SHOWCASE STAGE (ONE-PAGE NEAT VIEW)
           ================================================================ */}
-      <div className="celebration-stage">
+      <div
+        ref={stageRef}
+        onScroll={handleStageScroll}
+        className="celebration-stage"
+      >
         <div className="w-full max-w-7xl flex flex-col items-center text-center space-y-2 sm:space-y-3">
           {/* Main Title Hierarchy - Grand, Prominent & Centered */}
           <div className="space-y-1 text-center max-w-5xl px-3 mb-1">
@@ -392,6 +413,20 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Floating Scroll Indicator Hint when Curtains are Open */}
+      {curtainOpened && showScrollHint && (
+        <button
+          onClick={handleScrollDown}
+          className="stage-scroll-hint animate-bounce"
+          title="Scroll down to view all committee members"
+          aria-label="Scroll down to view all committee members"
+        >
+          <ChevronDown className="w-4 h-4 text-amber-300" />
+          <span>Scroll for more members</span>
+          <ChevronDown className="w-4 h-4 text-amber-300" />
+        </button>
+      )}
 
       {/* Edit / Upload Member Photo Modal */}
       <EditMemberModal
