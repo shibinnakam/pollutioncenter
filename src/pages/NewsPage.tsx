@@ -28,7 +28,7 @@ const NewsPage: React.FC = () => {
       <PageHeader
         title={t('news.title')}
         subtitle={t('news.subtitle')}
-        image="https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/news.jpeg"
       />
 
       <section className="py-16">
