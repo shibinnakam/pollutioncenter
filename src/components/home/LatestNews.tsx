@@ -11,7 +11,7 @@ interface LatestNewsProps {
 
 const LatestNews: React.FC<LatestNewsProps> = ({ news }) => {
   const { t } = useLanguage();
-  
+
   // Take only the latest 3 news items
   const latestNews = news.slice(0, 3);
 
@@ -76,7 +76,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ news }) => {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <MapPin size={13} className="text-emerald-500 shrink-0" />
-                  <span><strong>സ്ഥലം:</strong> സാമുദ്ര ഹാൾ, കോഴിക്കോട്</span>
+                  <span><strong>സ്ഥലം:</strong> സമുദ്ര ഹാൾ, കോഴിക്കോട്</span>
                 </div>
               </div>
 
