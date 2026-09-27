@@ -25,18 +25,18 @@ export interface AuthorityContact {
 
 export const AUTHORITIES: AuthorityContact[] = [
   {
-    name: 'Joys M Joy',
-    role: 'District Secretary (Kozhikode)',
-    phone: '9961077766',
-    photo: '/districtsecratary.jpeg',
-    badge: 'District Authority',
-  },
-  {
     name: 'Krishnan Ambady',
     role: 'State General Secretary (Kerala)',
     phone: '9947370308',
     photo: '/person7.jpg',
     badge: 'State Authority',
+  },
+  {
+    name: 'Joys M Joy',
+    role: 'District Secretary (Kozhikode)',
+    phone: '9961077766',
+    photo: '/districtsecratary.jpeg',
+    badge: 'District Authority',
   },
 ];
 

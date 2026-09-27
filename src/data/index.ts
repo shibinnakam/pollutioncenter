@@ -2273,29 +2273,36 @@ export const governmentOrders: GovernmentOrder[] = [
 
 export const newsItems: NewsItem[] = [
   {
-    id: 'news1',
-    title: 'Annual Conference Announced',
-    date: '2024-02-25',
-    summary: 'VETOA Kerala announces annual conference to be held in Kochi on March 15-16, 2024',
-    content: 'The Vehicle Emission Testing Owners Association Kerala (VETOA) is pleased to announce its annual conference scheduled for March 15-16, 2024, at the Grand Hyatt in Kochi. This year\'s conference will focus on new emission testing technologies and upcoming regulatory changes. All members are encouraged to attend this important event.',
-    imageUrl: '/mriyazvetoa.jpeg',
-    tags: ['Conference', 'Events']
-  },
-  {
     id: 'news2',
-    title: 'New BS6 Phase 2 Emission Norms in Effect',
-    date: '2024-01-10',
-    summary: 'BS6 Phase 2 emission norms now in effect across Kerala',
-    content: 'Starting April 1, 2023, the BS6 Phase 2 emission norms have come into effect across Kerala. All testing centers are required to update their equipment and testing procedures to comply with these new standards. The Transport Department has issued detailed guidelines for implementation, which can be accessed on the official website.',
+    title: '3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും | VETOA',
+    date: '2026-11-27',
+    summary: 'VEHICLE EMISSION TESTING OWNER’S ASSOCIATION (VETOA) 3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും — 2026 നവംബർ 27 രാവിലെ 10:00 AM ന് സാമുദ്ര ഹാൾ, കോഴിക്കോട് വെച്ച് നടക്കുന്നു.',
+    content: `VEHICLE EMISSION TESTING OWNER’S ASSOCIATION (VETOA)
+
+3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനം
+
+കുടുംബസംഗമം
+
+📅 തീയതി: 2026 നവംബർ 27
+🕙 സമയം: രാവിലെ 10:00 AM
+📍 സ്ഥലം: സാമുദ്ര ഹാൾ, കോഴിക്കോട്
+
+ഭാരവാഹികൾ
+* സംസ്ഥാന പ്രസിഡന്റ്
+* സംസ്ഥാന ജനറൽ സെക്രട്ടറി
+* കോഴിക്കോട് ജില്ലാ പ്രസിഡന്റ്
+* കോഴിക്കോട് ജില്ലാ സെക്രട്ടറി
+* കോഴിക്കോട് ജില്ലാ ട്രഷറർ
+
+പരിപാടികൾ
+* വെബ്സൈറ്റ് ഉദ്ഘാടനം
+* കുടുംബസംഗമം
+* SSLC +2 വിജയികൾക്ക് ആദരിക്കൽ
+* മികച്ച പ്രവർത്തനം കാഴ്ചവെച്ചവരെ ആദരിക്കൽ
+* വെൽഫെയർ ഉച്ചഭക്ഷണം
+
+ജില്ലാ, സംസ്ഥാന നേതാക്കൾ പങ്കെടുക്കുന്നു.`,
     imageUrl: '/cmvetoahome.jpeg',
-    tags: ['Regulations', 'Emission Standards']
-  },
-  {
-    id: 'news3',
-    title: 'Training Workshop for Testing Center Staff',
-    date: '2023-12-15',
-    summary: 'VETOA organizing training workshops for testing center staff in all districts',
-    content: 'The Vehicle Emission Testing Owners Association Kerala (VETOA) will be conducting a series of training workshops for testing center staff across all districts in Kerala. These workshops aim to enhance the technical skills of the staff and familiarize them with the latest testing equipment and procedures. The schedule for these workshops will be announced soon.',
-    tags: ['Training', 'Workshop']
+    tags: ['ജില്ലാ സമ്മേളനം', 'കുടുംബസംഗമം', 'കോഴിക്കോട്', 'VETOA']
   }
 ];

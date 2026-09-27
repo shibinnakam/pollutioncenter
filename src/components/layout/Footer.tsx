@@ -84,21 +84,21 @@ const Footer: React.FC = () => {
               <li className="flex flex-wrap items-center gap-1.5 pt-1 text-xs text-neutral-400">
                 <span className="text-emerald-400 font-semibold">WhatsApp:</span>
                 <a
-                  href="https://wa.me/919961077766?text=Hello%20Joys%20Sir%2C%20I%20am%20contacting%20you%20regarding%20VEOTA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neutral-300 hover:text-emerald-400 transition-colors font-medium"
-                >
-                  Joys: 9961077766
-                </a>
-                <span className="text-neutral-600">|</span>
-                <a
                   href="https://wa.me/919947370308?text=Hello%20Krishnan%20Sir%2C%20I%20am%20contacting%20you%20regarding%20VEOTA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-neutral-300 hover:text-emerald-400 transition-colors font-medium"
                 >
-                  Krishnan: 9947370308
+                  Krishnan (State): 9947370308
+                </a>
+                <span className="text-neutral-600">|</span>
+                <a
+                  href="https://wa.me/919961077766?text=Hello%20Joys%20Sir%2C%20I%20am%20contacting%20you%20regarding%20VEOTA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-300 hover:text-emerald-400 transition-colors font-medium"
+                >
+                  Joys (District): 9961077766
                 </a>
               </li>
             </ul>
