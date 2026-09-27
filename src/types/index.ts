@@ -32,6 +32,9 @@ export interface GovernmentOrder {
   summary: string;
   documentUrl: string;
   category: string;
+  badge?: string;
+  pageCount?: string;
+  centerCount?: number;
 }
 
 export interface NewsItem {

@@ -2225,49 +2225,48 @@ export const testingCenters: TestingCenter[] = [
 
 export const governmentOrders: GovernmentOrder[] = [
   {
-    id: 'go1',
-    title: 'New Emission Standards Implementation',
-    number: 'GO(P)No.25/2023/Trans',
-    date: '2023-05-15',
-    summary: 'Implementation of updated emission standards for vehicles registered in Kerala',
-    documentUrl: '\PUCC LIST DTC KOZHIKODE.pdf',
-    category: 'Emission Standards'
+    id: 'go-pucc-dtc-kozhikode',
+    title: 'PUCC LIST DTC KOZHIKODE',
+    number: 'DTC KOZHIKODE',
+    date: '2023-05-24',
+    summary: 'Complete Kozhikode District PUCC centers list - Official comprehensive directory of all authorized vehicle pollution testing centers across Kozhikode district.',
+    documentUrl: '/PUCC LIST DTC KOZHIKODE.pdf',
+    category: 'District List',
+    badge: 'Complete District Directory',
+    pageCount: '62 Pages'
   },
   {
-    id: 'go2',
-    title: 'Testing Center Guidelines',
-    number: 'GO(P)No.32/2023/Trans',
-    date: '2023-06-21',
-    summary: 'Updated guidelines for operating vehicle emission testing centers in Kerala',
-    documentUrl: '/documents/go-32-2023.pdf',
-    category: 'Testing Centers'
+    id: 'go-kl011',
+    title: 'Authorized Pollution Centers - Kozhikode (KL-11)',
+    number: 'KL-011',
+    date: '2026-09-27',
+    summary: 'Official active list of 36 authorized vehicle pollution testing centers in Kozhikode under KL011 / KL-11.',
+    documentUrl: '/kl011.pdf',
+    category: 'Kozhikode (KL-11)',
+    badge: '36 Active Centers',
+    centerCount: 36
   },
   {
-    id: 'go3',
-    title: 'Fee Structure for Emission Testing',
-    number: 'GO(P)No.40/2023/Trans',
-    date: '2023-08-10',
-    summary: 'Revised fee structure for different types of vehicles for emission testing',
-    documentUrl: '/documents/go-40-2023.pdf',
-    category: 'Fee Structure'
+    id: 'go-kl057',
+    title: 'Authorized Pollution Centers - Feroke / Koduvally (KL-57)',
+    number: 'KL-057',
+    date: '2026-09-27',
+    summary: 'Official active list of 43 authorized vehicle pollution testing centers in Feroke, Koduvally and surrounding areas under KL057 / KL-57.',
+    documentUrl: '/kl057.pdf',
+    category: 'Feroke / Koduvally (KL-57)',
+    badge: '43 Active Centers',
+    centerCount: 43
   },
   {
-    id: 'go4',
-    title: 'Equipment Standards for Testing Centers',
-    number: 'GO(P)No.52/2023/Trans',
-    date: '2023-10-05',
-    summary: 'Standards for equipment to be used in emission testing centers',
-    documentUrl: '/documents/go-52-2023.pdf',
-    category: 'Equipment'
-  },
-  {
-    id: 'go5',
-    title: 'Staff Qualification Requirements',
-    number: 'GO(P)No.08/2024/Trans',
-    date: '2024-01-18',
-    summary: 'Qualification requirements for technical staff in emission testing centers',
-    documentUrl: '/documents/go-08-2024.pdf',
-    category: 'Personnel'
+    id: 'go-kl076',
+    title: 'Authorized Pollution Centers - Nanmanda / Balussery (KL-76)',
+    number: 'KL-076',
+    date: '2026-09-27',
+    summary: 'Official active list of 18 authorized vehicle pollution testing centers in Nanmanda / Balussery under KL076 / KL-76 (Namanda).',
+    documentUrl: '/kl076.pdf',
+    category: 'Nanmanda (KL-76)',
+    badge: '18 Active Centers',
+    centerCount: 18
   }
 ];
 
