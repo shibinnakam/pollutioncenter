@@ -61,6 +61,12 @@ export default {
   'testingCenters.subRTO': 'സബ് ആർ.ടി.ഒ',
   'testingCenters.viewOnMap': 'ഗൂഗിൾ മാപ്പിൽ കാണുക',
   'testingCenters.toggleOffices': 'ആർ.ടി.ഒ ഓഫീസ് വിവരങ്ങൾ',
+  'testingCenters.selectSubRTO': 'സബ് ആർ.ടി.ഒ തിരഞ്ഞെടുക്കുക',
+  'testingCenters.selectSubRTOToView': 'പരിശോധനാ കേന്ദ്രങ്ങൾ കാണാൻ സബ് ആർ.ടി.ഒ തിരഞ്ഞെടുക്കുക',
+  'testingCenters.chooseSubRTO': 'അംഗീകൃത വാഹന പുകപരിശോധനാ കേന്ദ്രങ്ങൾ കാണാൻ താഴെ പറയുന്ന സബ് ആർ.ടി.ഒ ഓഫീസുകളിൽ ഒന്ന് തിരഞ്ഞെടുക്കുക',
+  'testingCenters.authorizedCenters': 'അംഗീകൃത കേന്ദ്രങ്ങൾ',
+  'testingCenters.viewCenters': 'കേന്ദ്രങ്ങൾ കാണുക',
+  'testingCenters.changeSubRTO': 'സബ് ആർ.ടി.ഒ മാറ്റുക',
 
   // Representatives
   'representatives.title': 'അസോസിയേഷൻ പ്രതിനിധികൾ',

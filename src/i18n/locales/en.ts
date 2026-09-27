@@ -61,6 +61,12 @@ export default {
   'testingCenters.subRTO': 'Sub RTO',
   'testingCenters.viewOnMap': 'View on Google Maps',
   'testingCenters.toggleOffices': 'RTO Offices Directory',
+  'testingCenters.selectSubRTO': 'Select Sub RTO',
+  'testingCenters.selectSubRTOToView': 'Select a Sub-RTO to view authorized testing centers',
+  'testingCenters.chooseSubRTO': 'Choose a Sub-RTO office below to view authorized vehicle emission testing centers in that jurisdiction',
+  'testingCenters.authorizedCenters': 'Authorized Centers',
+  'testingCenters.viewCenters': 'View Centers',
+  'testingCenters.changeSubRTO': 'Change Sub-RTO',
 
   // Representatives
   'representatives.title': 'Association Representatives',

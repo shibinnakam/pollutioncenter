@@ -8,11 +8,10 @@ import {
   Crown,
   PartyPopper,
   Pause,
-  Play,
   ChevronRight,
   ShieldCheck,
   User,
-  Camera,
+  Eye,
   ChevronDown,
 } from 'lucide-react';
 import './inauguration.css';
@@ -22,7 +21,7 @@ import {
   DEFAULT_COMMITTEE_MEMBERS,
   CommitteeMember,
 } from './committeeData';
-import { EditMemberModal } from './EditMemberModal';
+import { ViewMemberModal } from './EditMemberModal';
 
 /**
  * Checks if current date is within celebration window (20-09-2026 to 28-09-2026)
@@ -77,10 +76,10 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
   const [curtainOpened, setCurtainOpened] = useState(false);
   const [secondsRemaining, setSecondsRemaining] = useState(autoTransitionSeconds);
   const [isTimerPaused, setIsTimerPaused] = useState(false);
-  const [editingMember, setEditingMember] = useState<CommitteeMember | null>(null);
+  const [selectedMember, setSelectedMember] = useState<CommitteeMember | null>(null);
 
   // Committee members list loaded from localStorage if customized
-  const [members, setMembers] = useState<CommitteeMember[]>(() => {
+  const [members] = useState<CommitteeMember[]>(() => {
     try {
       const saved = localStorage.getItem('vetoa_committee_members_v2');
       if (saved) {
@@ -106,20 +105,6 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     playPop,
     unlockAudio,
   } = useInaugurationAudio();
-
-  // Save updated member profile
-  const handleSaveMember = (updated: CommitteeMember) => {
-    setMembers((prev) => {
-      const next = prev.map((m) => (m.id === updated.id ? updated : m));
-      try {
-        localStorage.setItem('vetoa_committee_members_v2', JSON.stringify(next));
-      } catch {
-        // Ignore
-      }
-      return next;
-    });
-    playPop();
-  };
 
   const [showScrollHint, setShowScrollHint] = useState(false);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -167,7 +152,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
 
   // 20-Second Auto-Transition Countdown
   useEffect(() => {
-    if (!curtainOpened || isTimerPaused || editingMember !== null) {
+    if (!curtainOpened || isTimerPaused || selectedMember !== null) {
       if (countdownTimerRef.current) clearInterval(countdownTimerRef.current);
       return;
     }
@@ -186,7 +171,7 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
     return () => {
       if (countdownTimerRef.current) clearInterval(countdownTimerRef.current);
     };
-  }, [curtainOpened, isTimerPaused, editingMember, onEnterWebsite]);
+  }, [curtainOpened, isTimerPaused, selectedMember, onEnterWebsite]);
 
   // Progress percentage
   const progressPercent = Math.max(
@@ -374,9 +359,9 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                 className="committee-card group cursor-pointer"
                 onClick={() => {
                   playPop();
-                  setEditingMember(member);
+                  setSelectedMember(member);
                 }}
-                title={`Click to view or edit photo for ${member.name}`}
+                title={`Click to view photograph of ${member.name}`}
               >
                 {/* Portrait Photo Frame */}
                 <div className="committee-photo-wrap">
@@ -393,9 +378,9 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
                     </div>
                   )}
 
-                  {/* Hover Camera Icon */}
+                  {/* Hover View / Zoom Icon */}
                   <div className="absolute inset-0 rounded-full bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                    <Camera className="w-4 h-4 text-amber-300" />
+                    <Eye className="w-5 h-5 text-amber-300 drop-shadow" />
                   </div>
                 </div>
 
@@ -428,12 +413,11 @@ export const RoyalInauguration: React.FC<RoyalInaugurationProps> = ({
         </button>
       )}
 
-      {/* Edit / Upload Member Photo Modal */}
-      <EditMemberModal
-        isOpen={editingMember !== null}
-        onClose={() => setEditingMember(null)}
-        member={editingMember}
-        onSave={handleSaveMember}
+      {/* View Member Photo & Profile Modal (View Only) */}
+      <ViewMemberModal
+        isOpen={selectedMember !== null}
+        onClose={() => setSelectedMember(null)}
+        member={selectedMember}
       />
     </div>
   );

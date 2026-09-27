@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Info, ChevronDown, ChevronUp, Search, ArrowLeft, ExternalLink, Building2, X, AlertTriangle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Info, ChevronDown, ChevronUp, ChevronRight, Search, ArrowLeft, ExternalLink, Building2, X, AlertTriangle } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { testingCenters, rtoDistricts, kozhikodeRTOOffices } from '../data';
 import { TestingCenter, RTOOfficeInfo } from '../types';
@@ -41,30 +41,38 @@ const TestingCentersPage: React.FC = () => {
     return undefined;
   };
 
-  // Compute which centers to show depending on selectedSubRTO (lowest level) or selectedMainRTO + "view all" option
+  // Compute which centers to show: only when a sub-RTO is selected, or when searching within the main RTO
   const centersToShow = testingCenters.filter(center => {
-    // if a sub-rto is selected, only show centers with that rto
+    // if a sub-rto is selected, only show centers with that specific rto
     if (selectedSubRTO) {
-      return center.rto === selectedSubRTO &&
-        (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          (center.centerCode && center.centerCode.toLowerCase().includes(searchQuery.toLowerCase())));
+      const matchesRTO = center.rto === selectedSubRTO;
+      if (!matchesRTO) return false;
+      if (!searchQuery.trim()) return true;
+      const q = searchQuery.toLowerCase();
+      return (
+        center.name.toLowerCase().includes(q) ||
+        center.location.toLowerCase().includes(q) ||
+        center.address.toLowerCase().includes(q) ||
+        (center.centerCode && center.centerCode.toLowerCase().includes(q))
+      );
     }
 
-    // if main RTO selected (but no sub selected), show centers whose rto is the mainRTO OR any of its subRTO ids
-    if (selectedMainRTO) {
+    // if main RTO selected and user is actively searching
+    if (selectedMainRTO && searchQuery.trim()) {
       const main = (rtoDistricts as any[]).find((d: any) => d.id === selectedMainRTO);
       const subIds = Array.isArray(main?.subRTO) ? main.subRTO.map((s: any) => s.id) : [];
       const matchesRTO = center.rto === selectedMainRTO || subIds.includes(center.rto);
-      return matchesRTO &&
-        (center.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          center.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          (center.centerCode && center.centerCode.toLowerCase().includes(searchQuery.toLowerCase())));
+      const q = searchQuery.toLowerCase();
+      return (
+        matchesRTO &&
+        (center.name.toLowerCase().includes(q) ||
+          center.location.toLowerCase().includes(q) ||
+          center.address.toLowerCase().includes(q) ||
+          (center.centerCode && center.centerCode.toLowerCase().includes(q)))
+      );
     }
 
-    // default: no RTO selected -> return empty, because we show only main RTO cards initially
+    // default: no centers shown until a Sub-RTO is clicked/selected
     return false;
   });
 
@@ -83,10 +91,10 @@ const TestingCentersPage: React.FC = () => {
   const handleFilterFromOffice = (office: RTOOfficeInfo) => {
     if (office.id === 'kl11') {
       setSelectedMainRTO('kl11');
-      setSelectedSubRTO('');
+      setSelectedSubRTO('kl11a');
     } else if (office.id === 'kl18') {
       setSelectedMainRTO('kl18');
-      setSelectedSubRTO('');
+      setSelectedSubRTO('kl18a');
     } else if (office.id === 'kl77') {
       setSelectedMainRTO('kl18');
       setSelectedSubRTO('kl77');
@@ -115,7 +123,7 @@ const TestingCentersPage: React.FC = () => {
       <PageHeader
         title={t('testingCenters.title')}
         subtitle={t('testingCenters.subtitle')}
-        image="https://images.pexels.com/photos/3807581/pexels-photo-3807581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/testing.jpeg"
       />
 
       <section className="py-12 md:py-16">
@@ -222,23 +230,22 @@ const TestingCentersPage: React.FC = () => {
                       </div>
 
                       <div className="mb-3 flex flex-wrap gap-2">
-                        {/* Button to view all centers under main RTO (including centers directly assigned to main RTO or its subs) */}
-                        <button
-                          onClick={() => { setSelectedSubRTO(''); /* centersToShow already handles main selection */ }}
-                          className={`px-3 py-1 rounded-full text-sm font-medium border ${selectedSubRTO === '' ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 border-primary-200' : 'bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border-neutral-200'} `}
-                        >
-                          {t('testingCenters.viewAllInRTO') || 'View all centers in this RTO'}
-                        </button>
-
-                        {/* render subRTOs */}
+                        {/* render subRTOs (No viewAllInRTO option) */}
                         {(() => {
                           const main = (rtoDistricts as any[]).find((d: any) => d.id === selectedMainRTO);
                           if (!main || !Array.isArray(main.subRTO)) return null;
                           return main.subRTO.map((s: any) => (
                             <button
                               key={s.id}
-                              onClick={() => setSelectedSubRTO(s.id)}
-                              className={`px-3 py-1 rounded-full text-sm font-medium border ${selectedSubRTO === s.id ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 border-primary-200' : 'bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border-neutral-200'} `}
+                              onClick={() => {
+                                setSelectedSubRTO(s.id);
+                                setExpandedCenter(null);
+                              }}
+                              className={`px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold border transition-all ${
+                                selectedSubRTO === s.id
+                                  ? 'bg-primary-600 text-white border-primary-600 shadow-sm'
+                                  : 'bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 border-neutral-300 dark:border-neutral-700 hover:border-primary-400 dark:hover:border-primary-500'
+                              } `}
                             >
                               {s.code} - {s.name}
                             </button>
@@ -299,9 +306,34 @@ const TestingCentersPage: React.FC = () => {
                     </motion.button>
                   ))}
                 </div>
-              ) : (
-                // Show centers filtered (centersToShow). If none found show message
-                <>
+              ) : selectedSubRTO ? (
+                // A Sub-RTO is selected: show selected Sub-RTO status bar + its centers
+                <div>
+                  <div className="flex flex-wrap items-center justify-between gap-3 p-4 bg-primary-50 dark:bg-primary-950/30 border border-primary-200 dark:border-primary-800/40 rounded-xl mb-6 shadow-sm">
+                    <div className="flex items-center gap-2.5">
+                      <span className="px-2.5 py-1 text-xs font-bold rounded-lg bg-primary-600 text-white shadow-sm">
+                        {(findDistrictById(selectedSubRTO) as any)?.code}
+                      </span>
+                      <div>
+                        <h3 className="text-sm sm:text-base font-bold text-neutral-900 dark:text-neutral-100">
+                          {(findDistrictById(selectedSubRTO) as any)?.name}
+                        </h3>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                          {centersToShow.length} {t('testingCenters.authorizedCenters') || 'Authorized Testing Centers'}
+                        </p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setSelectedSubRTO('');
+                        setExpandedCenter(null);
+                      }}
+                      className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-200 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors shadow-sm"
+                    >
+                      {t('testingCenters.changeSubRTO') || 'Change Sub-RTO'}
+                    </button>
+                  </div>
+
                   {centersToShow.length > 0 ? (
                     <div className="grid gap-6">
                       {centersToShow.map((center, index) => (
@@ -322,7 +354,86 @@ const TestingCentersPage: React.FC = () => {
                       </p>
                     </div>
                   )}
-                </>
+                </div>
+              ) : searchQuery.trim() ? (
+                // User is searching across main RTO
+                <div>
+                  <div className="p-3 mb-6 bg-neutral-100 dark:bg-neutral-800 rounded-lg text-xs text-neutral-600 dark:text-neutral-300">
+                    Search results for &ldquo;<strong>{searchQuery}</strong>&rdquo; ({centersToShow.length} centers found)
+                  </div>
+                  {centersToShow.length > 0 ? (
+                    <div className="grid gap-6">
+                      {centersToShow.map((center, index) => (
+                        <CenterCard
+                          key={center.id}
+                          center={center}
+                          isExpanded={expandedCenter === center.id}
+                          toggleExpand={() => toggleExpand(center.id)}
+                          rtoName={(findDistrictById(center.rto) as any)?.name || ''}
+                          index={index}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-10 bg-white dark:bg-neutral-800 rounded-lg shadow-soft">
+                      <p className="text-neutral-600 dark:text-neutral-300">
+                        {t('common.noResults')}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                // No sub-RTO selected yet: prompt user to click a Sub-RTO
+                (() => {
+                  const main = (rtoDistricts as any[]).find((d: any) => d.id === selectedMainRTO);
+                  const subList = Array.isArray(main?.subRTO) ? main.subRTO : [];
+                  return (
+                    <div className="space-y-4">
+                      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-primary-50/80 via-white to-primary-50/40 dark:from-neutral-800 dark:via-neutral-800/90 dark:to-neutral-800/60 border border-primary-100 dark:border-neutral-700 shadow-sm">
+                        <h3 className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white mb-1">
+                          {t('testingCenters.selectSubRTOToView') || 'Select a Sub-RTO to view authorized testing centers'}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400">
+                          {t('testingCenters.chooseSubRTO') || 'Choose a Sub-RTO office below to view all authorized vehicle emission testing centers in that jurisdiction.'}
+                        </p>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {subList.map((s: any, idx: number) => {
+                          const count = testingCenters.filter((c) => c.rto === s.id).length;
+                          return (
+                            <motion.button
+                              key={s.id}
+                              onClick={() => {
+                                setSelectedSubRTO(s.id);
+                                setExpandedCenter(null);
+                              }}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.25, delay: idx * 0.05 }}
+                              className="group p-5 rounded-2xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-md transition-all text-left flex items-center justify-between"
+                            >
+                              <div>
+                                <span className="inline-block text-xs font-bold px-2.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 group-hover:bg-primary-600 group-hover:text-white transition-colors mb-2">
+                                  {s.code}
+                                </span>
+                                <h4 className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                  {s.name}
+                                </h4>
+                                <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
+                                  {count} {t('testingCenters.authorizedCenters') || 'Authorized Centers'}
+                                </p>
+                              </div>
+                              <div className="w-9 h-9 rounded-full bg-neutral-100 dark:bg-neutral-700 group-hover:bg-primary-600 group-hover:text-white text-neutral-400 flex items-center justify-center transition-all shrink-0 ml-3 shadow-sm">
+                                <ChevronRight size={18} />
+                              </div>
+                            </motion.button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })()
               )}
             </div>
 
