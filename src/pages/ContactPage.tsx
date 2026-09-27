@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
       <PageHeader
         title={t('contact.title')}
         subtitle={t('contact.subtitle')}
-        image="https://images.pexels.com/photos/323503/pexels-photo-323503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/contact.jpeg"
       />
 
       <section className="py-16">

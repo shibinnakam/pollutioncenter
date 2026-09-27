@@ -78,7 +78,7 @@ const RequestFormPage: React.FC = () => {
       <PageHeader
         title={t('requestForm.title')}
         subtitle={t('requestForm.subtitle')}
-        image="https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/request.jpeg"
       />
 
       <section className="py-16">

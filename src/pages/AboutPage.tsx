@@ -16,7 +16,7 @@ const AboutPage: React.FC = () => {
       <PageHeader
         title={t('about.title')}
         subtitle={t('about.intro')}
-        image="https://images.pexels.com/photos/3807318/pexels-photo-3807318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/about.jpeg"
       />
 
       {/* History Section */}

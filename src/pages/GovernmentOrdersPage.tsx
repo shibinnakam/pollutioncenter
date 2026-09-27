@@ -33,7 +33,7 @@ const GovernmentOrdersPage: React.FC = () => {
       <PageHeader
         title={t('governmentOrders.title')}
         subtitle={t('governmentOrders.subtitle')}
-        image="https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="/govorders.jpeg"
       />
 
       <section className="py-16">
