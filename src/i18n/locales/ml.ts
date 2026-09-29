@@ -7,6 +7,7 @@ export default {
   'nav.testingCenters': 'പരിശോധന കേന്ദ്രങ്ങൾ',
   'nav.representatives': 'പ്രതിനിധികൾ',
   'nav.news': 'വാർത്തകളും അപ്ഡേറ്റുകളും',
+  'nav.media': 'മീഡിയ',
   'nav.contact': 'ബന്ധപ്പെടുക',
   'nav.requestForm': 'അഭ്യർത്ഥന ഫോം',
 
@@ -45,6 +46,16 @@ export default {
   'forms.searchPlaceholder': 'ഫോമുകൾ തിരയുക...',
   'forms.requirements': 'ആവശ്യമായ രേഖകൾ',
   'forms.purpose': 'ഉദ്ദേശ്യവും വിവരങ്ങളും',
+
+  // Media
+  'media.title': 'VETOA – 3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും',
+  'media.subtitle': '3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനത്തിന്റെയും കുടുംബസംഗമത്തിന്റെയും ഫോട്ടോകളും വീഡിയോയും',
+  'media.all': 'എല്ലാ മീഡിയകളും',
+  'media.photos': 'ഫോട്ടോകൾ (19)',
+  'media.videos': 'വീഡിയോ ഹൈലൈറ്റ്സ് (1)',
+  'media.viewFull': 'വലുതായി കാണുക',
+  'media.download': 'ഡൗൺലോഡ്',
+
 
 
   // Testing Centers

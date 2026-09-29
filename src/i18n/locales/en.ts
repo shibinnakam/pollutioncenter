@@ -7,6 +7,7 @@ export default {
   'nav.testingCenters': 'Testing Centers',
   'nav.representatives': 'Representatives',
   'nav.news': 'News & Updates',
+  'nav.media': 'Media',
   'nav.contact': 'Contact',
   'nav.requestForm': 'Request Form',
 
@@ -46,6 +47,16 @@ export default {
   'forms.searchPlaceholder': 'Search forms by title, code, or keyword...',
   'forms.requirements': 'Required Documents to Submit',
   'forms.purpose': 'Purpose & Guidelines',
+
+  // Media
+  'media.title': 'VETOA – 3rd Kozhikode District Conference and Family Gathering',
+  'media.subtitle': 'Photo and video gallery from the 3rd Kozhikode District Conference and Family Meet',
+  'media.all': 'All Media',
+  'media.photos': 'Photos (19)',
+  'media.videos': 'Video Highlights (1)',
+  'media.viewFull': 'View Fullscreen',
+  'media.download': 'Download',
+
 
 
   // Testing Centers

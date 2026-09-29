@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Tag, ArrowRight, Search, Clock, MapPin, X, Sparkles } from 'lucide-react';
+import { Calendar, Tag, ArrowRight, Search, Clock, MapPin, X, Sparkles, ExternalLink, Newspaper } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { newsItems } from '../data';
 import { useLanguage } from '../context/LanguageContext';
@@ -84,6 +84,12 @@ const NewsPage: React.FC = () => {
                         <Calendar size={13} className="mr-1" />
                         <span>{item.date}</span>
                       </div>
+                      {item.sourceName && (
+                        <div className="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-md bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800/40">
+                          <Newspaper size={13} className="mr-1" />
+                          <span>{item.sourceName}</span>
+                        </div>
+                      )}
                       {item.tags && item.tags.length > 0 && item.tags.map((tag) => (
                         <div key={tag} className="inline-flex items-center text-xs px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-300">
                           <Tag size={12} className="mr-1" />
@@ -93,7 +99,7 @@ const NewsPage: React.FC = () => {
                     </div>
                     
                     <h3 
-                      className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white mb-3 cursor-pointer hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white mb-3 cursor-pointer hover:text-primary-600 dark:hover:text-primary-400 transition-colors leading-snug"
                       onClick={() => setSelectedNews(item)}
                     >
                       {item.title}
@@ -103,30 +109,54 @@ const NewsPage: React.FC = () => {
                       {item.summary}
                     </p>
 
-                    {/* Quick Highlights for Conference & Family Meet */}
-                    <div className="mb-6 p-4 rounded-xl bg-neutral-50 dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-700/60 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <Calendar size={15} className="text-primary-500 shrink-0" />
-                        <span><strong>തീയതി:</strong> 2026 നവംബർ 27</span>
+                    {/* Quick Highlights for Event / Conference if available */}
+                    {item.eventDetails && (
+                      <div className="mb-6 p-4 rounded-xl bg-neutral-50 dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-700/60 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300 space-y-2">
+                        {item.eventDetails.date && (
+                          <div className="flex items-center gap-2">
+                            <Calendar size={15} className="text-primary-500 shrink-0" />
+                            <span><strong>തീയതി:</strong> {item.eventDetails.date}</span>
+                          </div>
+                        )}
+                        {item.eventDetails.time && (
+                          <div className="flex items-center gap-2">
+                            <Clock size={15} className="text-amber-500 shrink-0" />
+                            <span><strong>സമയം:</strong> {item.eventDetails.time}</span>
+                          </div>
+                        )}
+                        {item.eventDetails.location && (
+                          <div className="flex items-center gap-2">
+                            <MapPin size={15} className="text-emerald-500 shrink-0" />
+                            <span><strong>സ്ഥലം:</strong> {item.eventDetails.location}</span>
+                          </div>
+                        )}
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Clock size={15} className="text-amber-500 shrink-0" />
-                        <span><strong>സമയം:</strong> രാവിലെ 10:00 AM</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin size={15} className="text-emerald-500 shrink-0" />
-                        <span><strong>സ്ഥലം:</strong> സാമുദ്ര ഹാൾ, കോഴിക്കോട്</span>
-                      </div>
+                    )}
+
+                    {/* Action buttons */}
+                    <div className="mt-auto flex flex-col sm:flex-row gap-2.5 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedNews(item)}
+                        className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-primary-600 hover:bg-primary-700 text-white transition-colors shadow-sm"
+                      >
+                        <span>വിശദാംശങ്ങൾ (View Details)</span>
+                        <ArrowRight size={15} />
+                      </button>
+
+                      {item.sourceUrl && (
+                        <a
+                          href={item.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-rose-600 hover:bg-rose-700 text-white transition-colors shadow-sm"
+                        >
+                          <ExternalLink size={15} />
+                          <span>മനോരമ വാർത്ത (Read Link)</span>
+                        </a>
+                      )}
                     </div>
-                    
-                    <button
-                      type="button"
-                      onClick={() => setSelectedNews(item)}
-                      className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm bg-primary-600 hover:bg-primary-700 text-white transition-colors shadow-sm"
-                    >
-                      <span>മുഴുവൻ വിവരങ്ങൾ കാണുക (View Details)</span>
-                      <ArrowRight size={16} />
-                    </button>
+
                   </div>
                 </motion.article>
               ))}
@@ -185,16 +215,26 @@ const NewsPage: React.FC = () => {
               <div className="flex flex-wrap items-center gap-2 text-xs">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-950/40 text-primary-700 dark:text-primary-300 font-semibold border border-primary-200 dark:border-primary-800/40">
                   <Calendar size={13} />
-                  2026 നവംബർ 27
+                  {selectedNews.date}
                 </span>
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 font-semibold border border-amber-200 dark:border-amber-800/40">
-                  <Clock size={13} />
-                  രാവിലെ 10:00 AM
-                </span>
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-semibold border border-emerald-200 dark:border-emerald-800/40">
-                  <MapPin size={13} />
-                  സാമുദ്ര ഹാൾ, കോഴിക്കോട്
-                </span>
+                {selectedNews.sourceName && (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 font-semibold border border-rose-200 dark:border-rose-800/40">
+                    <Newspaper size={13} />
+                    {selectedNews.sourceName}
+                  </span>
+                )}
+                {selectedNews.eventDetails?.time && (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 font-semibold border border-amber-200 dark:border-amber-800/40">
+                    <Clock size={13} />
+                    {selectedNews.eventDetails.time}
+                  </span>
+                )}
+                {selectedNews.eventDetails?.location && (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-semibold border border-emerald-200 dark:border-emerald-800/40">
+                    <MapPin size={13} />
+                    {selectedNews.eventDetails.location}
+                  </span>
+                )}
               </div>
 
               <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white leading-snug">
@@ -205,6 +245,28 @@ const NewsPage: React.FC = () => {
                 {selectedNews.content}
               </div>
 
+              {selectedNews.sourceUrl && (
+                <div className="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-bold text-rose-900 dark:text-rose-200">
+                      പ്രസിദ്ധീകരിച്ച വാർത്ത (Published on Malayala Manorama):
+                    </p>
+                    <p className="text-xs text-rose-700 dark:text-rose-300">
+                      മലയാള മനോരമ ഓൺലൈനിൽ ഈ വാർത്ത നേരിട്ട് വായിക്കാം.
+                    </p>
+                  </div>
+                  <a
+                    href={selectedNews.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold bg-rose-600 hover:bg-rose-700 text-white shadow-sm transition-colors shrink-0"
+                  >
+                    <span>മനോരമ ഓൺലൈൻ സന്ദർശിക്കുക</span>
+                    <ExternalLink size={14} />
+                  </a>
+                </div>
+              )}
+
               <div className="flex justify-end pt-2">
                 <button
                   type="button"
@@ -214,6 +276,7 @@ const NewsPage: React.FC = () => {
                   Close
                 </button>
               </div>
+
             </div>
           </div>
         </div>

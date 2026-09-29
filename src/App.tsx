@@ -19,6 +19,7 @@ import FormsPage from './pages/FormsPage';
 import TestingCentersPage from './pages/TestingCentersPage';
 import RepresentativesPage from './pages/RepresentativesPage';
 import NewsPage from './pages/NewsPage';
+import MediaPage from './pages/MediaPage';
 import ContactPage from './pages/ContactPage';
 import RequestFormPage from './pages/RequestFormPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -75,6 +76,7 @@ function App() {
                       <Route path="/testing-centers" element={<TestingCentersPage />} />
                       <Route path="/representatives" element={<RepresentativesPage />} />
                       <Route path="/news" element={<NewsPage />} />
+                      <Route path="/media" element={<MediaPage />} />
                       <Route path="/contact" element={<ContactPage />} />
                       <Route path="/request-form" element={<RequestFormPage />} />
                       <Route path="*" element={<NotFoundPage />} />

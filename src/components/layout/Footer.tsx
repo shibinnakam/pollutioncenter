@@ -57,6 +57,16 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/news" className="text-sm text-neutral-400 hover:text-primary-400 transition-colors">
+                  {t('nav.news')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/media" className="text-sm text-neutral-400 hover:text-primary-400 transition-colors">
+                  {t('nav.media')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-sm text-neutral-400 hover:text-primary-400 transition-colors">
                   {t('nav.contact')}
                 </Link>

@@ -1,4 +1,4 @@
-import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict, RTOOfficeInfo, OfficialForm } from '../types';
+import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict, RTOOfficeInfo, OfficialForm, MediaItem } from '../types';
 
 export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
   {
@@ -2367,6 +2367,23 @@ export const officialForms: OfficialForm[] = [
 
 export const newsItems: NewsItem[] = [
   {
+    id: 'news-manorama-mla',
+    title: 'പുക പരിശോധനയ്ക്ക് ചാർജ് വർധന അനിവാര്യം: കെ. ജയന്ത് എംഎൽഎ | മനോരമ ഓൺലൈൻ',
+    date: '2026-09-28',
+    summary: 'കേരളത്തിലെ വാഹന പുക പരിശോധനയ്ക്ക് കാലാനുസൃതമായ ചാർജ് വർധനവ് ആവശ്യമാണെന്ന് കോഴിക്കോട് എംഎൽഎ കെ.ജയന്ത് പ്രസ്താവിച്ചു. VETOA കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും ഉദ്ഘാടനം ചെയ്യുകയായിരുന്നു അദ്ദേഹം.',
+    content: `കോഴിക്കോട്∙ കേരളത്തിലെ വാഹന പുക പരിശോധനയ്ക്ക് കാലാനുസൃതമായ ചാർജ് വർധനവ് ആവശ്യമാണെന്ന് കെ.ജയന്ത് എംഎൽഎ പറഞ്ഞു.
+
+കോഴിക്കോട് ജില്ലാ വെഹിക്കിൾ എമിഷൻ ടെസ്റ്റിങ് ഓണേഴ്സ് അസോസിയേഷന്റെ (VETOA) ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും ഉദ്ഘാടനം ചെയ്തു സംസാരിക്കുകയായിരുന്നു അദ്ദേഹം.
+
+സംസ്ഥാന ജനറൽ സെക്രട്ടറി കൃഷ്ണൻ അമ്പാടി യോഗത്തിൽ അധ്യക്ഷത വഹിച്ചു. പ്രേംരാജ്, ജോയ്സ്, ഷെമീർ സുൽത്താൻ, സിബി ജേക്കബ്, ഷൈജു ചെറുവലത്ത് തുടങ്ങിയ നേതാക്കൾ പരിപാടിയിൽ സംസാരിച്ചു.
+
+വാഹന എമിഷൻ പരിശോധനാ കേന്ദ്രങ്ങളുടെ സുഗമമായ പ്രവർത്തനത്തിനും കൃത്യമായ ഉപകരണങ്ങളുടെ അറ്റകുറ്റപ്പണികൾക്കും കാലാനുസൃതമായ നിരക്ക് വർദ്ധനവ് നടപ്പിലാക്കേണ്ടതുണ്ടെന്ന് ചടങ്ങിൽ ചർച്ചയായി.`,
+    imageUrl: '/k-jayanth-mla.jpg',
+    tags: ['മനോരമ ഓൺലൈൻ', 'കെ. ജയന്ത് MLA', 'ചാർജ് വർധന', 'VETOA സമ്മേളനം'],
+    sourceName: 'Malayala Manorama (മനോരമ ഓൺലൈൻ)',
+    sourceUrl: 'https://www.manoramaonline.com/district-news/kozhikode/2026/09/28/mla-on-kerala-emission-test-charge-increase.html'
+  },
+  {
     id: 'news2',
     title: '3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും | VETOA',
     date: '2026-11-27',
@@ -2397,6 +2414,33 @@ export const newsItems: NewsItem[] = [
 
 ജില്ലാ, സംസ്ഥാന നേതാക്കൾ പങ്കെടുക്കുന്നു.`,
     imageUrl: '/cmvetoahome.jpeg',
-    tags: ['ജില്ലാ സമ്മേളനം', 'കുടുംബസംഗമം', 'കോഴിക്കോട്', 'VETOA']
+    tags: ['ജില്ലാ സമ്മേളനം', 'കുടുംബസംഗമം', 'കോഴിക്കോട്', 'VETOA'],
+    eventDetails: {
+      date: '2026 നവംബർ 27',
+      time: 'രാവിലെ 10:00 AM',
+      location: 'സാമുദ്ര ഹാൾ, കോഴിക്കോട്'
+    }
   }
 ];
+
+export const conferenceMediaItems: MediaItem[] = [
+  {
+    id: 'media-video-20',
+    type: 'video',
+    url: '/20.mp4',
+    title: '3rd Kozhikode District Conference & Family Gathering Video Highlights',
+    description: 'Special celebration video coverage of the 3rd Kozhikode District Conference & Family Gathering of VETOA Kerala.',
+    order: 20
+  },
+  ...Array.from({ length: 19 }, (_, i) => {
+    const num = i + 1;
+    return {
+      id: `media-photo-${num}`,
+      type: 'image' as const,
+      url: `/${num}.jpeg`,
+      title: `VETOA 3rd District Conference & Family Meet - Photo ${num}`,
+      description: `Moment from the 3rd Kozhikode District Conference and Family Gathering.`,
+      order: num
+    };
+  })
+];

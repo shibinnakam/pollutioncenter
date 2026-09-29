@@ -45,7 +45,24 @@ export interface NewsItem {
   content: string;
   imageUrl?: string;
   tags?: string[];
+  sourceUrl?: string;
+  sourceName?: string;
+  eventDetails?: {
+    date?: string;
+    time?: string;
+    location?: string;
+  };
 }
+
+export interface MediaItem {
+  id: string;
+  type: 'image' | 'video';
+  url: string;
+  title: string;
+  description?: string;
+  order: number;
+}
+
 
 export interface RequestForm {
   name: string;
