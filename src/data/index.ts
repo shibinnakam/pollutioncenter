@@ -1,4 +1,4 @@
-import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict, RTOOfficeInfo } from '../types';
+import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, RTODistrict, RTOOfficeInfo, OfficialForm } from '../types';
 
 export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
   {
@@ -2225,6 +2225,39 @@ export const testingCenters: TestingCenter[] = [
 
 export const governmentOrders: GovernmentOrder[] = [
   {
+    id: 'go-guidelines-testing-centers',
+    title: 'Guidelines for Vehicle Emission Testing Centers',
+    number: 'MVD Guidelines',
+    date: '2023-01-15',
+    summary: 'Comprehensive guidelines, standard operating procedures, technical equipment standards, and compliance regulations for authorized vehicle pollution testing centers.',
+    documentUrl: '/guidelinesfortestingcenters.pdf',
+    category: 'Guidelines',
+    badge: 'Standard Guidelines',
+    pageCount: '4 Pages'
+  },
+  {
+    id: 'go-pucc-circular',
+    title: 'PUCC Operational Circular - Transport Department',
+    number: 'TC Circular',
+    date: '2023-06-20',
+    summary: 'Official Motor Vehicles Department circular detailing mandatory online PUCC testing rules, certificate issuance protocols, and operational compliance.',
+    documentUrl: '/pucccircular.pdf',
+    category: 'Circulars',
+    badge: 'Official Circular',
+    pageCount: '6 Pages'
+  },
+  {
+    id: 'go-pucc-fee',
+    title: 'Vehicle Emission Testing Fee Revision Order (PUCC Fee)',
+    number: 'GO PUCC Fee',
+    date: '2022-08-22',
+    summary: 'Official Government Order specifying approved testing fee rates for 2-wheelers, 3-wheelers, 4-wheelers (Petrol, Diesel, CNG/LPG) and related fees.',
+    documentUrl: '/puccfee.pdf',
+    category: 'Fee Structure',
+    badge: 'Approved Rates',
+    pageCount: '4 Pages'
+  },
+  {
     id: 'go-pucc-dtc-kozhikode',
     title: 'PUCC LIST DTC KOZHIKODE',
     number: 'DTC KOZHIKODE',
@@ -2269,6 +2302,68 @@ export const governmentOrders: GovernmentOrder[] = [
     centerCount: 18
   }
 ];
+
+export const officialForms: OfficialForm[] = [
+  {
+    id: 'form-norms-incorrect',
+    title: 'Norms Incorrect Correction Application Form',
+    titleMl: 'വാഹന നോംസ് തിരുത്തൽ അപേക്ഷാ ഫോം (Norms Incorrect Form)',
+    code: 'NIC-FORM',
+    documentUrl: '/NORMS INCORRECT FORM.pdf',
+    category: 'Norms Correction',
+    badge: 'MVD Norms Correction',
+    fileSize: '689 KB',
+    pageCount: '1 Page',
+    description: 'Official application form submitted to RTO / Sub-RTO offices for correcting vehicle emission norms recorded incorrectly in the Vahan portal database.',
+    descriptionMl: 'വാഹൻ പോർട്ടലിൽ രേഖപ്പെടുത്തിയിരിക്കുന്ന വാഹനത്തിന്റെ എമിഷൻ നോംസിലെ (BS Norms) തെറ്റുകൾ തിരുത്തുന്നതിനായി RTO / ജോയിന്റ് RTO ഓഫീസിൽ സമർപ്പിക്കേണ്ട ഔദ്യോഗിക അപേക്ഷാ ഫോറം.',
+    purpose: 'Used when vehicle pollution testing fails or cannot be conducted due to incorrect emission norms (BS rating) in the online registration records.',
+    purposeMl: 'വാഹനത്തിന്റെ രേഖകളിലെ തെറ്റായ ബി.എസ്. നോംസ് കാരണം പുക പരിശോധന നടത്താൻ സാധിക്കാത്ത സാഹചര്യങ്ങളിൽ നോംസ് കൃത്യമായി രേഖപ്പെടുത്തുന്നതിന്.',
+    requirements: [
+      'Duly filled Norms Incorrect Form signed by vehicle owner',
+      'Original & self-attested copy of Registration Certificate (RC)',
+      'Previous PUC Certificate / Failed test slip showing norm error',
+      'Vehicle Manufacturer Form 21 / 22 or emission certificate (if available)',
+      'Owner ID Proof (Aadhaar / Voter ID / Driving Licence)'
+    ],
+    requirementsMl: [
+      'പൂരിപ്പിച്ച് ഒപ്പിട്ട നോംസ് തിരുത്തൽ അപേക്ഷാ ഫോറം',
+      'വാഹനത്തിന്റെ ആർ.സി. ബുക്കിന്റെ പകർപ്പ് (RC Copy)',
+      'മുൻപ് എടുത്ത പുക പരിശോധന സർട്ടിഫിക്കറ്റ് അല്ലെങ്കിൽ ഫെയിൽ സ്ലിപ്പ്',
+      'വാഹന നിർമ്മാതാവിന്റെ ഫോം 21 / 22 അല്ലെങ്കിൽ എമിഷൻ സ്പെസിഫിക്കേഷൻ രേഖ',
+      'വാഹന ഉടമയുടെ തിരിച്ചറിയൽ രേഖ (ആധാർ / ഡ്രൈവിംഗ് ലൈസൻസ്)'
+    ]
+  },
+  {
+    id: 'form-bs-change',
+    title: 'Bharat Stage (BS) Change Application Form',
+    titleMl: 'ഭാരത് സ്റ്റേജ് (BS) മാറ്റൽ അപേക്ഷാ ഫോം (BS Change Form)',
+    code: 'BSC-FORM',
+    documentUrl: '/BS - change form.pdf',
+    category: 'BS Stage Updation',
+    badge: 'Bharat Stage Updation',
+    fileSize: '396 KB',
+    pageCount: '1 Page',
+    description: 'Official application format to request modification or transition of Bharat Stage (BS-II, BS-III, BS-IV, BS-VI) classification in Motor Vehicles Department records.',
+    descriptionMl: 'മോട്ടോർ വാഹന വകുപ്പിൽ വാഹനത്തിന്റെ ഭാരത് സ്റ്റേജ് തരംതിരിവ് (BS-II, BS-III, BS-IV, BS-VI) മാറ്റുന്നതിനും അപ്ഡേറ്റ് ചെയ്യുന്നതിനുമുള്ള ഔദ്യോഗിക ഫോറം.',
+    purpose: 'Required to correctly classify the vehicle’s Bharat Stage standard in the transport records to ensure accurate emission testing limits and certificate validity.',
+    purposeMl: 'വാഹനത്തിന്റെ ശരിയായ ഭാരത് സ്റ്റേജ് എമിഷൻ പരിധികൾക്ക് വിധേയമായി കൃത്യമായ ടെസ്റ്റിംഗ് സർട്ടിഫിക്കറ്റ് ലഭിക്കുന്നതിനായി വാഹൻ ഡാറ്റാബേസിൽ ഭാരത് സ്റ്റേജ് തിരുത്താൻ.',
+    requirements: [
+      'Completed and signed BS Change Application Form',
+      'Copy of Vehicle Registration Certificate (RC Book)',
+      'Original Manufacturer Sales Invoice / Form 21 / Form 22 with BS specification',
+      'Current or latest Emission Test Report from authorized testing center',
+      'Owner ID proof & authorization letter (if submitted by representative)'
+    ],
+    requirementsMl: [
+      'പൂരിപ്പിച്ച് ഒപ്പിട്ട ഭാരത് സ്റ്റേജ് മാറ്റൽ അപേക്ഷാ ഫോറം',
+      'വാഹനത്തിന്റെ ആർ.സി. ബുക്കിന്റെ പകർപ്പ്',
+      'നിർമ്മാതാവിന്റെ ഇൻവോയ്സ് / ഫോം 21 / ഫോം 22 (BS സ്റ്റേജ് കാണിക്കുന്ന രേഖ)',
+      'അംഗീകൃത ടെസ്റ്റിംഗ് സെന്ററിൽ നിന്നുള്ള നിലവിലെ പുക പരിശോധന റിപ്പോർട്ട്',
+      'വാഹന ഉടമയുടെ തിരിച്ചറിയൽ രേഖ'
+    ]
+  }
+];
+
 
 export const newsItems: NewsItem[] = [
   {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Download, Search, Filter, ExternalLink, X, FileText, Calendar, Building2 } from 'lucide-react';
+import { Download, Search, Filter, ExternalLink, X, FileText, Calendar, Building2, ArrowRight, FileCheck } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { governmentOrders } from '../data';
 import { useLanguage } from '../context/LanguageContext';
@@ -75,6 +76,30 @@ const GovernmentOrdersPage: React.FC = () => {
 
       <section className="py-12">
         <div className="container-custom">
+          {/* Quick Notice to Forms */}
+          <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-primary-50 to-emerald-50 dark:from-neutral-800 dark:to-neutral-800 border border-primary-200/80 dark:border-neutral-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-primary-100 dark:bg-primary-900/50 text-primary-700 dark:text-primary-300 shrink-0">
+                <FileCheck size={20} />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                  Looking for Norms Incorrect or Bharat Stage (BS) Change Forms?
+                </p>
+                <p className="text-xs text-neutral-600 dark:text-neutral-400">
+                  Download official application forms directly from our dedicated Forms section.
+                </p>
+              </div>
+            </div>
+            <Link
+              to="/forms"
+              className="inline-flex items-center px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-primary-600 hover:bg-primary-700 text-white shadow-xs transition-colors shrink-0"
+            >
+              <span>Download Forms</span>
+              <ArrowRight size={14} className="ml-1.5" />
+            </Link>
+          </div>
+
           {/* Search, Filter & Quick Pills */}
           <div className="mb-8 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -85,11 +110,12 @@ const GovernmentOrdersPage: React.FC = () => {
                 </div>
                 <input
                   type="text"
-                  placeholder="Search orders, KL codes (e.g. KL-11, KL-57, KL-76, DTC)..."
+                  placeholder="Search orders, guidelines, circular, fee, KL codes (KL-11, KL-57, KL-76)..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 pr-10 py-3 w-full rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-100 placeholder-neutral-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition shadow-sm"
                 />
+
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery('')}

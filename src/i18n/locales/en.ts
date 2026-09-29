@@ -3,11 +3,13 @@ export default {
   'nav.home': 'Home',
   'nav.about': 'About',
   'nav.governmentOrders': 'Government Orders',
+  'nav.forms': 'Forms',
   'nav.testingCenters': 'Testing Centers',
   'nav.representatives': 'Representatives',
   'nav.news': 'News & Updates',
   'nav.contact': 'Contact',
   'nav.requestForm': 'Request Form',
+
 
   // Homepage
   'home.hero.title': 'Welcome to Vetoa Kozhikode - Vehicle Emission Testing Owners Association Kerala',
@@ -35,6 +37,16 @@ export default {
   'governmentOrders.category': 'Category',
   'governmentOrders.summary': 'Summary',
   'governmentOrders.viewDocument': 'View Document',
+
+  // Forms
+  'forms.title': 'Official Forms & Formats',
+  'forms.subtitle': 'Download application forms for Norms Correction and Bharat Stage (BS) changes',
+  'forms.download': 'Download PDF',
+  'forms.view': 'Preview Document',
+  'forms.searchPlaceholder': 'Search forms by title, code, or keyword...',
+  'forms.requirements': 'Required Documents to Submit',
+  'forms.purpose': 'Purpose & Guidelines',
+
 
   // Testing Centers
   'testingCenters.title': 'Testing Centers',

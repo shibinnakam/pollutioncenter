@@ -3,6 +3,7 @@ export default {
   'nav.home': 'ഹോം',
   'nav.about': 'ഞങ്ങളെ കുറിച്ച്',
   'nav.governmentOrders': 'സർക്കാർ ഉത്തരവുകൾ',
+  'nav.forms': 'ഫോമുകൾ',
   'nav.testingCenters': 'പരിശോധന കേന്ദ്രങ്ങൾ',
   'nav.representatives': 'പ്രതിനിധികൾ',
   'nav.news': 'വാർത്തകളും അപ്ഡേറ്റുകളും',
@@ -35,6 +36,16 @@ export default {
   'governmentOrders.category': 'വിഭാഗം',
   'governmentOrders.summary': 'സംഗ്രഹം',
   'governmentOrders.viewDocument': 'രേഖ കാണുക',
+
+  // Forms
+  'forms.title': 'ഔദ്യോഗിക ഫോമുകൾ',
+  'forms.subtitle': 'നോംസ് തിരുത്തലിനും ഭാരത് സ്റ്റേജ് (BS) മാറ്റത്തിനുമുള്ള ഔദ്യോഗിക അപേക്ഷാ ഫോമുകൾ ഡൗൺലോഡ് ചെയ്യുക',
+  'forms.download': 'ഫോം ഡൗൺലോഡ് ചെയ്യുക',
+  'forms.view': 'ഫോം കാണുക',
+  'forms.searchPlaceholder': 'ഫോമുകൾ തിരയുക...',
+  'forms.requirements': 'ആവശ്യമായ രേഖകൾ',
+  'forms.purpose': 'ഉദ്ദേശ്യവും വിവരങ്ങളും',
+
 
   // Testing Centers
   'testingCenters.title': 'പരിശോധന കേന്ദ്രങ്ങൾ',

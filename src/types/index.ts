@@ -84,3 +84,21 @@ export interface RTOOfficeInfo {
   location?: string;
   pin?: string;
 }
+
+export interface OfficialForm {
+  id: string;
+  title: string;
+  titleMl?: string;
+  code: string;
+  description: string;
+  descriptionMl?: string;
+  documentUrl: string;
+  category: string;
+  badge: string;
+  purpose: string;
+  purposeMl?: string;
+  requirements: string[];
+  requirementsMl?: string[];
+  fileSize?: string;
+  pageCount?: string;
+}
