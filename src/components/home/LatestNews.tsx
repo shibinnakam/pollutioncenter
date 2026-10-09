@@ -68,7 +68,7 @@ const LatestNews: React.FC<LatestNewsProps> = ({ news }) => {
               <div className="mb-5 p-3 rounded-lg bg-neutral-100 dark:bg-neutral-700/50 text-xs text-neutral-600 dark:text-neutral-300 space-y-1.5">
                 <div className="flex items-center gap-1.5">
                   <Calendar size={13} className="text-primary-500 shrink-0" />
-                  <span><strong>തീയതി:</strong> 2026 നവംബർ 27</span>
+                  <span><strong>തീയതി:</strong> 2026 സെപ്റ്റംബർ 27</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Clock size={13} className="text-amber-500 shrink-0" />

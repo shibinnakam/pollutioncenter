@@ -109,7 +109,7 @@ const TestingCentersPage: React.FC = () => {
       setSelectedSubRTO('kl76');
     } else if (office.id === 'kl85') {
       setSelectedMainRTO('kl11');
-      setSelectedSubRTO('kl73'); // Feroke maps to kl73 in center data
+      setSelectedSubRTO('kl85');
     }
     setMobileDrawerOpen(false);
     const el = document.getElementById('testing-centers-content');
