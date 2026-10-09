@@ -2386,15 +2386,15 @@ export const newsItems: NewsItem[] = [
   {
     id: 'news2',
     title: '3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും | VETOA',
-    date: '2026-11-27',
-    summary: 'VEHICLE EMISSION TESTING OWNER’S ASSOCIATION (VETOA) 3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും — 2026 നവംബർ 27 രാവിലെ 10:00 AM ന് സാമുദ്ര ഹാൾ, കോഴിക്കോട് വെച്ച് നടക്കുന്നു.',
+    date: '2026-09-27',
+    summary: 'VEHICLE EMISSION TESTING OWNER’S ASSOCIATION (VETOA) 3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനവും കുടുംബസംഗമവും — 2026 സെപ്റ്റംബർ 27 രാവിലെ 10:00 AM ന് സാമുദ്ര ഹാൾ, കോഴിക്കോട് വെച്ച് നടക്കുന്നു.',
     content: `VEHICLE EMISSION TESTING OWNER’S ASSOCIATION (VETOA)
 
 3-ാമത് കോഴിക്കോട് ജില്ലാ സമ്മേളനം
 
 കുടുംബസംഗമം
 
-📅 തീയതി: 2026 നവംബർ 27
+📅 തീയതി: 2026 സെപ്റ്റംബർ 27
 🕙 സമയം: രാവിലെ 10:00 AM
 📍 സ്ഥലം: സാമുദ്ര ഹാൾ, കോഴിക്കോട്
 
@@ -2416,7 +2416,7 @@ export const newsItems: NewsItem[] = [
     imageUrl: '/cmvetoahome.jpeg',
     tags: ['ജില്ലാ സമ്മേളനം', 'കുടുംബസംഗമം', 'കോഴിക്കോട്', 'VETOA'],
     eventDetails: {
-      date: '2026 നവംബർ 27',
+      date: '2026 സെപ്റ്റംബർ 27',
       time: 'രാവിലെ 10:00 AM',
       location: 'സാമുദ്ര ഹാൾ, കോഴിക്കോട്'
     }
