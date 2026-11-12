@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Tag, ArrowRight, Search, Clock, MapPin, X, Sparkles, ExternalLink, Newspaper } from 'lucide-react';
+import { Calendar, Tag, ArrowRight, Search, Clock, MapPin, X, Sparkles, ExternalLink, Newspaper, FileText, Download } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { newsItems } from '../data';
 import { useLanguage } from '../context/LanguageContext';
@@ -134,15 +134,38 @@ const NewsPage: React.FC = () => {
                     )}
 
                     {/* Action buttons */}
-                    <div className="mt-auto flex flex-col sm:flex-row gap-2.5 pt-2">
+                    <div className="mt-auto flex flex-wrap gap-2.5 pt-2">
                       <button
                         type="button"
                         onClick={() => setSelectedNews(item)}
-                        className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-primary-600 hover:bg-primary-700 text-white transition-colors shadow-sm"
+                        className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-primary-600 hover:bg-primary-700 text-white transition-colors shadow-sm"
                       >
                         <span>വിശദാംശങ്ങൾ (View Details)</span>
                         <ArrowRight size={15} />
                       </button>
+
+                      {item.documentUrl && (
+                        <>
+                          <a
+                            href={encodeURI(item.documentUrl)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white transition-colors shadow-sm"
+                          >
+                            <FileText size={15} />
+                            <span>View Notice</span>
+                          </a>
+                          <a
+                            href={encodeURI(item.documentUrl)}
+                            download
+                            className="inline-flex items-center justify-center p-2.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 text-neutral-700 dark:text-neutral-200 transition-colors"
+                            title="Download Notice PDF"
+                            aria-label="Download Notice PDF"
+                          >
+                            <Download size={16} />
+                          </a>
+                        </>
+                      )}
 
                       {item.sourceUrl && (
                         <a
@@ -244,6 +267,47 @@ const NewsPage: React.FC = () => {
               <div className="text-neutral-700 dark:text-neutral-200 text-sm sm:text-base leading-relaxed whitespace-pre-line bg-neutral-50 dark:bg-neutral-800/70 p-5 rounded-xl border border-neutral-200 dark:border-neutral-700/80 font-sans">
                 {selectedNews.content}
               </div>
+
+              {selectedNews.documentUrl && (
+                <div className="space-y-3">
+                  <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs font-bold text-emerald-900 dark:text-emerald-200">
+                        {selectedNews.documentLabel || 'Official Notice Document (PDF)'}
+                      </p>
+                      <p className="text-xs text-emerald-700 dark:text-emerald-300">
+                        Open in a new tab or download the official notice PDF.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <a
+                        href={encodeURI(selectedNews.documentUrl)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold bg-primary-600 hover:bg-primary-700 text-white shadow-sm transition-colors"
+                      >
+                        <ExternalLink size={14} />
+                        <span>Open PDF</span>
+                      </a>
+                      <a
+                        href={encodeURI(selectedNews.documentUrl)}
+                        download
+                        className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm transition-colors"
+                      >
+                        <Download size={14} />
+                        <span>Download</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="w-full h-96 rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800">
+                    <iframe
+                      src={`${encodeURI(selectedNews.documentUrl)}#toolbar=1&navpanes=0`}
+                      title={selectedNews.title}
+                      className="w-full h-full border-0"
+                    />
+                  </div>
+                </div>
+              )}
 
               {selectedNews.sourceUrl && (
                 <div className="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">

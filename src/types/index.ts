@@ -44,6 +44,8 @@ export interface NewsItem {
   summary: string;
   content: string;
   imageUrl?: string;
+  documentUrl?: string;
+  documentLabel?: string;
   tags?: string[];
   sourceUrl?: string;
   sourceName?: string;
@@ -85,6 +87,13 @@ export interface RTODistrict {
   id: string;
   name: string;
   code: string;
+  email?: string;
+  subRTO?: {
+    id: string;
+    code: string;
+    name: string;
+    email?: string;
+  }[];
 }
 
 export interface RTOOfficeInfo {

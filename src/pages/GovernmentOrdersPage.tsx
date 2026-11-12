@@ -5,6 +5,7 @@ import { Download, Search, Filter, ExternalLink, X, FileText, Calendar, Building
 import PageHeader from '../components/ui/PageHeader';
 import { governmentOrders } from '../data';
 import { useLanguage } from '../context/LanguageContext';
+import PuccRenewalChecklist from '../components/ui/PuccRenewalChecklist';
 
 const GovernmentOrdersPage: React.FC = () => {
   const { t } = useLanguage();
@@ -418,6 +419,11 @@ const GovernmentOrdersPage: React.FC = () => {
                 </button>
               </div>
             )}
+          </div>
+
+          {/* PUCC Renewal Documents Checklist */}
+          <div className="mt-12">
+            <PuccRenewalChecklist />
           </div>
         </div>
       </section>

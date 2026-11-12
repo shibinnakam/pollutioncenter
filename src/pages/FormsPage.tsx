@@ -20,6 +20,7 @@ import PageHeader from '../components/ui/PageHeader';
 import { officialForms } from '../data';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
+import PuccRenewalChecklist from '../components/ui/PuccRenewalChecklist';
 
 const FormsPage: React.FC = () => {
   const { t, language } = useLanguage();
@@ -242,6 +243,11 @@ const FormsPage: React.FC = () => {
                 </motion.article>
               );
             })}
+          </div>
+
+          {/* PUCC Renewal Documents Checklist */}
+          <div className="mb-12">
+            <PuccRenewalChecklist />
           </div>
 
           {/* Submission Guidelines Guide */}

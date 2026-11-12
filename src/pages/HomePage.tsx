@@ -5,6 +5,8 @@ import AboutSection from '../components/home/AboutSection';
 import LatestNews from '../components/home/LatestNews';
 import Stats from '../components/home/Stats';
 import CTA from '../components/home/CTA';
+import PuccRenewalChecklist from '../components/ui/PuccRenewalChecklist';
+import KeralaMinistersDirectory from '../components/ui/KeralaMinistersDirectory';
 import { slideImages, newsItems } from '../data';
 
 const HomePage: React.FC = () => {
@@ -19,6 +21,12 @@ const HomePage: React.FC = () => {
       <Stats />
       <AboutSection />
       <FeaturesSection />
+      <section className="section bg-white dark:bg-neutral-900">
+        <div className="container-custom space-y-12">
+          <PuccRenewalChecklist />
+          <KeralaMinistersDirectory />
+        </div>
+      </section>
       <LatestNews news={newsItems} />
       <CTA />
     </main>

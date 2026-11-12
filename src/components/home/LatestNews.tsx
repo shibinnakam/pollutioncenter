@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Clock, MapPin } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, MapPin, FileText, Download } from 'lucide-react';
 import { NewsItem } from '../../types';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -12,8 +12,8 @@ interface LatestNewsProps {
 const LatestNews: React.FC<LatestNewsProps> = ({ news }) => {
   const { t } = useLanguage();
 
-  // Take only the latest 3 news items
-  const latestNews = news.slice(0, 3);
+  // Take only the latest 6 news/notice items
+  const latestNews = news.slice(0, 6);
 
   return (
     <section className="section bg-neutral-50 dark:bg-neutral-800">
@@ -65,27 +65,60 @@ const LatestNews: React.FC<LatestNewsProps> = ({ news }) => {
               </p>
 
               {/* Event Quick Details */}
-              <div className="mb-5 p-3 rounded-lg bg-neutral-100 dark:bg-neutral-700/50 text-xs text-neutral-600 dark:text-neutral-300 space-y-1.5">
-                <div className="flex items-center gap-1.5">
-                  <Calendar size={13} className="text-primary-500 shrink-0" />
-                  <span><strong>തീയതി:</strong> 2026 സെപ്റ്റംബർ 27</span>
+              {item.eventDetails && (
+                <div className="mb-5 p-3 rounded-lg bg-neutral-100 dark:bg-neutral-700/50 text-xs text-neutral-600 dark:text-neutral-300 space-y-1.5">
+                  {item.eventDetails.date && (
+                    <div className="flex items-center gap-1.5">
+                      <Calendar size={13} className="text-primary-500 shrink-0" />
+                      <span><strong>തീയതി:</strong> {item.eventDetails.date}</span>
+                    </div>
+                  )}
+                  {item.eventDetails.time && (
+                    <div className="flex items-center gap-1.5">
+                      <Clock size={13} className="text-amber-500 shrink-0" />
+                      <span><strong>സമയം:</strong> {item.eventDetails.time}</span>
+                    </div>
+                  )}
+                  {item.eventDetails.location && (
+                    <div className="flex items-center gap-1.5">
+                      <MapPin size={13} className="text-emerald-500 shrink-0" />
+                      <span><strong>സ്ഥലം:</strong> {item.eventDetails.location}</span>
+                    </div>
+                  )}
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Clock size={13} className="text-amber-500 shrink-0" />
-                  <span><strong>സമയം:</strong> രാവിലെ 10:00 AM</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <MapPin size={13} className="text-emerald-500 shrink-0" />
-                  <span><strong>സ്ഥലം:</strong> സമുദ്ര ഹാൾ, കോഴിക്കോട്</span>
-                </div>
-              </div>
+              )}
 
-              <Link
-                to="/news"
-                className="mt-auto text-primary-600 dark:text-primary-400 hover:underline inline-flex items-center font-semibold text-sm"
-              >
-                {t('news.readMore')} <ArrowRight size={16} className="ml-1" />
-              </Link>
+              <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-2">
+                <Link
+                  to="/news"
+                  className="text-primary-600 dark:text-primary-400 hover:underline inline-flex items-center font-semibold text-sm"
+                >
+                  {t('news.readMore')} <ArrowRight size={16} className="ml-1" />
+                </Link>
+
+                {item.documentUrl && (
+                  <div className="flex items-center gap-1.5">
+                    <a
+                      href={encodeURI(item.documentUrl)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors"
+                    >
+                      <FileText size={13} />
+                      <span>View Notice</span>
+                    </a>
+                    <a
+                      href={encodeURI(item.documentUrl)}
+                      download
+                      className="p-1.5 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 text-neutral-700 dark:text-neutral-200 transition-colors"
+                      title="Download Notice PDF"
+                      aria-label="Download Notice PDF"
+                    >
+                      <Download size={14} />
+                    </a>
+                  </div>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

@@ -5,6 +5,7 @@ import PageHeader from '../components/ui/PageHeader';
 import { rtoDistricts } from '../data';
 import { useLanguage } from '../context/LanguageContext';
 import { WhatsAppAuthoritySection } from '../components/ui/WhatsAppAuthorityCard';
+import PuccRenewalChecklist from '../components/ui/PuccRenewalChecklist';
 
 const RequestFormPage: React.FC = () => {
   const { t } = useLanguage();
@@ -90,6 +91,11 @@ const RequestFormPage: React.FC = () => {
               subtitle="Testing Center owners can send center details, license copy, and enquiries directly to our secretaries on WhatsApp for immediate onboarding."
               contextMode="center-enquiry"
             />
+          </div>
+
+          {/* PUCC Renewal Documents Checklist */}
+          <div className="mb-10">
+            <PuccRenewalChecklist compact />
           </div>
 
           <motion.div

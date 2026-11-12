@@ -196,11 +196,17 @@ const TestingCentersPage: React.FC = () => {
                           onClick={() => setSelectedMainRTO(m.id)}
                           className="w-full text-left p-4 rounded-lg border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 hover:shadow-sm transition-shadow flex items-center justify-between"
                         >
-                          <div>
+                          <div className="min-w-0 pr-2">
                             <div className="text-sm text-neutral-500 dark:text-neutral-400">{m.code}</div>
                             <div className="text-lg font-semibold">{m.name}</div>
+                            {m.email && (
+                              <div className="flex items-center gap-1 text-xs text-primary-600 dark:text-primary-400 font-mono mt-1 truncate">
+                                <Mail size={12} className="shrink-0" />
+                                <span className="truncate">{m.email}</span>
+                              </div>
+                            )}
                           </div>
-                          <div className="text-neutral-400">
+                          <div className="text-neutral-400 shrink-0">
                             <ChevronDown size={20} />
                           </div>
                         </button>
@@ -226,6 +232,15 @@ const TestingCentersPage: React.FC = () => {
                           <div className="text-lg font-semibold">
                             {(findDistrictById(selectedMainRTO) as any)?.name}
                           </div>
+                          {(findDistrictById(selectedMainRTO) as any)?.email && (
+                            <a
+                              href={`mailto:${(findDistrictById(selectedMainRTO) as any)?.email}`}
+                              className="inline-flex items-center gap-1 text-xs text-primary-600 dark:text-primary-400 hover:underline font-mono mt-0.5"
+                            >
+                              <Mail size={12} />
+                              <span>{(findDistrictById(selectedMainRTO) as any)?.email}</span>
+                            </a>
+                          )}
                         </div>
                       </div>
 
@@ -296,7 +311,13 @@ const TestingCentersPage: React.FC = () => {
                       <div>
                         <div className="text-sm text-neutral-500 dark:text-neutral-400">{m.code}</div>
                         <h3 className="text-2xl font-semibold">{m.name}</h3>
-                        <p className="mt-2 text-neutral-600 dark:text-neutral-300">
+                        {m.email && (
+                          <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs sm:text-sm text-primary-600 dark:text-primary-400 font-mono">
+                            <Mail size={14} className="shrink-0" />
+                            <span>{m.email}</span>
+                          </div>
+                        )}
+                        <p className="mt-1.5 text-neutral-600 dark:text-neutral-300">
                           {(m.subRTO || []).length} sub RTO{(m.subRTO || []).length !== 1 ? 's' : ''}
                         </p>
                       </div>
@@ -318,9 +339,20 @@ const TestingCentersPage: React.FC = () => {
                         <h3 className="text-sm sm:text-base font-bold text-neutral-900 dark:text-neutral-100">
                           {(findDistrictById(selectedSubRTO) as any)?.name}
                         </h3>
-                        <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                          {centersToShow.length} {t('testingCenters.authorizedCenters') || 'Authorized Testing Centers'}
-                        </p>
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-0.5">
+                          <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                            {centersToShow.length} {t('testingCenters.authorizedCenters') || 'Authorized Testing Centers'}
+                          </p>
+                          {(findDistrictById(selectedSubRTO) as any)?.email && (
+                            <a
+                              href={`mailto:${(findDistrictById(selectedSubRTO) as any)?.email}`}
+                              className="inline-flex items-center gap-1 text-xs font-mono font-medium text-primary-700 dark:text-primary-300 hover:underline"
+                            >
+                              <Mail size={12} className="shrink-0" />
+                              <span>RTO Email: {(findDistrictById(selectedSubRTO) as any)?.email}</span>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <button
@@ -343,6 +375,7 @@ const TestingCentersPage: React.FC = () => {
                           isExpanded={expandedCenter === center.id}
                           toggleExpand={() => toggleExpand(center.id)}
                           rtoName={(findDistrictById(center.rto) as any)?.name || ''}
+                          rtoEmail={(findDistrictById(center.rto) as any)?.email || ''}
                           index={index}
                         />
                       ))}
@@ -370,6 +403,7 @@ const TestingCentersPage: React.FC = () => {
                           isExpanded={expandedCenter === center.id}
                           toggleExpand={() => toggleExpand(center.id)}
                           rtoName={(findDistrictById(center.rto) as any)?.name || ''}
+                          rtoEmail={(findDistrictById(center.rto) as any)?.email || ''}
                           index={index}
                         />
                       ))}
@@ -413,13 +447,19 @@ const TestingCentersPage: React.FC = () => {
                               transition={{ duration: 0.25, delay: idx * 0.05 }}
                               className="group p-5 rounded-2xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:border-primary-500 dark:hover:border-primary-400 hover:shadow-md transition-all text-left flex items-center justify-between"
                             >
-                              <div>
+                              <div className="min-w-0 pr-2">
                                 <span className="inline-block text-xs font-bold px-2.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 group-hover:bg-primary-600 group-hover:text-white transition-colors mb-2">
                                   {s.code}
                                 </span>
                                 <h4 className="text-base sm:text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                                   {s.name}
                                 </h4>
+                                {s.email && (
+                                  <div className="flex items-center gap-1.5 text-xs text-primary-600 dark:text-primary-400 font-mono mt-1 truncate">
+                                    <Mail size={12} className="shrink-0" />
+                                    <span className="truncate">{s.email}</span>
+                                  </div>
+                                )}
                                 <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
                                   {count} {t('testingCenters.authorizedCenters') || 'Authorized Centers'}
                                 </p>
@@ -503,10 +543,11 @@ interface CenterCardProps {
   isExpanded: boolean;
   toggleExpand: () => void;
   rtoName: string;
+  rtoEmail?: string;
   index: number;
 }
 
-const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpand, rtoName, index }) => {
+const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpand, rtoName, rtoEmail, index }) => {
   const { t } = useLanguage();
 
   return (
@@ -598,14 +639,15 @@ const CenterCard: React.FC<CenterCardProps> = ({ center, isExpanded, toggleExpan
                   <span className="text-neutral-700 dark:text-neutral-300">-</span>
                 )}
               </li>
-              {center.email && (
+              {(center.email || rtoEmail) && (
                 <li className="flex items-center">
                   <Mail size={18} className="text-primary-600 dark:text-primary-400 mr-2 shrink-0" />
+                  <span className="text-neutral-500 dark:text-neutral-400 mr-1.5 text-sm">RTO Email:</span>
                   <a
-                    href={`mailto:${center.email}`}
-                    className="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400"
+                    href={`mailto:${center.email || rtoEmail}`}
+                    className="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 font-mono text-sm"
                   >
-                    {center.email}
+                    {center.email || rtoEmail}
                   </a>
                 </li>
               )}

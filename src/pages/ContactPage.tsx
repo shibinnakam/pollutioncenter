@@ -4,6 +4,8 @@ import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import PageHeader from '../components/ui/PageHeader';
 import { useLanguage } from '../context/LanguageContext';
 import { WhatsAppAuthoritySection } from '../components/ui/WhatsAppAuthorityCard';
+import { kozhikodeRTOOffices } from '../data';
+import KeralaMinistersDirectory from '../components/ui/KeralaMinistersDirectory';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
@@ -135,6 +137,39 @@ const ContactPage: React.FC = () => {
                   subtitle="Redirect directly to WhatsApp to contact the association authorities with your message."
                   contextMode="general"
                 />
+              </div>
+
+              {/* RTO Office Emails */}
+              <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-soft p-6 mb-8">
+                <div className="mb-4 pb-3 border-b border-neutral-200 dark:border-neutral-700">
+                  <h3 className="text-lg font-bold text-neutral-900 dark:text-white">
+                    RTO &amp; Sub-RTO Official Emails (Kozhikode District)
+                  </h3>
+                  <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
+                    Official Motor Vehicles Department (MVD) email contacts for corresponding RTO jurisdictions
+                  </p>
+                </div>
+                <ul className="divide-y divide-neutral-100 dark:divide-neutral-700/70">
+                  {kozhikodeRTOOffices.map((office, idx) => (
+                    <li key={office.id} className="py-2.5 flex flex-wrap items-center justify-between gap-2 text-sm">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300">
+                          {idx + 1}. {office.code}
+                        </span>
+                        <span className="font-semibold text-neutral-800 dark:text-neutral-200">
+                          {office.name}
+                        </span>
+                      </div>
+                      <a
+                        href={`mailto:${office.email}`}
+                        className="inline-flex items-center gap-1.5 font-mono text-xs sm:text-sm text-primary-600 dark:text-primary-400 hover:underline"
+                      >
+                        <Mail size={14} className="shrink-0" />
+                        <span>{office.email}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Map */}
@@ -275,6 +310,11 @@ const ContactPage: React.FC = () => {
                 </form>
               </div>
             </motion.div>
+          </div>
+
+          {/* Ministers of Kerala Contact Directory */}
+          <div className="mt-14">
+            <KeralaMinistersDirectory />
           </div>
         </div>
       </section>

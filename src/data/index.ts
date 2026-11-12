@@ -3,75 +3,15 @@ import { SlideImage, TestingCenter, Representative, GovernmentOrder, NewsItem, R
 export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
   {
     id: 'kl11',
-    name: 'Kozhikode RTO',
+    name: 'KOZHIKODE RTO',
     nameMl: 'കോഴിക്കോട് ആർ.ടി.ഒ',
     type: 'RTO',
-    code: 'KL 11',
+    code: 'KL-11',
     email: 'kl11.mvd@kerala.gov.in',
     phone: '0495-2371705',
     address: 'Ground Floor, Civil Station, Wayanad Road, Eranhippalam, Kozhikode, Kerala - 673020(Pin)',
     location: 'Civil Station, Eranhippalam, Kozhikode',
     pin: '673020'
-  },
-  {
-    id: 'kl18',
-    name: 'VATAKARA RTO',
-    nameMl: 'വടകര ആർ.ടി.ഒ',
-    type: 'RTO',
-    code: 'KL 18',
-    email: 'kl18.mvd@kerala.gov.in',
-    phone: '0496-2526234',
-    address: 'Mini Civil Station, Near Court, Vadakara, Kozhikode - 673101(Pin), Kerala',
-    location: 'Near Court, Vadakara, Kozhikode',
-    pin: '673101'
-  },
-  {
-    id: 'kl77',
-    name: 'PERAMBRA SRTO',
-    nameMl: 'പേരാമ്പ്ര സബ് ആർ.ടി.ഒ',
-    type: 'SRTO',
-    code: 'KL-77',
-    email: 'kl77.mvd@kerala.gov.in',
-    phone: '0496-2615077',
-    address: 'First Floor, Mini Civil Station, Perambra, Kozhikode, Kerala - 673525.',
-    location: 'Mini Civil Station, Perambra, Kozhikode',
-    pin: '673525'
-  },
-  {
-    id: 'kl56',
-    name: 'KOYILANDI SRTO',
-    nameMl: 'കൊയിലാണ്ടി സബ് ആർ.ടി.ഒ',
-    type: 'SRTO',
-    code: 'KL-56',
-    email: 'kl56.mvd@kerala.gov.in',
-    phone: '0496-2623215',
-    address: 'Meethalekandy Complex, Koyilandy-Thamarassery Road, Koyilandy Town, Kozhikode, Kerala - 673305(Pin)',
-    location: 'Koyilandy Town, Kozhikode',
-    pin: '673305'
-  },
-  {
-    id: 'kl57',
-    name: 'KODUVALLI SRTO',
-    nameMl: 'കൊടുവള്ളി സബ് ആർ.ടി.ഒ',
-    type: 'SRTO',
-    code: 'KL-57',
-    email: 'kl57.mvd@kerala.gov.in',
-    phone: '0495-2210280',
-    address: 'Mini Civil Station, Koduvally PO, Kozhikode, Kerala - 673572(Pin)',
-    location: 'Mini Civil Station, Koduvally, Kozhikode',
-    pin: '673572'
-  },
-  {
-    id: 'kl76',
-    name: 'Nanmanda SRTO',
-    nameMl: 'നന്മണ്ട സബ് ആർ.ടി.ഒ',
-    type: 'SRTO',
-    code: 'KL-76',
-    email: 'kl76.mvd@kerala.gov.in',
-    phone: '0495-2857700',
-    additionalPhones: ['8547639076'],
-    address: 'Building No. 9/499, Nanmanda P.O, Kozhikode, Kerala',
-    location: 'Building No. 9/499, Nanmanda P.O, Kozhikode'
   },
   {
     id: 'kl85',
@@ -84,6 +24,66 @@ export const kozhikodeRTOOffices: RTOOfficeInfo[] = [
     address: 'Sub Regional Transport Office, Ramanattukara, Imax Tower, Chungam, Feroke P.O, Kozhikode 673631(Pin)',
     location: 'Ramanattukara (Feroke), Kozhikode',
     pin: '673631'
+  },
+  {
+    id: 'kl57',
+    name: 'KODUVALLY SRTO',
+    nameMl: 'കൊടുവള്ളി സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-57',
+    email: 'kl57.mvd@kerala.gov.in',
+    phone: '0495-2210280',
+    address: 'Mini Civil Station, Koduvally PO, Kozhikode, Kerala - 673572(Pin)',
+    location: 'Mini Civil Station, Koduvally, Kozhikode',
+    pin: '673572'
+  },
+  {
+    id: 'kl76',
+    name: 'NANMANDA SRTO',
+    nameMl: 'നന്മണ്ട സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-76',
+    email: 'kl76.mvd@kerala.gov.in',
+    phone: '0495-2857700',
+    additionalPhones: ['8547639076'],
+    address: 'Building No. 9/499, Nanmanda P.O, Kozhikode, Kerala',
+    location: 'Building No. 9/499, Nanmanda P.O, Kozhikode'
+  },
+  {
+    id: 'kl18',
+    name: 'VADAKARA RTO',
+    nameMl: 'വടകര ആർ.ടി.ഒ',
+    type: 'RTO',
+    code: 'KL-18',
+    email: 'kl18.mvd@kerala.gov.in',
+    phone: '0496-2526234',
+    address: 'Mini Civil Station, Near Court, Vadakara, Kozhikode - 673101(Pin), Kerala',
+    location: 'Near Court, Vadakara, Kozhikode',
+    pin: '673101'
+  },
+  {
+    id: 'kl56',
+    name: 'KOYILANDY SRTO',
+    nameMl: 'കൊയിലാണ്ടി സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-56',
+    email: 'kl56.mvd@kerala.gov.in',
+    phone: '0496-2623215',
+    address: 'Meethalekandy Complex, Koyilandy-Thamarassery Road, Koyilandy Town, Kozhikode, Kerala - 673305(Pin)',
+    location: 'Koyilandy Town, Kozhikode',
+    pin: '673305'
+  },
+  {
+    id: 'kl77',
+    name: 'PERAMBRA SRTO',
+    nameMl: 'പേരാമ്പ്ര സബ് ആർ.ടി.ഒ',
+    type: 'SRTO',
+    code: 'KL-77',
+    email: 'kl77.mvd@kerala.gov.in',
+    phone: '0496-2615077',
+    address: 'First Floor, Mini Civil Station, Perambra, Kozhikode, Kerala - 673525.',
+    location: 'Mini Civil Station, Perambra, Kozhikode',
+    pin: '673525'
   }
 ];
 
@@ -111,16 +111,17 @@ export const slideImages: SlideImage[] = [
   }
 ];
 
-export const rtoDistricts = [
+export const rtoDistricts: RTODistrict[] = [
   {
     id: "kl11",
     code: "KL-11",
     name: "RTO Kozhikode",
+    email: "kl11.mvd@kerala.gov.in",
     subRTO: [
-      { id: "kl11a", code: "KL-11", name: "Sub RTO Kozhikode" },
-      { id: "kl57", code: "KL-57", name: "Sub RTO Koduvally" },
-      { id: "kl85", code: "KL-85", name: "Sub RTO Feroke" },
-      { id: "kl76", code: "KL-76", name: "Sub RTO Nanmanda" }
+      { id: "kl11a", code: "KL-11", name: "Sub RTO Kozhikode", email: "kl11.mvd@kerala.gov.in" },
+      { id: "kl85", code: "KL-85", name: "Sub RTO Feroke", email: "kl85.mvd@kerala.gov.in" },
+      { id: "kl57", code: "KL-57", name: "Sub RTO Koduvally", email: "kl57.mvd@kerala.gov.in" },
+      { id: "kl76", code: "KL-76", name: "Sub RTO Nanmanda", email: "kl76.mvd@kerala.gov.in" }
     ]
   },
 
@@ -128,10 +129,11 @@ export const rtoDistricts = [
     id: "kl18",
     code: "KL-18",
     name: "RTO Vadakara",
+    email: "kl18.mvd@kerala.gov.in",
     subRTO: [
-      { id: "kl18a", code: "KL-18", name: "Sub RTO Vadakara" },
-      { id: "kl56", code: "KL-56", name: "Sub RTO Quilandi" },
-      { id: "kl77", code: "KL-77", name: "Sub RTO Perambra" },
+      { id: "kl18a", code: "KL-18", name: "Sub RTO Vadakara", email: "kl18.mvd@kerala.gov.in" },
+      { id: "kl56", code: "KL-56", name: "Sub RTO Koyilandy", email: "kl56.mvd@kerala.gov.in" },
+      { id: "kl77", code: "KL-77", name: "Sub RTO Perambra", email: "kl77.mvd@kerala.gov.in" },
     ]
   }
 ];
@@ -2225,6 +2227,127 @@ export const testingCenters: TestingCenter[] = [
 
 export const governmentOrders: GovernmentOrder[] = [
   {
+    id: 'go-96-go',
+    title: 'Government Order — 96.GO (96.Go.pdf)',
+    number: '96.GO',
+    date: '2026-09-27',
+    summary: 'Official Government Order (96.GO) regarding vehicle emission testing centers, regulatory compliance, and operational directives.',
+    documentUrl: '/96.GO.pdf',
+    category: 'Government Orders',
+    badge: 'Official GO (96.GO)',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-online-registration',
+    title: 'PUCC Online Registration Form (Online Registration.pdf)',
+    number: 'PUCC-REG',
+    date: '2026-09-27',
+    summary: 'Official PUCC Online Registration application form and instructions for pollution testing centers.',
+    documentUrl: '/Online registration.pdf',
+    category: 'Registration Forms',
+    badge: 'Online Registration',
+    pageCount: 'PDF Form'
+  },
+  {
+    id: 'go-pucc-guidelines-new',
+    title: 'PUCC Guidelines (PUCC Guidelines.pdf)',
+    number: 'PUCC Guidelines',
+    date: '2026-09-27',
+    summary: 'Official PUCC Guidelines detailing standard operating procedures, equipment calibration, and testing center rules.',
+    documentUrl: '/PUCC Guidelines.pdf',
+    category: 'Guidelines',
+    badge: 'PUCC Guidelines',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-indian-emission-norms-puc1',
+    title: 'Indian Emission NORMS PUC-1 (Indian Emission NORMS PUC-1.pdf)',
+    number: 'PUC-1 NORMS',
+    date: '2026-09-27',
+    summary: 'Reference document for Indian Emission Norms (PUC-1) standards, limits, and Bharat Stage emission specifications.',
+    documentUrl: '/Indian Emission NORMS PUC-1.pdf',
+    category: 'Emission Norms',
+    badge: 'Emission Norms PUC-1',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-vetoa-byelaw',
+    title: 'VETOA BYELAW (VETOA BYELAW -New ICDMS.pdf)',
+    number: 'VETOA BYELAW',
+    date: '2026-09-27',
+    summary: 'Official constitution, rules, regulations, and byelaws of the Vehicle Emission Testing Owners Association (VETOA - New ICDMS).',
+    documentUrl: '/VETOA BYELAW -New ICDMS.pdf',
+    category: 'Association Byelaw',
+    badge: 'Official Byelaw',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-vetoa-sticker',
+    title: 'VETOA Sticker (vetoa sticker.pdf)',
+    number: 'VETOA-STICKER',
+    date: '2026-11-12',
+    summary: 'Official VETOA Sticker design and printable format for authorized pollution testing centers.',
+    documentUrl: '/vetoa sticker.pdf',
+    category: 'Association Materials',
+    badge: 'VETOA Sticker',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-permissible-limits',
+    title: 'Permissible Limits for Petrol / CNG / LPG & Diesel Vehicles',
+    number: 'EMISSION-LIMITS',
+    date: '2026-11-12',
+    summary: 'Official chart of permissible CO%, HC (PPM), and Diesel Light Absorption / Hartridge limits with CMV Rules 115(2) guidelines.',
+    documentUrl: '/permissablelimits.jpeg',
+    category: 'Emission Norms',
+    badge: 'Permissible Limits Chart',
+    pageCount: 'Reference Chart'
+  },
+  {
+    id: 'go-price-list',
+    title: 'Price Lists — Pollution Testing Fee Schedule (pricelist.pdf)',
+    number: 'PRICE-LIST',
+    date: '2026-11-12',
+    summary: 'Official Price List and approved fee schedule for vehicle emission testing (PUCC) services.',
+    documentUrl: '/pricelist.pdf',
+    category: 'Fee Structure',
+    badge: 'Price List',
+    pageCount: 'PDF Document'
+  },
+  {
+    id: 'go-notice-may10',
+    title: 'Official Notice — May 10 (noticemay10.pdf)',
+    number: 'NOTICE-MAY10',
+    date: '2026-05-10',
+    summary: 'Official VETOA / MVD Notice dated May 10 for emission testing center owners and members.',
+    documentUrl: '/noticemay10.pdf',
+    category: 'Notices',
+    badge: 'Official Notice',
+    pageCount: 'PDF Notice'
+  },
+  {
+    id: 'go-notice-2',
+    title: 'Official Notice (notice2.pdf)',
+    number: 'NOTICE-02',
+    date: '2026-11-12',
+    summary: 'Official association notice and circular for authorized pollution testing centers.',
+    documentUrl: '/notice2.pdf',
+    category: 'Notices',
+    badge: 'Official Notice',
+    pageCount: 'PDF Notice'
+  },
+  {
+    id: 'go-state-general-secretary-notice',
+    title: 'State General Secretary Notice (Stategeneralsecratarynotice.pdf)',
+    number: 'SGS-NOTICE',
+    date: '2026-11-12',
+    summary: 'Official notice issued by the VETOA State General Secretary for all association members and testing centers.',
+    documentUrl: '/Stategeneralsecratarynotice.pdf',
+    category: 'Notices',
+    badge: 'State General Secretary Notice',
+    pageCount: 'PDF Notice'
+  },
+  {
     id: 'go-guidelines-testing-centers',
     title: 'Guidelines for Vehicle Emission Testing Centers',
     number: 'MVD Guidelines',
@@ -2361,11 +2484,320 @@ export const officialForms: OfficialForm[] = [
       'അംഗീകൃത ടെസ്റ്റിംഗ് സെന്ററിൽ നിന്നുള്ള നിലവിലെ പുക പരിശോധന റിപ്പോർട്ട്',
       'വാഹന ഉടമയുടെ തിരിച്ചറിയൽ രേഖ'
     ]
+  },
+  {
+    id: 'form-online-registration',
+    title: 'PUCC Online Registration Form',
+    titleMl: 'പി.യു.സി.സി ഓൺലൈൻ രജിസ്ട്രേഷൻ ഫോം (Online Registration.pdf)',
+    code: 'PUCC-ONLINE-REG',
+    documentUrl: '/Online registration.pdf',
+    category: 'PUCC Registration',
+    badge: 'Online Registration Form',
+    fileSize: '151 KB',
+    pageCount: 'PDF Document',
+    description: 'Official application form for PUCC Online Registration of Vehicle Emission Testing Centers.',
+    descriptionMl: 'വാഹന പുക പരിശോധനാ കേന്ദ്രങ്ങളുടെ പി.യു.സി.സി ഓൺലൈൻ രജിസ്ട്രേഷനുള്ള ഔദ്യോഗിക അപേക്ഷാ ഫോം.',
+    purpose: 'Used by testing center owners to apply for and complete online PUCC portal registration.',
+    purposeMl: 'പുക പരിശോധനാ കേന്ദ്രങ്ങളുടെ ഓൺലൈൻ രജിസ്ട്രേഷൻ നടപടികൾ പൂർത്തിയാക്കുന്നതിന്.',
+    requirements: [
+      'Completed PUCC Online Registration Form',
+      'Valid Center License & Calibration Certificates',
+      'Owner & Technician KYC Documents (Aadhaar, Driving Licence, Qualification)',
+      'Office & Parking Photos, Layout Plan, and Local Body License'
+    ],
+    requirementsMl: [
+      'പൂരിപ്പിച്ച പി.യു.സി.സി ഓൺലൈൻ രജിസ്ട്രേഷൻ ഫോം',
+      'നിലവിലുള്ള ലൈസൻസും കാലിബ്രേഷൻ സർട്ടിഫിക്കറ്റും',
+      'ഉടമയുടെയും ടെക്നീഷ്യന്റെയും ആധാർ, ലൈസൻസ്, യോഗ്യതാ സർട്ടിഫിക്കറ്റുകൾ',
+      'ഓഫീസ് ഫോട്ടോകൾ, ലേഔട്ട് പ്ലാൻ, പഞ്ചായത്ത് ലൈസൻസ്'
+    ]
+  },
+  {
+    id: 'form-96-go',
+    title: '96.GO — Government Order',
+    titleMl: 'സർക്കാർ ഉത്തരവ് — 96.GO (96.Go.pdf)',
+    code: '96.GO',
+    documentUrl: '/96.GO.pdf',
+    category: 'Government Order',
+    badge: '96.GO Document',
+    fileSize: '1.91 MB',
+    pageCount: 'PDF Document',
+    description: 'Official Government Order (96.GO) detailing directives and regulations for vehicle pollution testing centers.',
+    descriptionMl: 'വാഹന പുക പരിശോധനാ കേന്ദ്രങ്ങളുമായി ബന്ധപ്പെട്ട ഔദ്യോഗിക സർക്കാർ ഉത്തരവ് (96.GO).',
+    purpose: 'Official reference and regulatory compliance order for authorized PUCC testing centers.',
+    purposeMl: 'അംഗീകൃത പുക പരിശോധനാ കേന്ദ്രങ്ങൾ പാലിക്കേണ്ട സർക്കാർ മാർഗ്ഗനിർദ്ദേശങ്ങളും ഉത്തരവും.',
+    requirements: [
+      'Mandatory compliance by all authorized PUCC testing centers',
+      'Keep a reference copy available at the testing station'
+    ],
+    requirementsMl: [
+      'എല്ലാ അംഗീകൃത പുക പരിശോധനാ കേന്ദ്രങ്ങളും നിർബന്ധമായും പാലിക്കേണ്ടത്',
+      'സെന്ററിൽ റഫറൻസിനായി സൂക്ഷിക്കുക'
+    ]
+  },
+  {
+    id: 'form-pucc-guidelines',
+    title: 'PUCC Guidelines',
+    titleMl: 'പി.യു.സി.സി മാർഗ്ഗനിർദ്ദേശങ്ങൾ (PUCC Guidelines.pdf)',
+    code: 'PUCC-GUIDE',
+    documentUrl: '/PUCC Guidelines.pdf',
+    category: 'PUCC Guidelines',
+    badge: 'PUCC Guidelines',
+    fileSize: '2.52 MB',
+    pageCount: 'PDF Document',
+    description: 'Comprehensive PUCC Guidelines covering operational standards, equipment norms, and licensing rules for emission testing stations.',
+    descriptionMl: 'പുക പരിശോധനാ കേന്ദ്രങ്ങളുടെ പ്രവർത്തന മാനദണ്ഡങ്ങളും ലൈസൻസിംഗ് നിബന്ധനകളും അടങ്ങിയ സമഗ്ര മാർഗ്ഗനിർദ്ദേശങ്ങൾ.',
+    purpose: 'Standard operating and licensing guidelines for setting up, operating, and renewing PUCC testing centers.',
+    purposeMl: 'പി.യു.സി.സി കേന്ദ്രങ്ങളുടെ പ്രവർത്തനം, ലൈസൻസ് പുതുക്കൽ എന്നിവയ്ക്കുള്ള ഔദ്യോഗിക മാർഗ്ഗരേഖ.',
+    requirements: [
+      'Adherence to equipment calibration and AMC/ARI schedules',
+      'Compliance with office layout, parking area, and technician norms'
+    ],
+    requirementsMl: [
+      'ഉപകരണങ്ങളുടെ കാലിബ്രേഷൻ, എ.എം.സി നിബന്ധനകൾ പാലിക്കുക',
+      'ഓഫീസ് ലേഔട്ട്, പാർക്കിംഗ്, ടെക്നീഷ്യൻ യോഗ്യതാ മാനദണ്ഡങ്ങൾ പാലിക്കുക'
+    ]
+  },
+  {
+    id: 'form-indian-emission-norms-puc1',
+    title: 'Indian Emission NORMS PUC-1',
+    titleMl: 'ഇന്ത്യൻ എമിഷൻ നോംസ് PUC-1 (Indian Emission NORMS PUC-1.pdf)',
+    code: 'PUC-1-NORMS',
+    documentUrl: '/Indian Emission NORMS PUC-1.pdf',
+    category: 'Emission Norms',
+    badge: 'Indian Emission Norms',
+    fileSize: '1.46 MB',
+    pageCount: 'PDF Document',
+    description: 'Detailed reference manual on Indian Emission Norms (PUC-1), permissible emission limits, and Bharat Stage classifications.',
+    descriptionMl: 'ഇന്ത്യൻ എമിഷൻ നോംസ് (PUC-1), അനുവദനീയമായ പുക പരിധികൾ, ഭാരത് സ്റ്റേജ് തരംതിരിവുകൾ എന്നിവയുടെ ഔദ്യോഗിക രേഖ.',
+    purpose: 'Reference guide for verifying vehicle Bharat Stage emission standards and permissible CO / HC / Smoke density limits.',
+    purposeMl: 'വാഹനങ്ങളുടെ ബി.എസ്. എമിഷൻ പരിധികളും നോംസും പരിശോധിക്കുന്നതിനുള്ള റഫറൻസ് രേഖ.',
+    requirements: [
+      'Verify vehicle manufacturing date and BS norm category during testing',
+      'Use for Norms Correction / BS Stage verification'
+    ],
+    requirementsMl: [
+      'വാഹനത്തിന്റെ നിർമ്മാണ തീയതിയും ബി.എസ്. നോംസും ഒത്തുനോക്കാൻ ഉപയോഗിക്കുക',
+      'നോംസ് തിരുത്തൽ അപേക്ഷകൾക്ക് റഫറൻസായി ഉപയോഗിക്കാം'
+    ]
+  },
+  {
+    id: 'form-vetoa-byelaw',
+    title: 'VETOA BYELAW (New ICDMS)',
+    titleMl: 'VETOA ബൈലോ നിയമാവലി (VETOA BYELAW -New ICDMS.pdf)',
+    code: 'VETOA-BYELAW',
+    documentUrl: '/VETOA BYELAW -New ICDMS.pdf',
+    category: 'Association Byelaw',
+    badge: 'Official VETOA Byelaw',
+    fileSize: '581 KB',
+    pageCount: 'PDF Document',
+    description: 'Official Byelaw and organizational constitution of the Vehicle Emission Testing Owners Association (VETOA Kerala - Reg. No: KKD/CD/342/2020).',
+    descriptionMl: 'വെഹിക്കിൾ എമിഷൻ ടെസ്റ്റിംഗ് ഓണേഴ്സ് അസോസിയേഷന്റെ (VETOA) ഔദ്യോഗിക ബൈലോയും നിയമാവലിയും.',
+    purpose: 'Defines the objectives, membership rules, governance structure, and rights/duties of VETOA association members.',
+    purposeMl: 'അസോസിയേഷന്റെ ലക്ഷ്യങ്ങൾ, അംഗത്വ നിബന്ധനകൾ, ഭരണഘടനാ ചട്ടങ്ങൾ എന്നിവ വ്യക്തമാക്കുന്ന രേഖ.',
+    requirements: [
+      'Official constitution reference for all VETOA registered members',
+      'Applicable across state and district committees'
+    ],
+    requirementsMl: [
+      'എല്ലാ VETOA അംഗങ്ങൾക്കുമുള്ള ഔദ്യോഗിക ഭരണഘടനാ രേഖ',
+      'സംസ്ഥാന-ജില്ലാ കമ്മിറ്റികൾക്ക് ബാധകം'
+    ]
+  },
+  {
+    id: 'form-vetoa-sticker',
+    title: 'VETOA Sticker (vetoa sticker.pdf)',
+    titleMl: 'VETOA സ്റ്റിക്കർ (vetoa sticker.pdf)',
+    code: 'VETOA-STICKER',
+    documentUrl: '/vetoa sticker.pdf',
+    category: 'Association Materials',
+    badge: 'VETOA Sticker',
+    fileSize: '221 KB',
+    pageCount: 'PDF Document',
+    description: 'Official VETOA Sticker printable PDF for authorized vehicle emission testing centers.',
+    descriptionMl: 'അംഗീകൃത വാഹന പുക പരിശോധനാ കേന്ദ്രങ്ങൾക്കായുള്ള ഔദ്യോഗിക VETOA സ്റ്റിക്കർ.',
+    purpose: 'Printable official VETOA association sticker for display at member testing centers.',
+    purposeMl: 'അംഗീകൃത ടെസ്റ്റിംഗ് സെന്ററുകളിൽ പ്രദർശിപ്പിക്കുന്നതിനുള്ള VETOA സ്റ്റിക്കർ.',
+    requirements: [
+      'Download and print in color on sticker sheet',
+      'For authorized VETOA member testing centers'
+    ],
+    requirementsMl: [
+      'ഡൗൺലോഡ് ചെയ്ത് കളർ പ്രിന്റ് എടുക്കുക',
+      'അംഗീകൃത VETOA മെമ്പർ സെന്ററുകൾക്കായി'
+    ]
+  },
+  {
+    id: 'form-permissible-limits',
+    title: 'Permissible Limits for Petrol / CNG / LPG & Diesel Vehicles',
+    titleMl: 'പെട്രോൾ / സി.എൻ.ജി / എൽ.പി.ജി & ഡീസൽ വാഹനങ്ങളുടെ അനുവദനീയ പുക പരിധി (Permissible Limits)',
+    code: 'PERMISSIBLE-LIMITS',
+    documentUrl: '/permissablelimits.jpeg',
+    category: 'Emission Norms',
+    badge: 'Permissible Limits Chart',
+    fileSize: '220 KB',
+    pageCount: '1 Page Chart',
+    description: 'Official reference chart showing permissible CO%, HC (PPM) limits for Petrol/CNG/LPG vehicles and Light Absorption / Hartridge units for Diesel vehicles under CMV Rules 115(2).',
+    descriptionMl: 'പെട്രോൾ, സി.എൻ.ജി, എൽ.പി.ജി, ഡീസൽ വാഹനങ്ങളുടെ അനുവദനീയമായ പുക പരിശോധനാ പരിധികളും CMV Rule 115(2) വിവരങ്ങളും.',
+    purpose: 'Display chart and quick reference for permissible emission limits across 2/3/4-wheelers and BS categories.',
+    purposeMl: 'വിവിധ വാഹനങ്ങളുടെ എമിഷൻ പരിധികൾ പരിശോധിക്കാനും സെന്ററുകളിൽ പ്രദർശിപ്പിക്കാനുമുള്ള ചാർട്ട്.',
+    requirements: [
+      'Covers 2 & 3 Wheelers (2/4 Stroke) and 4 Wheelers (Pre-BS, BS-II, BS-IV)',
+      'Includes Diesel Free Acceleration Test limits & PUC validity rules'
+    ],
+    requirementsMl: [
+      'ഇരുചക്ര, മുച്ചക്ര, നാലുചക്ര വാഹനങ്ങളുടെ CO%, HC (PPM) പരിധികൾ',
+      'ഡീസൽ വാഹനങ്ങളുടെ ലിമിറ്റുകളും പി.യു.സി കാലാവധി വിവരങ്ങളും'
+    ]
+  },
+  {
+    id: 'form-price-list',
+    title: 'Price Lists — PUCC Testing Fee Schedule (pricelist.pdf)',
+    titleMl: 'വിലവിവരപ്പട്ടിക — പുക പരിശോധന നിരക്കുകൾ (pricelist.pdf)',
+    code: 'PRICE-LIST',
+    documentUrl: '/pricelist.pdf',
+    category: 'Fee Structure',
+    badge: 'Official Price List',
+    fileSize: '677 KB',
+    pageCount: 'PDF Document',
+    description: 'Official Price List specifying approved testing charges for various vehicle categories at emission testing centers.',
+    descriptionMl: 'വാഹന പുക പരിശോധനാ കേന്ദ്രങ്ങളിലെ വിവിധ വാഹന വിഭാഗങ്ങൾക്കുള്ള ഔദ്യോഗിക നിരക്ക് പട്ടിക.',
+    purpose: 'Reference and display price list for authorized vehicle pollution testing centers.',
+    purposeMl: 'അംഗീകൃത പുക പരിശോധനാ കേന്ദ്രങ്ങളിൽ പ്രദർശിപ്പിക്കുന്നതിനും റഫറൻസിനുമുള്ള നിരക്ക് പട്ടിക.',
+    requirements: [
+      'Display clearly at the testing center customer counter',
+      'Follow approved fee structure for all vehicle categories'
+    ],
+    requirementsMl: [
+      'ടെസ്റ്റിംഗ് സെന്ററുകളിൽ ഉപഭോക്താക്കൾക്ക് കാണത്തക്കവിധം പ്രദർശിപ്പിക്കുക',
+      'അംഗീകൃത നിരക്കുകൾ പ്രകാരം പ്രവർത്തിക്കുക'
+    ]
+  }
+];
+
+export interface PuccRenewalDocumentItem {
+  id: number;
+  title: string;
+  titleMl: string;
+  category: string;
+}
+
+export const puccRenewalDocuments: PuccRenewalDocumentItem[] = [
+  {
+    id: 1,
+    title: 'PANCHAYATH LICENSE & BUILDING TAX / LAND TAX',
+    titleMl: 'പഞ്ചായത്ത് ലൈസൻസ് & കെട്ടിട നികുതി / ഭൂനികുതി രസീത്',
+    category: 'Property & Local Body'
+  },
+  {
+    id: 2,
+    title: 'EXISTING PUCC LICENSE',
+    titleMl: 'നിലവിലുള്ള പി.യു.സി.സി (PUCC) ലൈസൻസ്',
+    category: 'Center License'
+  },
+  {
+    id: 3,
+    title: 'CALIBRATION CERTIFICATE',
+    titleMl: 'കാലിബ്രേഷൻ സർട്ടിഫിക്കറ്റ് (Calibration)',
+    category: 'Equipment'
+  },
+  {
+    id: 4,
+    title: 'AMC / ARI CERTIFICATE',
+    titleMl: 'എ.എം.സി / എ.ആർ.ഐ സർട്ടിഫിക്കറ്റ് (AMC / ARI)',
+    category: 'Equipment'
+  },
+  {
+    id: 5,
+    title: 'OWNER AADHAAR & LICENSE',
+    titleMl: 'സെന്റർ ഉടമയുടെ ആധാർ കാർഡും ഡ്രൈവിംഗ് ലൈസൻസും',
+    category: 'Owner Documents'
+  },
+  {
+    id: 6,
+    title: 'TECHNICIAN QUALIFICATION CERTIFICATE',
+    titleMl: 'ടെക്നീഷ്യന്റെ വിദ്യാഭ്യാസ യോഗ്യതാ സർട്ടിഫിക്കറ്റ്',
+    category: 'Technician Documents'
+  },
+  {
+    id: 7,
+    title: 'TECHNICIAN - TRAINING CERTIFICATE',
+    titleMl: 'ടെക്നീഷ്യൻ ട്രെയിനിംഗ് സർട്ടിഫിക്കറ്റ്',
+    category: 'Technician Documents'
+  },
+  {
+    id: 8,
+    title: 'TECHNICIAN - DRIVING LICENSE',
+    titleMl: 'ടെക്നീഷ്യന്റെ ഡ്രൈവിംഗ് ലൈസൻസ്',
+    category: 'Technician Documents'
+  },
+  {
+    id: 9,
+    title: 'AADHAAR - TECHNICIAN',
+    titleMl: 'ടെക്നീഷ്യന്റെ ആധാർ കാർഡ്',
+    category: 'Technician Documents'
+  },
+  {
+    id: 10,
+    title: 'LAYOUT PLAN & PARKING PLAN',
+    titleMl: 'ലേഔട്ട് പ്ലാൻ & പാർക്കിംഗ് പ്ലാൻ',
+    category: 'Premises & Layout'
+  },
+  {
+    id: 11,
+    title: 'RENT AGREEMENT',
+    titleMl: 'വാടക കരാർ (Rent Agreement)',
+    category: 'Property & Local Body'
+  },
+  {
+    id: 12,
+    title: 'USER ID & PASSWORD, MOBILE NO, EMAIL ID',
+    titleMl: 'യൂസർ ഐ.ഡി & പാസ്‌വേഡ്, മൊബൈൽ നമ്പർ, ഇമെയിൽ ഐ.ഡി',
+    category: 'Portal Credentials'
+  },
+  {
+    id: 13,
+    title: 'OFFICE & PARKING PHOTOS',
+    titleMl: 'ഓഫീസിന്റെയും പാർക്കിംഗ് സ്ഥലത്തിന്റെയും ഫോട്ടോകൾ',
+    category: 'Premises & Layout'
   }
 ];
 
 
 export const newsItems: NewsItem[] = [
+  {
+    id: 'notice-state-general-secretary',
+    title: 'State General Secretary Notice — VETOA Kerala',
+    date: '2026-11-12',
+    summary: 'Official notice issued by the State General Secretary of Vehicle Emission Testing Owners Association (VETOA) for all testing center owners and members.',
+    content: `Official Notice from the State General Secretary, VETOA Kerala.\n\nPlease view or download the attached PDF notice for complete details and instructions for all authorized pollution testing centers.`,
+    documentUrl: '/Stategeneralsecratarynotice.pdf',
+    documentLabel: 'State General Secretary Notice (PDF)',
+    tags: ['Notice', 'State General Secretary', 'VETOA Kerala'],
+    sourceName: 'VETOA Official Notice'
+  },
+  {
+    id: 'notice-may-10',
+    title: 'Official Notice — May 10',
+    date: '2026-05-10',
+    summary: 'Important official notice dated May 10 regarding emission testing center operations and association directives.',
+    content: `Official Notice (May 10).\n\nPlease view or download the attached PDF document (noticemay10.pdf) for full details.`,
+    documentUrl: '/noticemay10.pdf',
+    documentLabel: 'May 10 Notice (PDF)',
+    tags: ['Notice', 'May 10', 'Circular'],
+    sourceName: 'VETOA Official Notice'
+  },
+  {
+    id: 'notice-2',
+    title: 'Official Notice — Association Circular',
+    date: '2026-11-12',
+    summary: 'Official circular and notice for authorized pollution testing center owners and VETOA members.',
+    content: `Official Notice (notice2.pdf).\n\nPlease open or download the attached PDF notice to read the complete circular.`,
+    documentUrl: '/notice2.pdf',
+    documentLabel: 'Notice PDF (notice2.pdf)',
+    tags: ['Notice', 'Circular', 'VETOA'],
+    sourceName: 'VETOA Official Notice'
+  },
   {
     id: 'news-manorama-mla',
     title: 'പുക പരിശോധനയ്ക്ക് ചാർജ് വർധന അനിവാര്യം: കെ. ജയന്ത് എംഎൽഎ | മനോരമ ഓൺലൈൻ',
