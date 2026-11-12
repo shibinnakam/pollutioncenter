@@ -118,7 +118,7 @@ const MediaPage: React.FC = () => {
                 <div className="flex flex-wrap items-center gap-4 pt-2 text-xs sm:text-sm text-neutral-300">
                   <div className="flex items-center gap-1.5">
                     <Calendar size={15} className="text-primary-400" />
-                    <span>2026 November 27</span>
+                    <span>2026 September 27</span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <MapPin size={15} className="text-emerald-400" />
